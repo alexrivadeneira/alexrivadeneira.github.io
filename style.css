@@ -163,7 +163,7 @@ nav ul li a:hover{
 #top2{
 
 	display: relative;
-	background-image: url("img/f4.gif");
+	background-image: url("img/f6.gif");
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-color: #fff;
@@ -364,6 +364,32 @@ nav ul li a:hover{
 
 .clearfix {display: inline-block;}  /* for IE/Mac */
 
+
+
+
+@media screen and (max-width: 1780px) {
+
+	#top2{
+		background-image: url("img/f6.gif");
+	}
+
+
+@media screen and (max-width: 1630px) {
+
+	#top2{
+		background-image: url("img/f5.gif");
+	}
+
+}
+
+@media screen and (max-width: 1540px) {
+
+	#top2{
+		background-image: url("img/f4.gif");
+	}
+
+}
+
 @media screen and (max-width: 1350px) {
 
 	.name{
@@ -373,6 +399,28 @@ nav ul li a:hover{
 
 	nav ul li{
 		font-size: 1.25em;
+	}
+
+	#top2{
+		background-image: url("img/f3.gif");
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.name{
+		font-size: 2em;
+		min-width: 300px;
+	}
+
+	nav ul li{
+		font-size: 1.25em;
+	}
+
+	#top2{
+		background-image: url("img/f2.gif");
+	}
 
 }
 
@@ -383,6 +431,9 @@ nav ul li a:hover{
 		min-width: 300px;
 	}
 
+	#top2{
+		background-image: url("img/f1.gif");
+	}
 
 
 }

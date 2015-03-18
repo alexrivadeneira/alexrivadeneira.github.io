@@ -53,10 +53,12 @@ $(".aboutNav").click(function(){
 var navBar = $("nav");
 var nameHeight = $("nav").height() + 25;
 var navScrollClass = "nav-scrolled";
+var banner = $("#banner");
 
 $(window).scroll(function(){
 	if ( $(this).scrollTop() > nameHeight ){
 		navBar.addClass(navScrollClass);
+
 	} else {
 		navBar.removeClass(navScrollClass);
 	}
