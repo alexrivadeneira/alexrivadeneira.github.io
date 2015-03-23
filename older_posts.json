@@ -1,0 +1,37 @@
+[
+
+  {
+    "title":"Basic Search Algorithm",
+    "date":"03/10/2015",
+    "content":"I'm building a basic search algorithm in Python that allows a user to search an RSS feed from Craiglist. <a href=\"https://github.com/alexrivadeneira/python-craigslist-search\" target=\"search\">Click here to view the project repo on Github.</a> I've also written a blog post exploring this project, the challenges I'm facing, and ideas I have for further exploration.",
+    "image":"search.png",
+    "link": "https://github.com/alexrivadeneira/python-craigslist-search"
+    },
+
+ 
+
+  {
+    "title":"Tic Tac Toe...vs the Computer",
+    "date":"09/09/2014",
+    "content":"The computer is not very smart yet, but it can prevent you from winning on the diagonals.  In future versions, I will make the computer be able to block additional types of moves. It's eerie to see the game coming to life! You can change the size of the board on line 653, but keep the board a square larger than a 2x2 grid or else it will break.  <a href=\"http://www.codeskulptor.org/#user37_gBGFfHbHho_25.py\" target=\"ttt\">You can play the human-only version of the game here.</a>",
+    "image":"tttvscomp.png",
+    "link": "http://www.codeskulptor.org/#user37_7yzOJ39UY6_0.py"
+    },
+
+  {
+    "title":"Blackjack",
+    "date":"05/09/2014",
+    "content":"Blackjack! There are still a couple of bugs and this was built with a template that started with maybe 30% of the code already there, but it's still amazing to have made this.  There are a couple of bugs that need to be worked out, but it's mostly playable.  It feels really amazing to have built one of the old Windows card games.",
+    "image":"blackjack.png",
+    "link": "http://www.codeskulptor.org/#user32_D6u4pH4Cqw_8.py"
+    },
+
+  {
+    "title":"Pong",
+    "date":"04/14/2014",
+    "content":"This was a project for a Coursera  Class done in Python. Unfortunately, I lost the finished version, which kept score.  About 30% of the code was already provided in the template.",
+    "image":"pong.png",
+    "link": "http://www.codeskulptor.org/#user30_ny4ztEV5WE_0.py"
+    }
+
+]

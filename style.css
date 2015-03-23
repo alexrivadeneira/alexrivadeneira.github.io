@@ -3,9 +3,22 @@
 	font-family: Courier;
 }
 
+
+
+
 .underline{
  	border-bottom: 10px solid black;
 }
+
+
+#older{
+	text-align: center;
+	position: relative;
+	display: none;
+	margin: 3em 3em 3em 3em;
+
+}
+
 
 
 
@@ -427,9 +440,14 @@ nav ul li a:hover{
 	.post ul li{
 		display: none;
 	}
-	
+
 	#top2{
 		background-image: url("img/f1.gif");
+	}
+
+	.post p{
+		display: block;
+		width: 100%;
 	}
 
 
