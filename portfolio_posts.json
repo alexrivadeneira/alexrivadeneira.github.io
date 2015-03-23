@@ -1,10 +1,10 @@
 [
   {
-    "title":"My Little Magnum Opus",
-    "date":"03/16/2015",
-    "content":"This week I'm building my 'Magnum Opus' web app as the capstone for the first phase of my newly-rebooted web development career.  The project is a single-page Ruby on Rails application that incorporates interfacing with one or more APIs. Stay tuned.",
-    "image":"mo.png",
-    "link": "#"
+    "title":"TubeTube: Perfectly Timed Videos for Your Journey",
+    "date":"03/22/2015",
+    "content":"Are you ever bored and need something to do during your long ride on the DC Metro? TubeTube can help!  Enter your start and stop stations, and TubeTube will calculate your trip length and recommend interesting videos that fit your travel time!  This is a Ruby on Rails application. <a href='http://tube2.herokuapp.com/' target='tube'>Try it out here</a>, <a href='https://github.com/alexrivadeneira/tubetube' target='github'>or view the Github repo here.</a> ",
+    "image":"tubetube.png",
+    "link": "http://tube2.herokuapp.com/"
     },
   {
     "title":"Basic Search Algorithm",
