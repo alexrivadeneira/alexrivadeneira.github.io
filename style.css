@@ -392,14 +392,7 @@ nav ul li a:hover{
 
 @media screen and (max-width: 1350px) {
 
-	.name{
-		font-size: 2em;
-		min-width: 300px;
-	}
 
-	nav ul li{
-		font-size: 1.25em;
-	}
 
 	#top2{
 		background-image: url("img/f3.gif");
@@ -431,6 +424,10 @@ nav ul li a:hover{
 		min-width: 300px;
 	}
 
+	.post ul li{
+		display: none;
+	}
+	
 	#top2{
 		background-image: url("img/f1.gif");
 	}
@@ -463,5 +460,17 @@ nav ul li a:hover{
 	#top, #bottom {
 		height: 7px;
 		}
+
+	.post ul li{
+		display: none;
+	}
+
+	.post img{
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+
+	}
 
 }
