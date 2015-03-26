@@ -1,0 +1,54 @@
+ALEX RIVADENEIRA 
+(202) 459 1316
+alexrivadeneira.github.io 
+alexrivs@gmail.com                                                                                                             github.com/alexrivadeneira 
+ 
+** Education - Dartmouth College, BA 2010 
+
+Clear-communicating educator and full-stack web developer interested in building common-sense software to reimagine and improve the classroom. 
+
+Web Development Immersive Student  
+General Assembly, Computer Programming School                                Washington, D.C., November 2014 – present  
+A three-month intensive web development class to supplement self-learning. Main languages are Ruby and 
+Javascript, using Rails, Sinatra, Backbone and Meteor to develop applications from the ground up. Style application 
+front-ends with Javascript, JQuery, SASS and CSS that display as intended in modern web browsers, including 
+dynamic AJAX calls. Interface with APIs to harness third party data. Create and manage databases/models with 
+Postgresql and ActiveRecord, and MongoDB. Develop wireframes, test with RSpec Ruby Gem, and track 
+collaborative development using version control with Git and Github.   
+• “Calculator Race” – A simple game built using Meteor JS and MongoDB where players race one another to 
+answer math questions. 
+• “Head to Head” – A game where users compete to guess one another’s preferences. Built game logic with Ruby 
+and routed actions using Ruby Gem/framework Sinatra. Created and migrated data models using 
+ActiveRecord and Postgresql. Used Git and Github for version control and deployed to Heroku. 
+• “Drizzly” (Collaborative project) – Weather app that queries Weather Underground API and makes dynamic 
+AJAX calls to present conditions in the user’s favorite locations. Used Rails and Ruby Gem Devise to set 
+up user authentication and basic HTTP routes.   
+• Python Data Science Workshop – Used Python’s Anaconda and Pandas to create predictive models.   
+Special Investigator & Investigations Coordinator   
+U.S. State Department, Diplomatic Security Contractor          Washington, D.C. & Mumbai, India, 2013 – present 
+ Created PHP forms to automate parts of report writing, allowing for faster completion of investigations.   
+ 
+Bandra, Mumbai Programming Learners Club Founder                                                   Mumbai, India, 2013  
+Established a weekly Meetup group to teach and share web development knowledge while working with the State 
+Department in India. Built games in Python. Interacted with international entrepreneurs and code enthusiasts.   
+Senior Teacher Candidate Services Specialist   
+American Board for Certification of Teacher Excellence                                            Washington, D.C., 2012-2013   
+Reported candidate test data to State Departments of Education using Lotus databases and Excel, including v- 
+lookups, data sorting/concatenation, and pivot tables. Updated website using Drupal CMS, and used Google 
+Analytics to track traffic. Worked with team of programmers to develop new software and web-based products. 
+  
+                                                          Additional Professional Experience 
+Special Investigator & Background Investigations Coordinator   
+U.S. State Department, Diplomatic Security Contract                  Washington, D.C. & Mumbai, India, 2013 – present 
+ Investigate officials and foreign nationals at the U.S. Consulate in Mumbai, India and Washington, D.C. area to 
+determine suitability for access to classified information. Interview individuals for background investigations and 
+develop investigation leads. Write reports on findings. Obtained Top Secret government clearance.   
+Senior Teacher Candidate Services Specialist   
+American Board for Certification of Teacher Excellence                                               Washington, D.C., 2012-2013   
+Performed candidate background checks and verified eligibility for certification. Advised candidates on best 
+practices for studying and writing essays. Managed assistant. Assisted with human resource duties.   
+Teacher, English, Grades 9, 11, 12   
+Marshall Islands Ministry of Education & Don Bosco High School Jaluit, RMI & Washington, D.C., 2010-2012 
+ Developed curriculum and dynamic grammar teaching system for diverse and low-income learners.    
+
+Academic Citation in Math, 2006. Cum Laude Honors, 2007-2008
