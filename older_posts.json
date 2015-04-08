@@ -1,4 +1,12 @@
 [
+  {
+    "title":"2048",
+    "date":"04/08/2015",
+    "content":"2048, built in Python as part of Rice University's <a href=\"https://www.coursera.org/course/principlescomputing1\">Principles of Computing Course</a>.  I designed the logic with instructions and Rice provided the GUI.\" target=\"2048\">Click here to view the project repo on Github.</a> I've also written a blog post exploring this project, the challenges I'm facing, and ideas I have for further exploration.",
+    "image":"2048.png",
+    "link": "http://www.codeskulptor.org/#user39_unOF7r1mKt_6.py"
+    },
+
 
   {
     "title":"Basic Search Algorithm",
