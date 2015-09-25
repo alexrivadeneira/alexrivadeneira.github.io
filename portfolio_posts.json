@@ -17,7 +17,7 @@
   {
     "title":"Head to Head! Game",
     "date":"01/25/2015",
-    "content":"The first portfolio project for my Web Development Immersive course.  It's a guessing game where the players try to guess their friends preferences on random topics.  I built the game logic with Ruby and routed actions using the Ruby Gem/framework, Sinatra on top of a Postgresql database. I also used Git and Github for version control and deployed to Heroku.  You can see the game in action <a href=\"https://tranquil-ocean-7738.herokuapp.com\" target=\"h2h2\">here</a>, or view the Github repo <a href=\"https://github.com/alexrivadeneira/compass\">here</a>.",
+    "content":"A guessing game where the players try to guess their friends preferences on random topics.  I built the game logic with Ruby and routed actions using the Ruby Gem/framework, Sinatra on top of a Postgresql database. You can see the game in action <a href=\"https://tranquil-ocean-7738.herokuapp.com\" target=\"h2h2\">here</a>, or view the Github repo <a href=\"https://github.com/alexrivadeneira/compass\">here</a>.",
     "image":"h2h.png",
     "link": "https://tranquil-ocean-7738.herokuapp.com"
     },
