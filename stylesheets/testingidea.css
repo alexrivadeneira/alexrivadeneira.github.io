@@ -10,20 +10,20 @@
 /* changes all the links to brand color, except for stage links */
 /* unselected idea tags */
 nav.idea-list-modes li > a[aria-selected="false"] {
-  background-color: #553958;
+  background-color: #004386;
 }
 /* "Lets put our ideas to work" box  */
 .header-search,
 .header-countdown {
-  background-color: #553958;
+  background-color: #004386;
 }
 /* header banner navigation background */
 .official-header {
-  background-color: #553958;
+  background-color: #004386;
 }
 /* header banner navigation background */
 .official-main-nav ul.dropdown-menu {
-  background-color: #553958;
+  background-color: #004386;
 }
 /* header banner navigation active link*/
 .official-main-nav > .dropdown-menu > .active > a {
@@ -40,7 +40,7 @@ nav.idea-list-modes li > a[aria-selected="false"] {
 .idea .btn-link,
 .profile .btn-link,
 .main-content-area .btn-link {
-  color: #ff73ff;
+  color: #007fc2;
 }
 /* "Submit New Idea" button  */
 .header-actions > .btn {
@@ -59,11 +59,11 @@ nav.idea-list-modes li > a[aria-selected="false"] {
 }
 /* sidebar headers */
 .aside-section-heading {
-  color: #ff73ff;
+  color: #007fc2;
 }
 /* sidebar links */
 aside[role="complementary"] a {
-  color: #ff73ff;
+  color: #007fc2;
 }
 /* sidebar stage links - you shouldn't change this; affects too many areas */
 aside[role="complementary"] ul.stage-list > li > a {
@@ -71,7 +71,7 @@ aside[role="complementary"] ul.stage-list > li > a {
 }
 /* sidebar stage links - you shouldn't change this; affects too many areas */
 .link-list > .current {
-  background-color: #ff73ff;
+  background-color: #007fc2;
 }
 /* inner community - eliminate weird gray and shadows */
 .column-wrapper {
@@ -99,11 +99,11 @@ aside[role="complementary"] ul.stage-list > li > a {
 /* fix for tags color issue */
 .idea-tags a.tag {
   background: #fff;
-  color: #ff73ff;
-  border: 2px solid #ff73ff;
+  color: #007fc2;
+  border: 2px solid #007fc2;
 }
 .idea-tags a.tag:hover {
-  color: #ff73ff;
+  color: #007fc2;
 }
 /* fix for SSO login button */
 a[href="/a/sso/login"] {
