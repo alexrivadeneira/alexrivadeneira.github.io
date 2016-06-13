@@ -11,13 +11,17 @@
 @brandColorLighter: @brandColor + 30%;
 @brandColorLightest: @brandColor + 60%;
 
+
+@orangeColor: #ff7400;
+@orangeColorLighter: @orangeColor + 30%;
+
 @contrastColor: #553958;
 @contrastColorDarker: @contrastColor - 30%;
 @contrastColorLighter: @contrastColor + 30%;
 
 
 .submit-new-idea, .submit-new-idea:hover{
-color: #FF73FF;
+color: @orangeColor;
 }
 
 .dropdown-menu{
@@ -70,7 +74,7 @@ nav.idea-list-modes li > a[aria-selected="false"]{
 
 /* "Submit New Idea" button  */
 .header-actions > .btn{
-	background-color: @brandColorLighter;
+	background-color: @orangeColorLighter;
 	font-weight: 900;
   -o-transition:.25s;
   -ms-transition:.25s;
@@ -81,7 +85,7 @@ nav.idea-list-modes li > a[aria-selected="false"]{
 
 /* "Submit New Idea" button  */
 .header-actions > .btn:hover{
-	background-color: @brandColorLightest;
+	background-color: @orangeColor;
 	font-weight: 900;
 }
 
