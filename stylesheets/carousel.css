@@ -829,6 +829,20 @@ a[href="/a/sso/login"] {
     padding: 30px;
   }
 
+    #slide3{
+    height: 400px;
+    width: 300px;
+        left: 25px;
+    position: relative;
+    background-color: coral;
+    border: 2px solid #333;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px;
+  }
+
+
   #left-arrow{
     height: 25px;
     width: 25px;
