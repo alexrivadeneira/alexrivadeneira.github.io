@@ -765,12 +765,12 @@ html[dir="rtl"] .navbar-nav{
   }
 }
 
-.cl-we-are-discussing{
+.we-are-discussing{
   padding-top: 15px;
 }
 
 @media(max-width: 992px){
-  .cl-we-are-discussing{
+  .we-are-discussing{
     padding-top: 50px;
   }
 }
