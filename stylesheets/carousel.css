@@ -804,42 +804,19 @@ a[href="/a/sso/login"] {
   transition: .25s;
 }
   #slide{
-    height: 400px;
-    width: 300px;
-    position: relative;
-    left: 25px;
-    background-color: #ececf4;
-    border: 2px solid #333;
-    font-family: sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding: 30px;
+    background-color: gold;
   }
 
   #slide2{
-    height: 400px;
-    width: 300px;
-        left: 25px;
-    position: relative;
+
     background-color: coral;
-    border: 2px solid #333;
-    font-family: sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding: 30px;
+
   }
 
     #slide3{
-    height: 400px;
-    width: 300px;
-        left: 25px;
-    position: relative;
-    background-color: coral;
-    border: 2px solid #333;
-    font-family: sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding: 30px;
+
+    background-color: lavender;
+
   }
 
 
