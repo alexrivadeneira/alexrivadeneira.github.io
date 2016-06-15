@@ -840,6 +840,6 @@ a[href="/a/sso/login"] {
 .main-content-area a {
   color: #fff !important;
 }
-.custom-widget {
+section.custom-widget {
   background: #fff !important;
 }
