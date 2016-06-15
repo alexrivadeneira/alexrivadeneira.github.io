@@ -1,9 +1,5 @@
 /* phoneco2 by alex v3 - last update 30 apr 2016 */
 /* -------general------- */
-body{
-  background: #000;
-}
-
 .cl-row h1,
 .cl-row h2,
 .cl-row h3,
@@ -803,6 +799,6 @@ a[href="/a/sso/login"] {
 @media (max-width: 992px) {
   top: 30px;
 }
-body {
-  background: #000;
+.container {
+  background: url("/userimages/accounts/91/915379/sfondo2560.jpg");
 }
