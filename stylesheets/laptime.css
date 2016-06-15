@@ -802,3 +802,25 @@ a[href="/a/sso/login"] {
 .container {
   background: url("/userimages/accounts/91/915379/sfondo2560.jpg");
 }
+.site-footer {
+  color: #fff;
+}
+.site-footer a {
+  color: #fff;
+}
+.idea-list-modes {
+  background-color: #383330;
+}
+.idea-list-modes > ul {
+  background-color: #383330;
+  top: 0px;
+}
+.stage-filter > h3 {
+  color: #fff;
+}
+.idea-list > .idea,
+.profile-list > .idea,
+.idea-list > .paging,
+.profile-list > .paging {
+  border-top: none;
+}
