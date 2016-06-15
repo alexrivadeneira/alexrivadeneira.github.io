@@ -833,7 +833,7 @@ a[href="/a/sso/login"] {
   border: none;
 }
 .main-content-area {
-  background-color: #333333;
+  background-color: #333333 !important;
   color: #fff;
 }
 .main-content-area a {
