@@ -786,9 +786,6 @@ a[href="/a/sso/login"] {
   color: #fff;
 }
 /* -------END inner community page------ */
-.section.custom-widget {
-  background-color: #333333;
-}
 .welcome {
   background-color: #333333;
   color: #fff;
@@ -823,4 +820,14 @@ a[href="/a/sso/login"] {
 .idea-list > .paging,
 .profile-list > .paging {
   border-top: none;
+}
+.official-header {
+  border: none;
+}
+.header-search,
+.header-countdown {
+  border: none;
+}
+.welcome {
+  border: none;
 }
