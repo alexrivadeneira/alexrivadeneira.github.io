@@ -823,6 +823,7 @@ a[href="/a/sso/login"] {
 }
 .official-header {
   border: none;
+  border-bottom: none;
 }
 .header-search,
 .header-countdown {
