@@ -1,5 +1,9 @@
 /* phoneco2 by alex v3 - last update 30 apr 2016 */
 /* -------general------- */
+* {
+  box-shadow: none;
+  text-shadow: none;
+}
 .cl-row h1,
 .cl-row h2,
 .cl-row h3,
