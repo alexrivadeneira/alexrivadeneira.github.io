@@ -52,21 +52,20 @@ p {
   background-color: #e8e8e8;
 }
 .cl-brand-bg {
-  background-color: #e6632b;
+  background-color: #1b4057;
   color: #fff;
 }
 .cl-text-brand {
-  color: #e6632b !important;
+  color: #1b4057 !important;
 }
 .cl-text-contrast {
-  color: #553958 !important;
+  color: #ff0051 !important;
 }
 .cl-section .btn {
   border: none;
-  background-color: #e6632b;
+  background-color: #ff0051;
   color: #fff;
   font-weight: 900;
-  border-radius: 5px;
   -o-transition: .10s;
   -ms-transition: .10s;
   -moz-transition: .10s;
@@ -74,7 +73,7 @@ p {
   transition: .10s;
 }
 .cl-section .btn:hover {
-  background-color: #ff8149;
+  background-color: #395e75;
 }
 a {
   -o-transition: .10s;
@@ -92,7 +91,7 @@ a {
 nav.navbar-sub-hero {
   border: none;
   background: none;
-  background-color: #e6632b;
+  background-color: #1b4057;
   z-index: 99;
   letter-spacing: 1px;
   font-weight: 300;
@@ -125,7 +124,7 @@ nav.navbar-sub-hero #ideascale-navbar-collapse-1 ul li > ul > li {
   text-transform: none;
 }
 nav.navbar-sub-hero #ideascale-navbar-collapse-1 ul li > ul > li:hover {
-  background-color: #ff8149;
+  background-color: #395e75;
 }
 nav.navbar-sub-hero .navbar-brand {
   padding: 0;
@@ -139,11 +138,11 @@ nav.navbar-sub-hero .navbar-nav {
 }
 nav.navbar-sub-hero .navbar-nav a:hover {
   color: #fff;
-  background-color: #ff9f67;
+  background-color: #577c93;
 }
 nav.navbar-sub-hero .navbar-nav a:active {
   color: #fff;
-  background-color: #ff9f67;
+  background-color: #577c93;
 }
 nav.navbar-sub-hero .navbar-nav > li > a {
   color: #fff;
@@ -162,12 +161,12 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   text-transform: none !important;
 }
 nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
-  background-color: #e6632b !important;
+  background-color: #1b4057 !important;
 }
 /* -------END navbar------- */
 /* -------carousel------ */
 .carousel-inner {
-  background: #ff9f67;
+  background: #577c93;
 }
 .carousel-caption {
   top: 20%;
@@ -179,6 +178,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .carousel-caption .btn {
   margin-right: 15px;
   margin-top: 15px;
+  border-radius: 5px;
 }
 .carousel .item {
   width: 100%;
@@ -248,16 +248,16 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   font-size: 14px;
 }
 .cl-ideas .cl-idea-box h3 a {
-  color: #e6632b;
+  color: #1b4057;
 }
 .cl-ideas .cl-idea-author {
-  color: #ff8149;
+  color: #395e75;
 }
 .cl-ideas .cl-idea-stats {
   position: absolute;
   bottom: 45px;
   left: 30px;
-  color: #ff8149;
+  color: #395e75;
 }
 @media (max-width: 768px) {
   .cl-ideas .cl-idea-stats {
@@ -270,7 +270,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   /* div that adds a top border to the idea box */
 }
 .cl-ideas-campaigns .cl-idea-top-border-box {
-  background-color: #553958;
+  background-color: #ff0051;
   width: 100%;
   height: 10px;
 }
@@ -278,7 +278,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   position: absolute;
   bottom: 45px;
   right: 30px;
-  color: #e6632b;
+  color: #1b4057;
 }
 @media (max-width: 768px) {
   .cl-ideas-campaigns .cl-campaign-end-date {
@@ -288,7 +288,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 /* -------END idea boxes, repurposed as small campaign view ------ */
 /* -------idea boxes, pinned ------ */
 .cl-ideas-pinned .cl-idea-center-pin {
-  color: #ff8149;
+  color: #395e75;
   text-align: center;
   width: 100%;
   font-size: 35px;
@@ -319,7 +319,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   padding-bottom: 0px;
 }
 .cl-ideas-alt h3 a {
-  color: #e6632b;
+  color: #1b4057;
 }
 .cl-ideas-alt .cl-idea-author-img {
   position: static;
@@ -334,7 +334,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   /* used to add padding to every other callout idea for visual interest */
 }
 .cl-ideas-callout h3 a {
-  color: #e6632b;
+  color: #1b4057;
 }
 .cl-ideas-callout .cl-ideas-callout-style {
   border: none;
@@ -344,13 +344,13 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   position: absolute;
   bottom: 75px;
   left: 30px;
-  color: #ff8149;
+  color: #395e75;
 }
 .cl-ideas-callout .cl-idea-stats-callout-reverse {
   position: absolute;
   bottom: 75px;
   right: 30px;
-  color: #ff8149;
+  color: #395e75;
 }
 .cl-ideas-callout .cl-ideas-callout-extra-margin {
   margin-top: 50px;
@@ -426,20 +426,20 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   bottom: 45px;
   left: 30px;
   font-size: 13px;
-  color: #e6632b;
+  color: #1b4057;
 }
 .cl-campaigns .cl-campaign-logo-box {
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  border-top: 10px solid #e6632b;
+  border-top: 10px solid #1b4057;
 }
 .cl-campaigns .cl-campaign-end-date {
   position: absolute;
   bottom: 45px;
   right: 30px;
-  color: #e6632b;
+  color: #1b4057;
 }
 /* adjustment for small ios devices */
 @media (max-width: 400px) {
@@ -486,7 +486,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   height: 200px;
 }
 .cl-campaigns-horizontal .cl-campaigns-horizontal-name {
-  color: #e6632b;
+  color: #1b4057;
   text-align: left;
   font-size: 25px;
 }
@@ -501,18 +501,18 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .cl-campaigns-featured .cl-featured-campaign-logo {
   width: 100%;
   height: 270px;
-  border: 1px solid #e6632b;
+  border: 1px solid #1b4057;
 }
 .cl-campaigns-featured .cl-campaign-group {
   padding-top: 7px;
-  color: #e6632b;
+  color: #1b4057;
   font-size: 13px;
   text-transform: uppercase;
   text-align: left;
 }
 .cl-campaigns-featured .cl-featured-campaign-name a {
   text-align: left;
-  color: #e6632b;
+  color: #1b4057;
   font-size: 18px;
   font-weight: 900;
 }
@@ -521,7 +521,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .cl-leaderboard .cl-leaderboard-row {
   padding-top: 5px;
   padding-bottom: 5px;
-  color: #e6632b;
+  color: #1b4057;
   text-align: center;
 }
 .cl-leaderboard .cl-leaderboard-even-bg {
@@ -583,31 +583,31 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 /* word cloud frequency widget */
 .very-high {
   font-size: 28px;
-  color: #aa2700;
+  color: #00041b;
 }
 .high {
   font-size: 23px;
-  color: #c8450d;
+  color: #002239;
 }
 .medium-high {
   font-size: 20px;
-  color: #e6632b;
+  color: #1b4057;
 }
 .medium {
   font-size: 15px;
-  color: #e6632b;
+  color: #1b4057;
 }
 .medium-low {
   font-size: 13px;
-  color: #ff8149;
+  color: #395e75;
 }
 .low {
   font-size: 10px;
-  color: #ff8149;
+  color: #395e75;
 }
 .very-low {
   font-size: 8px;
-  color: #ff9f67;
+  color: #577c93;
 }
 /* -------END tags------ */
 /* -------footer------ */
@@ -631,7 +631,7 @@ footer ul li {
   font-weight: 900;
 }
 footer p {
-  color: #ff9f67;
+  color: #577c93;
   font-size: 10px;
   text-align: center;
 }
@@ -643,13 +643,13 @@ footer p {
   background-size: cover;
 }
 .cl-video-section .cl-brand-translucent-overlay {
-  background-color: rgba(200, 69, 13, 0.6);
+  background-color: rgba(0, 33, 54, 0.6);
   width: 100%;
   color: #fff;
 }
 .cl-video-section iframe {
   width: 100%;
-  border: 1px solid #e6632b;
+  border: 1px solid #1b4057;
 }
 .cl-video-section h2 > a {
   color: #fff;
@@ -717,11 +717,11 @@ nav.idea-list-modes li > a[aria-selected="false"] {
 .idea .btn-link,
 .profile .btn-link,
 .main-content-area .btn-link {
-  color: #e6632b;
+  color: #1b4057;
 }
 /* "Submit New Idea" button  */
 .header-actions > .btn {
-  background-color: #ff8149;
+  background-color: #395e75;
   font-weight: 900;
   -o-transition: .10s;
   -ms-transition: .10s;
@@ -731,16 +731,16 @@ nav.idea-list-modes li > a[aria-selected="false"] {
 }
 /* "Submit New Idea" button  */
 .header-actions > .btn:hover {
-  background-color: #ff9f67;
+  background-color: #577c93;
   font-weight: 900;
 }
 /* sidebar headers */
 .aside-section-heading {
-  color: #e6632b;
+  color: #1b4057;
 }
 /* sidebar links */
 aside[role="complementary"] a {
-  color: #e6632b;
+  color: #1b4057;
 }
 /* sidebar stage links - you shouldn't change this; affects too many areas */
 aside[role="complementary"] ul.stage-list > li > a {
@@ -748,7 +748,7 @@ aside[role="complementary"] ul.stage-list > li > a {
 }
 /* sidebar stage links - you shouldn't change this; affects too many areas */
 .link-list > .current {
-  background-color: #e6632b;
+  background-color: #1b4057;
 }
 /* inner community - eliminate weird gray and shadows */
 .column-wrapper {
@@ -776,11 +776,11 @@ aside[role="complementary"] ul.stage-list > li > a {
 /* fix for tags color issue */
 .idea-tags a.tag {
   background: #fff;
-  color: #e6632b;
-  border: 2px solid #e6632b;
+  color: #1b4057;
+  border: 2px solid #1b4057;
 }
 .idea-tags a.tag:hover {
-  color: #e6632b;
+  color: #1b4057;
 }
 /* fix for SSO login button */
 a[href="/a/sso/login"] {
