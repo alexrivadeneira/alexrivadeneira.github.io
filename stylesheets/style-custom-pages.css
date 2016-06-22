@@ -50,7 +50,7 @@ p {
 }
 /* text and background colors */
 .cl-grey-bg {
-  background-color: #e8e8e8;
+  background-color: #f5f5f5;
 }
 .cl-brand-bg {
   background-color: #1b4057;
@@ -169,6 +169,11 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .carousel-inner {
   background: #577c93;
 }
+.carousel-caption {
+  left: 0;
+  text-align: left;
+  padding-left: 50px;
+}
 .carousel-caption p {
   font-size: 25px;
   font-weight: 300;
@@ -200,7 +205,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 /* pick your carousel item backgrounds */
 .carousel-item-1 {
   background: url("http://cheesetest.ideascale.com/community-library/accounts/92/925005/Public/PhoneCo_6.jpeg");
-  background-position: 100px;
 }
 .carousel-item-2 {
   background: url("http://cheesetest.ideascale.com/community-library/accounts/92/925005/Public/PhoneCo_6.jpeg");
@@ -515,7 +519,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   text-align: center;
 }
 .cl-leaderboard .cl-leaderboard-even-bg {
-  background-color: #e8e8e8;
+  background-color: #f5f5f5;
   color: #000;
 }
 .cl-leaderboard .cl-leaderboard-avatar {
