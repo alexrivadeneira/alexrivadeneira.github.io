@@ -10,6 +10,7 @@
 .cl-row h4 {
   text-align: center;
   padding-bottom: 15px;
+  font-weight: 300;
 }
 .cl-row ul {
   list-style-position: inside;
