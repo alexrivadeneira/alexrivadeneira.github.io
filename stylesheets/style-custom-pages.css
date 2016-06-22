@@ -177,10 +177,17 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   font-size: 25px;
   font-weight: 300;
 }
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4 {
+  font-weight: 300;
+}
 .carousel-caption .btn {
   margin-right: 15px;
   margin-top: 20px;
   border-radius: 5px;
+  font-weight: 300;
 }
 .carousel .item {
   width: 100%;
