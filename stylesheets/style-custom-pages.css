@@ -23,13 +23,15 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  text-transform: uppercase;
 }
 .row {
   margin-left: 0px;
   margin-right: 0px;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 300;
 }
 /* adjust container size, overriding bootstrap-ideascale style */
 .main-container {
