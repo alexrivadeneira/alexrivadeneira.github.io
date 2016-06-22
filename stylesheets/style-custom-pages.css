@@ -169,12 +169,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .carousel-inner {
   background: #577c93;
 }
-.carousel-caption {
-  padding-left: 50px;
-  top: 20%;
-  text-align: left;
-  box-shadow: 0px 0px 20px -2px #1b4057;
-}
 .carousel-caption p {
   font-size: 25px;
   font-weight: 300;
