@@ -435,7 +435,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  border-top: 10px solid #1b4057;
 }
 .cl-campaigns .cl-campaign-end-date {
   position: absolute;
