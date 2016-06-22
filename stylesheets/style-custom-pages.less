@@ -20,7 +20,10 @@
 /* -------general------- */
 
 
-
+*{
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
 .cl-row{
 	
 	& h1, h2, h3, h4{
@@ -322,6 +325,8 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover{
 		border-radius: 100%;
 		width: 10px;
 		height: 10px;
+		border-color: @contrastColor;
+		color: @contrastColor;
 	}
 
 	& .active{
