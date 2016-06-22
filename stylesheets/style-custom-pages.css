@@ -231,13 +231,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   margin-bottom: 1px;
   background-color: #ff0051;
 }
-/* adjustment for very small ios device */
-@media (max-width: 400px) {
-  .carousel .item {
-    height: 730px;
-    background-size: cover;
-  }
-}
 /* -------END carousel------ */
 /* -------idea boxes, regular------ */
 .cl-ideas .cl-idea-box {
