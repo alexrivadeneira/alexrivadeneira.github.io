@@ -294,13 +294,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 /* -------END idea boxes, repurposed as small campaign view ------ */
 /* -------idea boxes, pinned ------ */
-.cl-ideas-pinned {
-  -o-transition: .25s;
-  -ms-transition: .25s;
-  -moz-transition: .25s;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
 .cl-ideas-pinned .cl-idea-center-pin {
   color: #395e75;
   text-align: center;
@@ -321,6 +314,11 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .cl-ideas-pinned .cl-pin-rotate1:hover {
   transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
+  -o-transition: .25s;
+  -ms-transition: .25s;
+  -moz-transition: .25s;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 .cl-ideas-pinned .cl-pin-rotate2 {
   transform: rotate(-1deg);
@@ -329,6 +327,11 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 .cl-ideas-pinned .cl-pin-rotate2:hover {
   transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
+  -o-transition: .25s;
+  -ms-transition: .25s;
+  -moz-transition: .25s;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 /* -------END idea boxes, pinned ------ */
 /* -------idea boxes, alternative------ */
