@@ -219,13 +219,13 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 /* overriding default bootstrap styles for the circle controllers to make them sleek squares */
 .carousel-indicators li {
-  border-radius: 0;
-  width: 25px;
-  height: 26px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
 }
 .carousel-indicators .active {
-  width: 25px;
-  height: 27px;
+  width: 10px;
+  height: 10px;
   margin-bottom: 1px;
 }
 /* adjustment for very small ios device */
