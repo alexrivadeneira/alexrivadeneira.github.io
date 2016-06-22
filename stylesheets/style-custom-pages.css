@@ -166,6 +166,9 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 /* -------END navbar------- */
 /* -------carousel------ */
+.carousel-inner {
+  background: #ff9f67;
+}
 .carousel-caption {
   top: 20%;
 }
