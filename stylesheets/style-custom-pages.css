@@ -155,6 +155,9 @@ nav.navbar-sub-hero .navbar-nav > li > a {
     display: none;
   }
 }
+nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
+  font-weight: 600;
+}
 /* -------END navbar------- */
 /* -------carousel------ */
 .carousel-caption {
