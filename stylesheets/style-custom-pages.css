@@ -655,10 +655,10 @@ footer h4 {
 footer ul li a {
   color: #fff;
 }
-footer ul li a :hover {
+footer ul li a:hover {
   color: #fff;
 }
-footer ul li a :visited {
+footer ul li a:visited {
   color: #fff;
 }
 footer ul li {
