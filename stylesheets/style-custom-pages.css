@@ -173,12 +173,12 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   box-shadow: 0px 0px 20px -2px #1b4057;
 }
 .carousel-caption p {
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 300;
 }
 .carousel-caption .btn {
   margin-right: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 5px;
 }
 .carousel .item {
@@ -230,6 +230,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   width: 10px;
   height: 10px;
   margin-bottom: 1px;
+  background-color: #ff0051;
 }
 /* adjustment for very small ios device */
 @media (max-width: 400px) {
