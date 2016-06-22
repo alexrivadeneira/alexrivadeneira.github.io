@@ -66,7 +66,7 @@ p {
   border: none;
   background-color: #ff0051;
   color: #fff;
-  font-weight: 900;
+  font-weight: 300;
   -o-transition: .10s;
   -ms-transition: .10s;
   -moz-transition: .10s;
@@ -171,6 +171,8 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 .carousel-caption {
   top: 20%;
+  left: 0;
+  text-align: left;
   box-shadow: 0px 0px 20px -2px #1b4057;
 }
 .carousel-caption p {
