@@ -38,7 +38,7 @@ hr.gradient {
   height: 2px;
   width: 25%;
   background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 /* adjust container size, overriding bootstrap-ideascale style */
 .main-container {
@@ -70,9 +70,6 @@ hr.gradient {
 }
 .cl-background-bg p {
   color: #fff;
-}
-.cl-background-bg hr.gradient {
-  background-image: linear-gradient(to right, #ff0051, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 .cl-brand-bg {
   background-color: #1b4057;
@@ -451,9 +448,9 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   left: 15px;
   font-size: 25px;
   line-height: 30px;
-  font-weight: 900;
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: red;
 }
 .cl-campaigns .cl-campaign-idea-number {
   position: absolute;
@@ -659,11 +656,17 @@ footer h4 {
 footer ul li a {
   color: #fff;
 }
+footer ul li a :hover {
+  color: #fff;
+}
+footer ul li a :visited {
+  color: #fff;
+}
 footer ul li {
   list-style: none;
   padding: 5px;
   margin-left: -30px;
-  font-weight: 900;
+  font-weight: 300;
 }
 footer p {
   color: #577c93;
