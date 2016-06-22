@@ -170,6 +170,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 .carousel-caption {
   top: 20%;
+  box-shadow: 0px 0px 20px -2px #1b4057;
 }
 .carousel-caption p {
   font-size: 22px;
