@@ -115,7 +115,7 @@ hr.gradient {
 	}
 
 	& hr.gradient{
-		background-image: linear-gradient(to right, rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1));
+		background-image: linear-gradient(to right, rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), .75), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 0));
 		}
 }
 
@@ -952,6 +952,7 @@ footer{
 		color: @brandColorLightest;
 		font-size: 10px;
 		text-align: center;
+		font-weight: 300;
 	}	
 
 }
