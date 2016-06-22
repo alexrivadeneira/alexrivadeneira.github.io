@@ -325,8 +325,8 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   -webkit-transform: rotate(-1deg);
 }
 .cl-ideas-pinned .cl-pin-rotate2:hover {
-  transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
+  transform: rotate(70deg);
+  -webkit-transform: rotate(70deg);
   -o-transition: .25s;
   -ms-transition: .25s;
   -moz-transition: .25s;
