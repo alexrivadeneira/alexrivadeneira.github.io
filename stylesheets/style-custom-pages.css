@@ -9,7 +9,7 @@
 .cl-row h3,
 .cl-row h4 {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   font-weight: 300;
 }
 .cl-row ul {
@@ -38,6 +38,7 @@ hr.gradient {
   height: 2px;
   width: 25%;
   background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 40px;
 }
 /* adjust container size, overriding bootstrap-ideascale style */
 .main-container {
@@ -435,6 +436,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  border: 1px solid #ccc;
 }
 .cl-campaigns .cl-campaign-end-date {
   position: absolute;
