@@ -71,6 +71,9 @@ hr.gradient {
 .cl-background-bg p {
   color: #fff;
 }
+.cl-background-bg hr.gradient {
+  background-image: linear-gradient(to right, #ff0051, #ff0051, #ff0051);
+}
 .cl-brand-bg {
   background-color: #1b4057;
   color: #fff;

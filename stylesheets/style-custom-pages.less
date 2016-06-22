@@ -114,8 +114,12 @@ hr.gradient {
 		color: #fff;
 	}
 
-
+	& hr.gradient{
+		background-image: linear-gradient(to right, rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1), rgba(red(@contrastColor), green(@contrastColor), blue(@contrastColor), 1));
+		}
 }
+
+
 
 .cl-brand-bg{
 	background-color: @brandColor;
