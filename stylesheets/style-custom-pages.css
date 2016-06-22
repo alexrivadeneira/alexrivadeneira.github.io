@@ -61,6 +61,9 @@ hr.gradient {
 .cl-grey-bg {
   background-color: #f5f5f5;
 }
+.cl-background-bg {
+  background: url("/community-library/accounts/92/925005/PhoneCo_16.jpg");
+}
 .cl-brand-bg {
   background-color: #1b4057;
   color: #fff;
