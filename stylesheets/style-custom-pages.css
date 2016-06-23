@@ -300,11 +300,14 @@ blockquote.cl-quote-text:before {
 }
 blockquote.cl-quote-text:after {
   color: #ff0051;
-  content: open-quote;
+  content: close;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
+}
+blockquote.cl-quote-text {
+  border-left: none;
 }
 /* --------END quote ----------- */
 /* -------idea boxes, regular------ */
