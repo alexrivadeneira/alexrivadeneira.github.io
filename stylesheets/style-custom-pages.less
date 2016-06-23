@@ -405,10 +405,25 @@ hr.your-role{
 /* --------quote --------- */
 
 img.cl-quote-avatar{
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	border-radius: 100%;	
 	float: right;
+}
+
+
+blockquote.cl-quote-text{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+blockquote.cl-quote-text:before{
+	color: @contrastColor;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
 }
 
 /* --------END quote ----------- */
