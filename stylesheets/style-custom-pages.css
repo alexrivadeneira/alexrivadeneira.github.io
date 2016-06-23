@@ -281,9 +281,10 @@ hr.your-role {
 /* -------END your role-------- */
 /* --------quote --------- */
 img.cl-quote-avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
+  float: right;
 }
 /* --------END quote ----------- */
 /* -------idea boxes, regular------ */
