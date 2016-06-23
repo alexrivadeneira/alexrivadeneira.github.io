@@ -279,6 +279,13 @@ hr.your-role {
   height: 1px;
 }
 /* -------END your role-------- */
+/* --------quote --------- */
+img.cl-quote-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+/* --------END quote ----------- */
 /* -------idea boxes, regular------ */
 .cl-ideas .cl-idea-box {
   padding: 15px;
