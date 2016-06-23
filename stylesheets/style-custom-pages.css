@@ -298,6 +298,14 @@ blockquote.cl-quote-text:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+blockquote.cl-quote-text:after {
+  color: #ff0051;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
 /* --------END quote ----------- */
 /* -------idea boxes, regular------ */
 .cl-ideas .cl-idea-box {
