@@ -293,15 +293,15 @@ blockquote.cl-quote-text {
 blockquote.cl-quote-text:before {
   color: #ff0051;
   content: open-quote;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 blockquote.cl-quote-text:after {
   color: #ff0051;
-  content: close;
-  font-size: 4em;
+  content: close-quote;
+  font-size: 5em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
