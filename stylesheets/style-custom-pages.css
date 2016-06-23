@@ -258,7 +258,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 /* -------END carousel------ */
 /* -------your role------- */
-cl-your-role-inner {
+.cl-your-role-inner {
   background: #fff;
   font-size: 14px;
   font-weight: 300;
