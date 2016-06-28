@@ -208,6 +208,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   bottom: 0 !important;
   top: 0 !important;
   padding: 30px;
+  padding-top: 70px;
   color: #fff;
   background: rgba(0, 33, 54, 0.8);
   left: 0;
@@ -223,17 +224,18 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
 }
 .ip-carousel-caption h1 {
   font-weight: 900;
-  font-size: 17px;
+  font-size: 20px;
 }
 .ip-carousel-caption h4 {
   text-transform: uppercase;
   font-size: 11px;
+  font-weight: 300;
 }
 .ip-carousel-caption .btn {
   margin-right: 15px;
   margin-top: 20px;
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 900;
 }
 .ip-carousel .item {
   width: 100%;
