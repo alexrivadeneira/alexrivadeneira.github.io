@@ -382,6 +382,12 @@ blockquote.cl-quote-text {
   -webkit-transition: .25s;
   transition: .25s;
 }
+@media (min-width: 1200px) {
+  .cl-ideas-pinned > .cl-row {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
 /* -------END idea boxes, pinned ------ */
 /* -------idea boxes, alternative------ */
 .cl-ideas-alt .col-md-4 {
