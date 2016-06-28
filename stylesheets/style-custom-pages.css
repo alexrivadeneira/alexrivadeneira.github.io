@@ -68,6 +68,10 @@ hr.white {
   background-color: #1b4057;
   color: #fff;
 }
+.cl-contrast-bg {
+  background-color: #ff0051;
+  color: #fff;
+}
 .cl-text-brand {
   color: #1b4057 !important;
 }
