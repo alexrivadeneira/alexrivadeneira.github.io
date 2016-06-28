@@ -736,6 +736,12 @@ footer p {
   text-align: center;
   font-weight: 300;
 }
+@media (min-width: 1200px) {
+  footer > .cl-row {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 /* -------END footer------ */
 /* -------video area------ */
 .cl-video-bg {
