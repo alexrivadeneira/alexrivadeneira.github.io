@@ -874,3 +874,20 @@ a[href="/a/sso/login"] {
   padding: 0;
 }
 /* END Community specific mods */
+/* --------NEW INNER PAGE STUFF ------- */
+/* DARK COLORS */
+.idea-title > a {
+  color: #1b4057;
+}
+.idea a,
+.profile a,
+.main-content-area a,
+.campaign a,
+.idea .btn-link,
+.profile .btn-link,
+.main-content-area .btn-link,
+.campaign .btn-link {
+  color: #1b4057;
+}
+/* LIGHT COLORS */
+/* -------- END NEW INNER PAGE STUFF ---------- */
