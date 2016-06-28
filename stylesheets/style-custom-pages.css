@@ -108,6 +108,7 @@ nav.navbar-sub-hero {
   z-index: 99;
   letter-spacing: 1px;
   font-weight: 300;
+  padding-top: 15px;
   /* topbar menu items displayed on full*/
   /* navbar logo */
 }
@@ -477,14 +478,6 @@ blockquote.cl-quote-text {
   }
 }
 /* -------END idea boxes, callout style------ */
-/* -------about section-------- */
-.cl-about-left {
-  margin-left: -15px;
-}
-.cl-about-right {
-  padding: 30px;
-}
-/* -------END about section-------- */
 /* -------campaigns, standard with campaign logo with white title overlay, contained in white box------ */
 .cl-campaigns .cl-campaign-box {
   background: #fff;
