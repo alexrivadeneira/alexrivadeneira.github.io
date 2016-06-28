@@ -214,14 +214,20 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   text-align: left;
 }
 .ip-carousel-caption p {
-  font-size: 25px;
+  font-size: 14px;
   font-weight: 300;
 }
-.ip-carousel-caption h1,
 .ip-carousel-caption h2,
-.ip-carousel-caption h3,
-.ip-carousel-caption h4 {
+.ip-carousel-caption h3 {
   font-weight: 300;
+}
+.ip-carousel-caption h1 {
+  font-weight: 900;
+  font-size: 17px;
+}
+.ip-carousel-caption h4 {
+  text-transform: uppercase;
+  font-size: 11px;
 }
 .ip-carousel-caption .btn {
   margin-right: 15px;
