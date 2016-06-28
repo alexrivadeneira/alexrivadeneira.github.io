@@ -146,14 +146,6 @@ nav.navbar-sub-hero .navbar-brand > img {
 nav.navbar-sub-hero .navbar-nav {
   /* top level items without a dropdown menu*/
 }
-nav.navbar-sub-hero .navbar-nav a:hover {
-  color: #000;
-  background-color: #577c93;
-}
-nav.navbar-sub-hero .navbar-nav a:active {
-  color: #000;
-  background-color: #577c93;
-}
 nav.navbar-sub-hero .navbar-nav > li > a {
   color: #000;
 }
