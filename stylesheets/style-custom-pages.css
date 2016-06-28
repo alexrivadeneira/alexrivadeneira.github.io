@@ -818,9 +818,8 @@ footer p {
   color: #1b4057;
 }
 /* "Submit New Idea" button  */
-.new-idea-button,
-.new-question-button {
-  background-color: #ff0051;
+.official-header > .new-idea-button {
+  background-color: #ff0051 !important;
   -o-transition: .10s;
   -ms-transition: .10s;
   -moz-transition: .10s;
