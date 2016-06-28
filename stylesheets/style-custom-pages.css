@@ -829,6 +829,9 @@ footer p {
 .official-header > .new-idea-button {
   background: #ff0051 !important;
 }
+#new-idea-button {
+  background: #ff0051 !important;
+}
 /* sidebar headers */
 .aside-section-heading {
   color: #1b4057;
