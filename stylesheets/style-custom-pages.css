@@ -9,6 +9,7 @@ body {
 }
 .cl-row {
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 .cl-row h1,
 .cl-row h2,
