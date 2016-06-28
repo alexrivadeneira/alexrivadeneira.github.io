@@ -876,9 +876,6 @@ a[href="/a/sso/login"] {
 /* END Community specific mods */
 /* --------NEW INNER PAGE STUFF ------- */
 /* DARK COLORS */
-.idea-title > a {
-  color: #1b4057;
-}
 .idea a,
 .profile a,
 .main-content-area a,
@@ -889,5 +886,19 @@ a[href="/a/sso/login"] {
 .campaign .btn-link {
   color: #1b4057;
 }
+.voted-up > .vote-actions > .vote-up,
+a.vote-up:hover {
+  color: #1b4057;
+}
+.voted-up > .stage-data {
+  color: #1b4057;
+}
+.stage-details-0 .up-votes {
+  border-color: #1b4057;
+}
 /* LIGHT COLORS */
+/* HIGHLIGHTS */
+.idea-title > a {
+  color: #ff0051;
+}
 /* -------- END NEW INNER PAGE STUFF ---------- */
