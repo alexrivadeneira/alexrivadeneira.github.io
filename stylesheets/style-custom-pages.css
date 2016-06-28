@@ -470,6 +470,12 @@ blockquote.cl-quote-text {
   left: 25px;
   z-index: 1;
 }
+@media (min-width: 1200px) {
+  .cl-ideas-callout > .cl-row {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
 /* -------END idea boxes, callout style------ */
 /* -------about section-------- */
 .cl-about-left {
