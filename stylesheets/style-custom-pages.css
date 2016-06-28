@@ -24,14 +24,14 @@ body {
 .cl-row ul li {
   font-size: 15px;
 }
-h1 {
+.cl-row h1 {
   font-size: 50px;
 }
-h2 {
+.cl-row h2 {
   font-size: 37px;
   text-transform: uppercase;
 }
-p {
+.cl-row p {
   font-size: 18px;
   font-weight: 300;
 }
