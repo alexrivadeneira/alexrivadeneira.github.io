@@ -888,7 +888,7 @@ a[href="/a/sso/login"] {
 }
 .voted-up > .vote-actions > .vote-up,
 a.vote-up:hover {
-  color: #1b4057;
+  border-bottom-color: #1b4057;
 }
 .voted-up > .stage-data {
   color: #1b4057;
