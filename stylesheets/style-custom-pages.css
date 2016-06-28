@@ -787,10 +787,6 @@ footer p {
 /* **************************** */
 /* -------inner community page------ */
 /* changes all the links to brand color, except for stage links */
-/* unselected idea tags */
-nav.idea-list-modes li > a[aria-selected="false"] {
-  background-color: #553958;
-}
 /* "Lets put our ideas to work" box  */
 .header-search,
 .header-countdown {
