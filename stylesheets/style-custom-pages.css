@@ -270,7 +270,7 @@ img.cl-quote-avatar {
 blockquote.cl-quote-text {
   font-size: 18px;
   font-weight: 500;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 blockquote.cl-quote-text:before {
   color: #ff0051;
@@ -524,6 +524,10 @@ blockquote.cl-quote-text {
   bottom: 45px;
   right: 30px;
   color: #1b4057;
+}
+.cl-campaigns > .cl-row {
+  padding-left: 90px;
+  padding-right: 90px;
 }
 /* adjustment for small ios devices */
 @media (max-width: 400px) {
