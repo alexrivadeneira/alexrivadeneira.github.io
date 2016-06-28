@@ -1,8 +1,14 @@
 /* phoneco2 by alex v3 - last update 30 apr 2016 */
 /* -------general------- */
+body {
+  background: #f5f5f5;
+}
 * {
   box-shadow: none !important;
   text-shadow: none !important;
+}
+.cl-row {
+  padding-top: 45px;
 }
 .cl-row h1,
 .cl-row h2,
@@ -25,10 +31,6 @@ h2 {
   font-size: 37px;
   text-transform: uppercase;
 }
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
 p {
   font-size: 18px;
   font-weight: 300;
@@ -44,23 +46,6 @@ hr.white {
   border: 0;
   height: 2px;
   background: #fff;
-}
-/* adjust container size, overriding bootstrap-ideascale style */
-.main-container {
-  width: 100%;
-  padding: 0;
-}
-/* adjust container size, overriding bootstrap-ideascale style */
-.container {
-  padding: 0;
-}
-/* prevent rows from stretching past certain width */
-.row.cl-row {
-  /* adds nice padding on the sides and above and below rows..  -__- ahhhhh.... */
-  padding: 45px 15px 45px 15px;
-  position: relative;
-  margin: 0 auto;
-  max-width: 1000px;
 }
 /* text and background colors */
 .cl-grey-bg {
@@ -119,7 +104,7 @@ a {
 nav.navbar-sub-hero {
   border: none;
   background: none;
-  background-color: #1b4057;
+  background-color: #fff;
   z-index: 99;
   letter-spacing: 1px;
   font-weight: 300;
@@ -137,10 +122,6 @@ nav.navbar-sub-hero .cl-search-btn {
   padding: 6px 10px 6px 10px;
   font-size: 12px;
   border-radius: 5px;
-}
-nav.navbar-sub-hero .container {
-  padding-left: 27px;
-  padding-right: 5px;
 }
 nav.navbar-sub-hero #ideascale-navbar-collapse-1 ul li {
   text-transform: uppercase;
@@ -165,15 +146,15 @@ nav.navbar-sub-hero .navbar-nav {
   /* top level items without a dropdown menu*/
 }
 nav.navbar-sub-hero .navbar-nav a:hover {
-  color: #fff;
+  color: #000;
   background-color: #577c93;
 }
 nav.navbar-sub-hero .navbar-nav a:active {
-  color: #fff;
+  color: #000;
   background-color: #577c93;
 }
 nav.navbar-sub-hero .navbar-nav > li > a {
-  color: #fff;
+  color: #000;
 }
 .navbar-default .navbar-nav .open .dropdown-menu {
   background-color: #fff;
