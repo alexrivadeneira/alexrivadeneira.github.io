@@ -826,7 +826,7 @@ footer p {
   -webkit-transition: .10s;
   transition: .10s;
 }
-.official-header > #new-idea-button {
+.official-header > .new-idea-button {
   background: #ff0051 !important;
 }
 /* sidebar headers */
