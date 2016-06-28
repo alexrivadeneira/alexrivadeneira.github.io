@@ -714,7 +714,6 @@ footer h4 {
   text-transform: uppercase;
   padding-top: 45px;
   letter-spacing: 1px;
-  font-weight: 600;
 }
 footer ul li a {
   color: #fff;
@@ -736,6 +735,9 @@ footer p {
   font-size: 10px;
   text-align: center;
   font-weight: 300;
+}
+footer > section.cl-section > row.cl-row > div > h4 {
+  font-weight: 600;
 }
 @media (min-width: 1200px) {
   footer .cl-row {
