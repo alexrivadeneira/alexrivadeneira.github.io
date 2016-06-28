@@ -172,9 +172,9 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   background: #577c93;
 }
 .carousel-caption {
-  /* left: 0; */
-  /* text-align: left; */
-  /*padding-left: 50px;*/
+  left: 0;
+  text-align: left;
+  padding-left: 50px;
 }
 .carousel-caption p {
   font-size: 25px;
