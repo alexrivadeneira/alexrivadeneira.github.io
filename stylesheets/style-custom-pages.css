@@ -826,6 +826,9 @@ footer p {
   -webkit-transition: .10s;
   transition: .10s;
 }
+.official-header > #new-idea-button {
+  background: #ff0051 !important;
+}
 /* sidebar headers */
 .aside-section-heading {
   color: #1b4057;
