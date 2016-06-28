@@ -788,54 +788,8 @@ footer p {
 /* -------inner community page------ */
 /* changes all the links to brand color, except for stage links */
 /* "Submit New Idea" button  */
-.official-header > .new-idea-button {
-  background-color: #ff0051 !important;
-  -o-transition: .10s;
-  -ms-transition: .10s;
-  -moz-transition: .10s;
-  -webkit-transition: .10s;
-  transition: .10s;
-}
-.official-header > .new-idea-button {
-  background: #ff0051 !important;
-}
 #new-idea-button {
   background: #ff0051 !important;
-}
-/* sidebar headers */
-.aside-section-heading {
-  color: #1b4057;
-}
-/* sidebar links */
-aside[role="complementary"] a {
-  color: #1b4057;
-}
-/* sidebar stage links - you shouldn't change this; affects too many areas */
-aside[role="complementary"] ul.stage-list > li > a {
-  color: #333;
-}
-/* sidebar stage links - you shouldn't change this; affects too many areas */
-.link-list > .current {
-  background-color: #1b4057;
-}
-/* inner community - eliminate weird gray and shadows */
-.column-wrapper {
-  background: none;
-}
-.official-header {
-  border-bottom: 1px solid #bbb;
-  box-shadow: none;
-}
-.header-actions > .btn {
-  box-shadow: none;
-}
-.idea-list-modes {
-  background: #fff;
-  border-top: none;
-}
-.official-header > .logo {
-  border: 1px solid #888;
-  box-shadow: none;
 }
 /* fix for team building link issue */
 .team-member-action > a[data-json-handler-contextual="idea-team-updated"] {
