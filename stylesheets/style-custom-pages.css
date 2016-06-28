@@ -876,6 +876,9 @@ a[href="/a/sso/login"] {
 /* END Community specific mods */
 /* --------NEW INNER PAGE STUFF ------- */
 /* DARK COLORS */
+.go-to-admin > a {
+  color: #1b4057;
+}
 .idea a,
 .profile a,
 .main-content-area a,
@@ -897,6 +900,9 @@ a.vote-up:hover {
   border-color: #1b4057;
 }
 /* LIGHT COLORS */
+.stage-details > .stage-workflow > .stage-list > .active > a {
+  background-color: #577c93;
+}
 /* HIGHLIGHTS */
 .idea-title > a {
   color: #ff0051;
