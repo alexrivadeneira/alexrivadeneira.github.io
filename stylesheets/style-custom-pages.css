@@ -525,7 +525,7 @@ blockquote.cl-quote-text {
   right: 30px;
   color: #1b4057;
 }
-@media (min-width: 1320px) {
+@media (min-width: 1200px) {
   .cl-campaigns > .cl-row {
     padding-left: 90px;
     padding-right: 90px;
