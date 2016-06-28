@@ -174,9 +174,6 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 /* -------END navbar------- */
 /* -------carousel------ */
-#myCarousel > .container {
-  height: 500px;
-}
 .carousel-inner {
   background: #577c93;
 }
@@ -203,6 +200,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1):hover {
 }
 .carousel .item {
   width: 100%;
+  height: 500px;
   background-size: cover;
 }
 /* turn off default carousel controls from bootstrap */
