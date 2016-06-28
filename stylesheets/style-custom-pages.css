@@ -899,6 +899,16 @@ a.vote-up:hover {
 .stage-details-0 .up-votes {
   border-color: #1b4057;
 }
+/** campaign page **.
+
+.campaign-description > h2 > a{
+	color: @brandcolor;
+}
+
+.stage-all.active > a, .stage-all:hover > a, .stage-all > a:focus, .stage-all.idea-stage{
+	background-color: @brandColor !important;
+}
+
 /* LIGHT COLORS */
 .stage-details > .stage-workflow > .stage-list > .active > a {
   background-color: #577c93;
