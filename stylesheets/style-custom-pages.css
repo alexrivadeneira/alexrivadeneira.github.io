@@ -714,6 +714,7 @@ footer h4 {
   text-transform: uppercase;
   padding-top: 45px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 footer ul li a {
   color: #fff;
