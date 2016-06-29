@@ -173,8 +173,8 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
 }
 .carousel-caption {
   left: 0;
-  text-align: left;
-  padding-left: 50px;
+  top: 25%;
+  width: 100%;
 }
 .carousel-caption p {
   font-size: 25px;
@@ -184,7 +184,10 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
 .carousel-caption h2,
 .carousel-caption h3,
 .carousel-caption h4 {
-  font-weight: 300;
+  font-weight: 900;
+}
+.carousel-caption h1 {
+  font-size: 40px;
 }
 .carousel-caption .btn {
   margin-right: 15px;
@@ -207,7 +210,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   right: 0 !important;
   bottom: 0 !important;
   top: 0 !important;
-  padding: 30px;
+  padding: 45px;
   padding-top: 100px;
   color: #fff;
   background: rgba(0, 33, 54, 0.8);
