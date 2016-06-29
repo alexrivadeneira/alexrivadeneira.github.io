@@ -1305,23 +1305,36 @@ a[href="/a/sso/login"]{
 
 
 
-.campaign-description > h2 > a{
-	color: @brandColor;
-}
-
-
-/* campaign page */
-
 .stage-all.active > a, .stage-all:hover > a, .stage-all > a:focus, .stage-all.idea-stage{
 	background-color: @brandColor !important;
 }
+
 
 .voted-up > .vote-actions > .vote-up, a.vote-up:hover{
 	color: @brandColor;
 }
 
 
+
+
+	/* campaign page */
+
+
+.campaign-description .stage-workflow > h3{
+	color: @brandColor;
+}
+
+.campaign-description h2 a{
+	color: @brandColor;
+}
+
+
+
 /* LIGHT COLORS */
+
+.stage-0 > a{
+	background-color: @brandColorLightest !important;
+}
 
 .stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a{
 	background-color: @brandColorLightest !important;

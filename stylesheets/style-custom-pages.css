@@ -908,10 +908,6 @@ a.vote-up:hover {
 .stage-details-0 .up-votes {
   border-color: #1b4057;
 }
-.campaign-description > h2 > a {
-  color: #1b4057;
-}
-/* campaign page */
 .stage-all.active > a,
 .stage-all:hover > a,
 .stage-all > a:focus,
@@ -922,7 +918,17 @@ a.vote-up:hover {
 a.vote-up:hover {
   color: #1b4057;
 }
+/* campaign page */
+.campaign-description .stage-workflow > h3 {
+  color: #1b4057;
+}
+.campaign-description h2 a {
+  color: #1b4057;
+}
 /* LIGHT COLORS */
+.stage-0 > a {
+  background-color: #6b90a7 !important;
+}
 .stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a {
   background-color: #6b90a7 !important;
 }
