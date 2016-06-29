@@ -882,6 +882,9 @@ a[href="/a/sso/login"] {
 #leaders-section-content a[href="/a/leaderboard"] {
   color: #1b4057;
 }
+#tags-section-content a[href="/a/admin/ui-customization/tags-settings"] {
+  color: #1b4057;
+}
 .go-to-admin > a {
   color: #1b4057;
 }
