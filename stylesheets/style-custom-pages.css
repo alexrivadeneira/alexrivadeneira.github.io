@@ -925,6 +925,9 @@ a.vote-up:hover {
 .campaign-description h2 a {
   color: #1b4057;
 }
+.campaign-team-link a {
+  color: #1b4057;
+}
 /* LIGHT COLORS */
 .stage-0 > a {
   background-color: #6b90a7 !important;
