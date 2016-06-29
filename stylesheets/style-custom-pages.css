@@ -1,5 +1,5 @@
 /* -------general------- */
-body {
+.main-c body {
   background: #f5f5f5;
 }
 * {
@@ -910,8 +910,8 @@ a.vote-up:hover {
 }
 
 /* LIGHT COLORS */
-.stage-details > .stage-workflow > .stage-list > .active > a {
-  background-color: #577c93;
+.stage-details .stage-details-0 > .stage-workflow > .stage-list > .active > a {
+  background-color: #577c93 !important;
 }
 /* HIGHLIGHTS */
 .idea-title > a {
