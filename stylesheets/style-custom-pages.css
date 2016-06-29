@@ -902,24 +902,20 @@ a.vote-up:hover {
 .stage-details-0 .up-votes {
   border-color: #1b4057;
 }
-/** campaign page **.
-
-.campaign-description > h2 > a{
-	color: @brandcolor;
+.campaign-description > h2 > a {
+  color: #1b4057;
 }
-
-.stage-all.active > a, .stage-all:hover > a, .stage-all > a:focus, .stage-all.idea-stage{
-	background-color: @brandColor !important;
+/* campaign page */
+.stage-all.active > a,
+.stage-all:hover > a,
+.stage-all > a:focus,
+.stage-all.idea-stage {
+  background-color: #1b4057 !important;
 }
-
-a[data-in-progress-handler="voting-on-idea"] > span.is-icon-arrow-up{
-	color: @brandColor;
+.voted-up > .vote-actions > .vote-up,
+a.vote-up:hover {
+  color: #1b4057;
 }
-
-a[data-in-progress-handler="voting-on-idea"] > span[aria-hidden="true"]{
-	color: @brandColor;
-}
-
 /* LIGHT COLORS */
 .stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a {
   background-color: #6b90a7 !important;
