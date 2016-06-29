@@ -879,6 +879,9 @@ a[href="/a/sso/login"] {
 /* END Community specific mods */
 /* --------NEW INNER PAGE STUFF ------- */
 /* DARK COLORS */
+#leaders-section-content a[href="/a/leaderboard"] {
+  color: #1b4057;
+}
 .go-to-admin > a {
   color: #1b4057;
 }
