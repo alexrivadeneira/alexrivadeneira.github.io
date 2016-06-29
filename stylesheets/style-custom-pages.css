@@ -913,7 +913,7 @@ a.vote-up:hover {
 }
 
 /* LIGHT COLORS */
-.stage-details .stage-details-0 > .stage-workflow > .stage-list > .active > a {
+.stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a {
   background-color: #577c93 !important;
 }
 /* HIGHLIGHTS */
