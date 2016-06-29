@@ -912,6 +912,14 @@ a.vote-up:hover {
 	background-color: @brandColor !important;
 }
 
+a[data-in-progress-handler="voting-on-idea"] > span.is-icon-arrow-up{
+	color: @brandColor;
+}
+
+a[data-in-progress-handler="voting-on-idea"] > span[aria-hidden="true"]{
+	color: @brandColor;
+}
+
 /* LIGHT COLORS */
 .stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a {
   background-color: #6b90a7 !important;
