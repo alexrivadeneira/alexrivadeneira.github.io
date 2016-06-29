@@ -844,7 +844,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
 #new-idea-button {
   background: #ff0051 !important;
 }
-*mobile* .new-idea-bar > a.btn-lg {
+*mobile* .new-idea-bar > a.btn.btn-primary.btn-lg.btn-block {
   background: #ff0051;
 }
 /* fix for team building link issue */
