@@ -199,7 +199,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
 }
 /*END refactor like below  - these are the default styles for landing page */
 .ip-carousel-inner {
-  background: #577c93;
+  background: #6b90a7;
 }
 .ip-carousel-caption {
   height: 100%;
@@ -746,7 +746,7 @@ blockquote.cl-quote-text {
 }
 .very-low {
   font-size: 8px;
-  color: #577c93;
+  color: #6b90a7;
 }
 /* -------END tags------ */
 /* -------footer------ */
@@ -776,7 +776,7 @@ footer ul li {
   font-weight: 300;
 }
 footer p {
-  color: #577c93;
+  color: #6b90a7;
   font-size: 10px;
   text-align: center;
   font-weight: 300;
@@ -914,7 +914,7 @@ a.vote-up:hover {
 
 /* LIGHT COLORS */
 .stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a {
-  background-color: #577c93 !important;
+  background-color: #6b90a7 !important;
 }
 /* HIGHLIGHTS */
 .idea-title > a {
