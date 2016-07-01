@@ -17,9 +17,25 @@
 
 
 
+@stageall: @brandColor + 110%;
+@stage0: @brandColor + 90%;
+@stage1: @brandColor + 70%;
+@stage2: @brandColor + 50%;
+@stage3: @brandColor + 30%;
+@stage4: @brandColor + 10%;
+@stage5: @brandColor - 10%;
+@stage6: @brandColor - 30%;
+@stage7: @brandColor - 50%;
+@stage8: @brandColor - 70%;
+@stage9: @brandColor - 90%;
+
+
+
 /* -------general------- */
 
-
+a:hover{
+	text-decoration: none;
+}
 
 
 body{
@@ -1104,46 +1120,48 @@ blockquote.cl-quote-text{
 
 
 
+
+
 /* -------tags------ */
 /* word cloud frequency widget */
 
 .very-high{
 	font-size: 28px;
-	color: @brandColorDarkest;
+	color: @stage9;
 
 }
 
 .high{
 	font-size: 23px;
-	color: @brandColorDarker;
+	color: @stage7;
 }
 
 .medium-high{
 	font-size: 20px;
-	color: @brandColor;
+	color: @stage5;
 
 }
 
 .medium{
 	font-size: 15px;
-	color: @brandColor;	
+	color: @stage3;	
 }
 
 .medium-low{
 	font-size: 13px;
-	color: @brandColorLighter;
+	color: @stage4;
 	
 }
 
 .low{
 	font-size: 10px;
-	color: @brandColorLighter;
+	color: @stage2;
 		
 }
 
 .very-low{
 	font-size: 8px;
-	color: @brandColorLightest;		
+	color: @stage1;		
 }
 
 /* -------END tags------ */
@@ -1451,20 +1469,6 @@ a.view-campaign-brief{
 /* -------- END NEW INNER PAGE STUFF ---------- */
 
 
-
-
-
-@stageall: @brandColor + 110%;
-@stage0: @brandColor + 90%;
-@stage1: @brandColor + 70%;
-@stage2: @brandColor + 50%;
-@stage3: @brandColor + 30%;
-@stage4: @brandColor + 10%;
-@stage5: @brandColor - 10%;
-@stage6: @brandColor - 30%;
-@stage7: @brandColor - 50%;
-@stage8: @brandColor - 70%;
-@stage9: @brandColor - 90%;
 
 
 

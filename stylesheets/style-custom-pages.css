@@ -1,4 +1,7 @@
 /* -------general------- */
+a:hover {
+  text-decoration: none;
+}
 body {
   background: #f5f5f5;
 }
@@ -774,31 +777,31 @@ blockquote.cl-quote-text {
 /* word cloud frequency widget */
 .very-high {
   font-size: 28px;
-  color: #00041b;
+  color: #000000;
 }
 .high {
   font-size: 23px;
-  color: #002239;
+  color: #000e25;
 }
 .medium-high {
   font-size: 20px;
-  color: #1b4057;
+  color: #11364d;
 }
 .medium {
   font-size: 15px;
-  color: #1b4057;
+  color: #395e75;
 }
 .medium-low {
   font-size: 13px;
-  color: #395e75;
+  color: #254a61;
 }
 .low {
   font-size: 10px;
-  color: #395e75;
+  color: #4d7289;
 }
 .very-low {
   font-size: 8px;
-  color: #6b90a7;
+  color: #61869d;
 }
 /* -------END tags------ */
 /* -------footer------ */
