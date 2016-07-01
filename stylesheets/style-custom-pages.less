@@ -15,6 +15,8 @@
 
 
 
+
+
 /* -------general------- */
 
 
@@ -69,6 +71,10 @@ body{
 		font-weight: 300;
 	}
 
+}
+
+.cl-quote-row{
+	padding-bottom: 45px !important;
 }
 
 hr.gradient {
@@ -169,7 +175,7 @@ a{
 
 /* responive view hamburger toggle button line color */
 .navbar-default .navbar-toggle .icon-bar{
-	background-color: #fff;
+	background-color: @contrastColor;
 }
 
 nav.navbar-sub-hero {
@@ -270,13 +276,15 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 }
 .carousel-caption {
   left: 0;
-  top: 25%;
+  top: 30%;
 
   width: 100%;
 }
 .carousel-caption p {
   font-size: 25px;
   font-weight: 300;
+  padding-bottom: 15px;
+
 }
 .carousel-caption h1,
 .carousel-caption h2,
@@ -288,16 +296,34 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 	font-size: 40px;
 }
 .carousel-caption .btn {
-  margin-right: 15px;
-  margin-top: 20px;
+
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: 900;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
 }
 .carousel .item {
   width: 100%;
   height: 500px;
   background-size: cover;
 }
+
+
+
+@media(max-width: 400px){
+	.carousel-caption h1{
+		font-size: 30px;
+	}	
+
+	.carousel-caption p{
+	  font-size: 15px;
+	  font-weight: 300;
+	  padding-bottom: 15px;
+
+	}	
+}
+
 
 /*END refactor like below  - these are the default styles for landing page */
 
@@ -327,6 +353,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 	& p{
 		font-size: 14px;
 		font-weight: 300;
+		padding-bottom: 15px;
 	}
 
 	& h2, h3{
@@ -345,13 +372,21 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 	}
 
 	& .btn{
-		margin-right: 15px;
-		margin-top: 20px;
+
 		border-radius: 5px;
 		font-weight: 900;
+		margin-left: 0px;
 	  			
 	}
 }
+
+
+@media(max-width: 768px){
+	.ip-carousel-caption{
+		padding-top: 50px;
+	}	
+}
+
 
 .ip-carousel .item {
     width: 100%;
@@ -375,6 +410,12 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 .carousel-item-1{
 	background: url("/community-library/accounts/92/925005/slider1.jpg");
 
+}
+
+@media(max-width: 768px){
+	.carousel-item-1{
+		background-position: -
+	}
 }
 
 .carousel-item-2{
@@ -430,12 +471,12 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 }
 
 .cl-your-role-inner > p{
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .cl-your-role-inner > h3{
-	font-size: 18px;
-	text-transform: none;
+	font-size: 12px;
+	text-transform: uppercase;
 	font-weight: 900 !important;
 }
 
@@ -462,39 +503,47 @@ hr.your-role{
 
 /* --------quote --------- */
 
+
 img.cl-quote-avatar{
-	width: 130px;
-	height: 130px;
+	width: 100px;
+	height: 100px;
 	border-radius: 100%;	
 	float: right;
+
+}
+
+img.cl-quote-avatar-top{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;	
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 15px;	
 }
 
 
 blockquote.cl-quote-text{
 	font-size: 18px;
 	font-weight: 500;
-	padding-bottom: 70px;
+
 }
 
 
 
-blockquote.cl-quote-text:before{
+.cl-quote-row-open{
 	color: @contrastColor;
 	content: open-quote;
-	font-size: 5em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
+	font-size: 70px;
 	vertical-align: -0.4em;
 }
 
-blockquote.cl-quote-text:after{
+/*
+.cl-quote-row-close{
 	color: @contrastColor;
 	content: close-quote;
-	font-size: 5em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
+	font-size: 70px;
 	vertical-align: -0.4em;
-}
+} */
 
 blockquote.cl-quote-text{
 	border-left: none;
@@ -514,12 +563,16 @@ blockquote.cl-quote-text{
 		height: 270px;
 
 
+
+
 		& p{
 			font-size: 14px;
+					color: #333;
 		}	
 
 		& h3 a {
 			color: @brandColor;
+			font-weight: 900;
 		}
 	}	
 
@@ -541,6 +594,13 @@ blockquote.cl-quote-text{
 	@media(max-width: 768px){
 		.cl-ideas .cl-idea-stats{
 			bottom: 15px;
+		}
+	}
+
+	@media(max-width: 400px){
+		.cl-ideas .cl-idea-box{
+			margin-left: 8px;
+			margin-right: 8px;
 		}
 	}
 
@@ -581,7 +641,15 @@ blockquote.cl-quote-text{
 /* -------idea boxes, pinned ------ */
 
 .cl-ideas-pinned{
+	
+	& .cl-idea-box h3 a{
+		color: @contrastColor;
+		font-weight: 900;
 
+	& .cl-idea-author{
+		color: @contrastColor;
+	}
+}
 
 	& .cl-idea-center-pin{
 			color: @brandColorLighter;
@@ -803,7 +871,7 @@ blockquote.cl-quote-text{
 		right: 15px;
 		font-size: 25px;
 		line-height: 30px;
-		font-weight: 500;
+		font-weight: 900;
 		color: #fff;
 		text-decoration: none;
 
@@ -1221,6 +1289,11 @@ footer > section.cl-section > row.cl-row > div > h4{
 
 #new-idea-button{
 	background: @contrastColor !important;
+	  -o-transition:.10s;
+	  -ms-transition:.10s;
+	  -moz-transition:.10s;
+	  -webkit-transition:.10s;
+	  transition:1;
 }
 
 *mobile*
@@ -1264,7 +1337,13 @@ a[href="/a/sso/login"]{
 	}
 }
 
+/* campaign thumbnails */
 
+.campaigns-section-content > .link-list li a img{
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+}
 
 /* -------END inner community page------ */
 
@@ -1280,10 +1359,20 @@ a[href="/a/sso/login"]{
 
 /* --------NEW INNER PAGE STUFF ------- */
 
+
+
 /* DARK COLORS */
 
 
-#leaders-section-content a[href="/a/leaderboard"] {
+#leaders-section-content a[href="/a/leaderboard"]{
+	color: @brandColor;
+}
+
+#admins-section-content a[href="/a/admin/member-management/admin"]{
+	color: @brandColor;
+}
+
+#global-moderators-section-content a[href="/a/admin/member-management/moderator#anchor-security-global-moderator"]{
 	color: @brandColor;
 }
 
@@ -1326,10 +1415,16 @@ a[href="/a/sso/login"]{
 }
 
 
+.campaigns-section-content > h5{
+	padding-top: 15px;
+}
 
 
 	/* campaign page */
 
+a.view-campaign-brief{
+	color: @brandColor;
+}
 
 .campaign-description .stage-workflow > h3{
 	color: @brandColor;
@@ -1345,13 +1440,6 @@ a[href="/a/sso/login"]{
 
 /* LIGHT COLORS */
 
-.stage-0 > a{
-	background-color: @brandColorLightest !important;
-}
-
-.stage-action-block > .stage-details-0 > .stage-workflow > .stage-list > .active > a{
-	background-color: @brandColorLightest !important;
-}
 
 /* HIGHLIGHTS */
 
@@ -1362,3 +1450,353 @@ a[href="/a/sso/login"]{
 
 /* -------- END NEW INNER PAGE STUFF ---------- */
 
+
+
+
+
+@stageall: @brandColor + 110%;
+@stage0: @brandColor + 90%;
+@stage1: @brandColor + 70%;
+@stage2: @brandColor + 50%;
+@stage3: @brandColor + 30%;
+@stage4: @brandColor + 10%;
+@stage5: @brandColor - 10%;
+@stage6: @brandColor - 30%;
+@stage7: @brandColor - 50%;
+@stage8: @brandColor - 70%;
+@stage9: @brandColor - 90%;
+
+
+
+
+.stage-all.active > a, .stage-all:hover > a, .stage-all > a:focus, .stage-all.idea-stage{
+	background-color: @contrastColor !important;	
+}
+
+
+.stage-all.active > a, .stage-all:hover > a, .stage-all > a:focus, .stage-all.idea-stage{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+
+nav.campaign-nav a{
+  color: @brandColor !important;
+}
+
+
+
+
+
+li.stage-all > a{
+	background-color: @stageall !important;
+}
+
+
+aside > section > .stage-list li.stage-all > a::after{
+	border-top: 5px solid @stageall !important;	
+}
+
+li.stage-all > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-all > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+
+li.stage-all.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-all.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+
+
+
+
+li.stage-0 > a{
+	background: @stage0 !important;
+}
+
+aside > section > .stage-list li.stage-0 > a::after{
+	border-top: 5px solid @stage0 !important;	
+}
+
+li.stage-0 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-0 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-0.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-0.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-0 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-0 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+li.stage-1 > a{
+	background: @stage1 !important;
+}
+
+aside > section > .stage-list li.stage-1 > a::after{
+	border-top: 5px solid @stage1 !important;	
+}
+
+
+li.stage-1 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-1 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-1.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-1.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-1 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-1 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+
+li.stage-2 > a{
+	background: @stage2 !important;
+}
+
+
+aside > section > .stage-list li.stage-2 > a::after{
+	border-top: 5px solid @stage2 !important;	
+}
+
+
+li.stage-2 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-2 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-2.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-2.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-2 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-2 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+
+
+li.stage-3 > a{
+	background: @stage3 !important;
+}
+
+
+aside > section > .stage-list li.stage-3 > a::after{
+	border-top: 5px solid @stage3 !important;	
+}
+
+
+li.stage-3 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-3 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-3.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-3.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-3 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-3 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+
+
+li.stage-4 > a{
+	background: @stage4 !important;
+}
+
+
+aside > section > .stage-list li.stage-4 > a::after{
+	border-top: 5px solid @stage4 !important;	
+}
+
+
+li.stage-4 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-4 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-4.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-4.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-4 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-4 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+
+li.stage-5 > a{
+	background: @stage5 !important;
+}
+
+
+aside > section > .stage-list li.stage-5 > a::after{
+	border-top: 5px solid @stage5 !important;	
+	}
+
+
+li.stage-5 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-5 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-5.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-5.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-5 > a:focus{
+	border-top: 5px @contrastColor !important;	
+}
+
+
+aside > section > .stage-list li.stage-5 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+
+
+li.stage-6 > a{
+	background: @stage6 !important;
+}
+
+
+aside > section > .stage-list li.stage-6 > a::after{
+	border-top: 5px solid @stage6 !important;	
+	}
+
+
+li.stage-6 > a:hover{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-6 > a:hover::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+li.stage-6.active > a{
+	background-color: @contrastColor !important;	
+}
+
+aside > section > .stage-list li.stage-6.active > a::after{
+	border-top: 5px solid @contrastColor !important;	
+}
+
+
+
+aside > section > .stage-list li.stage-6 > a:focus{
+	border-top: 5px @contrastColor !important;		
+}
+
+
+aside > section > .stage-list li.stage-6 > a:focus{
+	background-color: @contrastColor !important;	
+}
+
+
+/* campaign brief stages */
+.campaign #campaign-stage-flow .stage-item{
+	background: @brandColor;
+}
