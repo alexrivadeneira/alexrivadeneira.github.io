@@ -775,33 +775,40 @@ blockquote.cl-quote-text {
 /* -------END leaderboard------ */
 /* -------tags------ */
 /* word cloud frequency widget */
-.very-high {
+a.very-high {
   font-size: 28px;
   color: #000000;
+  font-weight: 900;
 }
-.high {
+a.high {
   font-size: 23px;
   color: #000e25;
+  font-weight: 900;
 }
-.medium-high {
+a.medium-high {
   font-size: 20px;
   color: #11364d;
+  font-weight: 600;
 }
-.medium {
+a.medium {
   font-size: 15px;
   color: #395e75;
+  font-weight: 600;
 }
-.medium-low {
+a.medium-low {
   font-size: 13px;
   color: #254a61;
+  font-weight: 300;
 }
-.low {
+a.low {
   font-size: 10px;
   color: #4d7289;
+  font-weight: 300;
 }
-.very-low {
+a.very-low {
   font-size: 8px;
   color: #61869d;
+  font-weight: 200;
 }
 /* -------END tags------ */
 /* -------footer------ */
