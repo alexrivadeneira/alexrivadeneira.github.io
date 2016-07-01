@@ -902,7 +902,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
 /* **************************** */
 /* -------inner community page------ */
 /* changes all the links to brand color, except for stage links */
-.stage-details > .stage-workflow > .stage-list > li > a:hover {
+.stage-action-block > .stage-details > .stage-workflow > .stage-list > li > a:hover {
   background: #ff0051;
 }
 /* "Submit New Idea" button  */
