@@ -612,7 +612,7 @@ blockquote.cl-quote-text {
   position: absolute;
   bottom: 45px;
   left: 30px;
-  font-size: 12px;
+  font-size: 16px;
   color: #999;
   font-weight: 900;
 }
@@ -907,7 +907,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
   background: #ff0051;
 }
 /* "Submit New Idea" button  */
-w w #new-idea-button {
+#new-idea-button {
   background: #ff0051 !important;
   -o-transition: .10s;
   -ms-transition: .10s;
