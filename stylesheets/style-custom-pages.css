@@ -988,7 +988,14 @@ a[href="/a/sso/login"] {
 a.vote-up:hover {
   border-bottom-color: #1b4057;
 }
+.voted-down > .vote-actions > .vote-down,
+a.vote-down:hover {
+  border-top-color: #1b4057;
+}
 .voted-up > .stage-data {
+  color: #1b4057;
+}
+.voted-down > .stage-data {
   color: #1b4057;
 }
 .stage-details-0 .up-votes {
