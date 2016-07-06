@@ -907,7 +907,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
   background: #ff0051;
 }
 /* "Submit New Idea" button  */
-@-webkit-keyframes greenPulse {
+@-webkit-keyframes Pulse {
   from {
     background-color: #ff0051;
     -webkit-box-shadow: 0 0 9px #333;
@@ -928,8 +928,8 @@ footer > section.cl-section > row.cl-row > div > h4 {
   -moz-transition: .10s;
   -webkit-transition: .10s;
   transition: 1;
-  -webkit-animation-name: greenPulse;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-name: Pulse;
+  -webkit-animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
 }
 .new-idea-button {
