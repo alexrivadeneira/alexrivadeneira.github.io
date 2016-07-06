@@ -910,15 +910,12 @@ footer > section.cl-section > row.cl-row > div > h4 {
 @-webkit-keyframes Pulse {
   from {
     background-color: #ff0051;
-    -webkit-box-shadow: 0 0 9px #333;
   }
   50% {
     background-color: #ff1e6f;
-    -webkit-box-shadow: 0 0 18px #ff0051;
   }
   to {
     background-color: #ff0051;
-    -webkit-box-shadow: 0 0 9px #333;
   }
 }
 #new-idea-button {
