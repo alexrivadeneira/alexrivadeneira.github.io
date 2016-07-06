@@ -1011,10 +1011,10 @@ a.vote-down:hover {
 .stage-details-0 .up-votes {
   border-color: #1b4057;
 }
-.stage-details > .stage-workflow > .stage-list > .active > a:hover {
+.stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a:hover {
   color: #ff0051 !important;
 }
-.stage-details > .stage-workflow > .stage-list > .active > a {
+.stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a {
   color: #ff0051 !important;
 }
 .stage-all.active > a,
