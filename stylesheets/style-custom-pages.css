@@ -1011,6 +1011,9 @@ a.vote-down:hover {
 .stage-details-0 .up-votes {
   border-color: #1b4057;
 }
+.stage-details > .stage-workflow > .stage-list > .active > a:hover {
+  color: #ff0051;
+}
 .stage-all.active > a,
 .stage-all:hover > a,
 .stage-all > a:focus,
