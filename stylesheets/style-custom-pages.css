@@ -922,7 +922,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
 #new-idea-button {
   background: #ff0051 !important;
   -webkit-animation-name: Pulse;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
 }
 .new-idea-button {
