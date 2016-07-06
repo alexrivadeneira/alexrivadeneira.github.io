@@ -1322,11 +1322,11 @@ footer > section.cl-section > row.cl-row > div > h4{
 /* "Submit New Idea" button  */
 
 
-@contrastColorLighter: @contrastColor + 100%;
+@contrastColorLighter: @contrastColor + 50%;
 
 @-webkit-keyframes Pulse {
   from { background-color: @contrastColor; -webkit-box-shadow: 0 0 9px #333; }
-  50% { background-color: @contrastColorLighter; -webkit-box-shadow: 0 0 18px #91bd09; }
+  50% { background-color: @contrastColorLighter; -webkit-box-shadow: 0 0 18px @contrastColor; }
   to { background-color: @contrastColor; -webkit-box-shadow: 0 0 9px #333; }
 }
 

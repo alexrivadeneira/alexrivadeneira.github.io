@@ -913,8 +913,8 @@ footer > section.cl-section > row.cl-row > div > h4 {
     -webkit-box-shadow: 0 0 9px #333;
   }
   50% {
-    background-color: #ff64b5;
-    -webkit-box-shadow: 0 0 18px #91bd09;
+    background-color: #ff3283;
+    -webkit-box-shadow: 0 0 18px #ff0051;
   }
   to {
     background-color: #ff0051;
