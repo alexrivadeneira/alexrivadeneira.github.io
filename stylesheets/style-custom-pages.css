@@ -907,23 +907,8 @@ footer > section.cl-section > row.cl-row > div > h4 {
   background: #ff0051;
 }
 /* "Submit New Idea" button  */
-@-webkit-keyframes Pulse {
-  from {
-    background-color: #ff0051;
-  }
-  50% {
-    background-color: #ff1e6f;
-    -webkit-box-shadow: 0 0 18px #ff1e6f;
-  }
-  to {
-    background-color: #ff0051;
-  }
-}
 #new-idea-button {
   background: #ff0051 !important;
-  -webkit-animation-name: Pulse;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
 }
 .new-idea-button {
   background: #ff0051 !important;
@@ -968,6 +953,9 @@ a[href="/a/sso/login"] {
 }
 /* END Community specific mods */
 /* --------NEW INNER PAGE STUFF ------- */
+.official-main-nav > .dropdown-menu > .active > a {
+  color: #ff0051;
+}
 /* DARK COLORS */
 #leaders-section-content a[href="/a/leaderboard"] {
   color: #1b4057;
