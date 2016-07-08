@@ -1054,6 +1054,9 @@ nav.campaign-nav a {
   color: #1b4057 !important;
 }
 /* -------- CTA BLOCKS ---------- */
+.stage-action-ideate > .stage-data {
+  color: #1b4057;
+}
 .stage-details-1 > .stage-action > .btn-stage-action {
   background: #5f7989;
 }
