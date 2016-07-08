@@ -1137,6 +1137,9 @@ nav.campaign-nav a {
 .idea-extras-tabbed > .nav-tabs > li > [role="tab"]:hover {
   color: #333;
 }
+.comment-content > a.at-mention {
+  color: #ff0051;
+}
 /* -------- END IDEA SPECIFIC --------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
