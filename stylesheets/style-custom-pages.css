@@ -1042,17 +1042,18 @@ a.view-campaign-brief {
 .stage-all:hover > a,
 .stage-all > a:focus,
 .stage-all.idea-stage {
-  background-color: #5f7989 !important;
+  background-color: yellow !important;
 }
 .stage-all.active > a,
 .stage-all:hover > a,
 .stage-all > a:focus,
 .stage-all.idea-stage {
-  background-color: #5f7989 !important;
+  background-color: yellow !important;
 }
 nav.campaign-nav a {
   color: #1b4057 !important;
 }
+/* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
   background-color: #5f7989 !important;
 }
@@ -1239,6 +1240,7 @@ aside > section > .stage-list li.stage-6 > a:focus {
 aside > section > .stage-list li.stage-6 > a:focus {
   background-color: #1b4057 !important;
 }
+/* -------- END STAGES SIDEBAR ---------- */
 /* campaign brief stages */
 .campaign #campaign-stage-flow .stage-item {
   background: #1b4057;
