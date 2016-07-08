@@ -1109,6 +1109,11 @@ nav.campaign-nav a {
   background: #1b4057;
 }
 /* -------- END STAGE SPECIFIC ---------- */
+/* -------- IDEA SPECIFIC --------- */
+.idea-details-pills > .active > [data-toggle] {
+  color: #1b4057;
+}
+/* -------- END IDEA SPECIFIC --------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
   background-color: #5f7989 !important;
