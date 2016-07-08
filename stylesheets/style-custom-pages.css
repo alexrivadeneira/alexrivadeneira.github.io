@@ -1054,7 +1054,7 @@ nav.campaign-nav a {
   color: #1b4057 !important;
 }
 li.stage-all > a {
-  background-color: #89aec5 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-all > a::after {
   border-top: 5px solid #1b4057 !important;
@@ -1072,28 +1072,28 @@ aside > section > .stage-list li.stage-all.active > a::after {
   border-top: 5px solid #5f7989 !important;
 }
 li.stage-0 > a {
-  background: #759ab1 !important;
+  background: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-0 > a::after {
-  border-top: 5px solid #759ab1 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-0 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-0 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-0.active > a {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-0.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 aside > section > .stage-list li.stage-0 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #5f7989 !important;
 }
 aside > section > .stage-list li.stage-0 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 li.stage-1 > a {
   background: #61869d !important;
