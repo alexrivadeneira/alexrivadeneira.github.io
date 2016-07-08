@@ -1069,6 +1069,9 @@ nav.campaign-nav a {
 .stage-details-5 > .stage-action > .btn-stage-action {
   background: #1b4057;
 }
+.stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a {
+  background: #1b4057;
+}
 /* -------- END CTA BLOCKS ---------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
