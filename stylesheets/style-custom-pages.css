@@ -1096,28 +1096,28 @@ aside > section > .stage-list li.stage-0 > a:focus {
   background-color: #1b4057 !important;
 }
 li.stage-1 > a {
-  background: #61869d !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-1 > a::after {
-  border-top: 5px solid #61869d !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-1 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-1 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-1.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-1.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-1 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-1 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 li.stage-2 > a {
   background: #4d7289 !important;
