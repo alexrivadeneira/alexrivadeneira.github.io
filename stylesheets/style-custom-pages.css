@@ -1126,7 +1126,7 @@ nav.campaign-nav a {
 /* -------- END STAGE SPECIFIC ---------- */
 /* -------- IDEA SPECIFIC --------- */
 .idea-details-pills > .active > [data-toggle] {
-  color: #1b4057;
+  color: #1b4057 !important;
 }
 /* tabs */
 .idea-extras-tabbed > .nav-tabs > li > [role="tab"] {
