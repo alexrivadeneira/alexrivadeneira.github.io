@@ -1,3 +1,4 @@
+/* only important ones now are brandColor, brandColorRiff, and contrastcolor */
 /* -------general------- */
 a:hover {
   text-decoration: none;
@@ -904,7 +905,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
 /* -------inner community page------ */
 /* changes all the links to brand color, except for stage links */
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > li > a:hover {
-  background: #ff0051;
+  background: #5f7989;
 }
 /* "Submit New Idea" button  */
 #new-idea-button {
