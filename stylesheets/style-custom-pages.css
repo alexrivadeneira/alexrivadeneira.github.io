@@ -1105,6 +1105,9 @@ nav.campaign-nav a {
 #estimate-finish > button.btn-primary {
   background: #ff0051;
 }
+.non-semantic-protector > .ribbon {
+  background: #1b4057;
+}
 /* -------- END STAGE SPECIFIC ---------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
