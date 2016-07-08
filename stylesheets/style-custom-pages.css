@@ -1120,124 +1120,124 @@ aside > section > .stage-list li.stage-1 > a:focus {
   background-color: #1b4057 !important;
 }
 li.stage-2 > a {
-  background: #4d7289 !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-2 > a::after {
-  border-top: 5px solid #4d7289 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-2 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-2 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-2.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-2.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-2 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-2 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 li.stage-3 > a {
-  background: #395e75 !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-3 > a::after {
-  border-top: 5px solid #395e75 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-3 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-3 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-3.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-3.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-3 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-3 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 li.stage-4 > a {
-  background: #254a61 !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-4 > a::after {
-  border-top: 5px solid #254a61 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-4 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-4 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-4.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-4.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-4 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-4 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 li.stage-5 > a {
-  background: #11364d !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-5 > a::after {
-  border-top: 5px solid #11364d !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-5 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-5 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-5.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-5.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-5 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-5 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 li.stage-6 > a {
-  background: #002239 !important;
+  background: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-6 > a::after {
-  border-top: 5px solid #002239 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-6 > a:hover {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-6 > a:hover::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-6.active > a {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 aside > section > .stage-list li.stage-6.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 aside > section > .stage-list li.stage-6 > a:focus {
-  border-top: 5px #ff0051 !important;
+  border-top: 5px #1b4057 !important;
 }
 aside > section > .stage-list li.stage-6 > a:focus {
-  background-color: #ff0051 !important;
+  background-color: #1b4057 !important;
 }
 /* campaign brief stages */
 .campaign #campaign-stage-flow .stage-item {
