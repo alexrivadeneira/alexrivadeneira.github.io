@@ -1069,6 +1069,21 @@ nav.campaign-nav a {
 .stage-details-5 > .stage-action > .btn-stage-action {
   background: #5f7989;
 }
+.stage-details-1 > .stage-action > .btn-stage-action:hover {
+  background: #1b4057;
+}
+.stage-details-2 > .stage-action > .btn-stage-action:hover {
+  background: #1b4057;
+}
+.stage-details-3 > .stage-action > .btn-stage-action:hover {
+  background: #1b4057;
+}
+.stage-details-4 > .stage-action > .btn-stage-action:hover {
+  background: #1b4057;
+}
+.stage-details-5 > .stage-action > .btn-stage-action:hover {
+  background: #5f7989;
+}
 .stage-details-1 .progress-desc {
   color: #1b4057;
 }
