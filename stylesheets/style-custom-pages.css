@@ -1100,6 +1100,12 @@ nav.campaign-nav a {
   background: #1b4057 !important;
 }
 /* -------- END CTA BLOCKS ---------- */
+/* -------- STAGE SPECIFIC ---------- */
+/* estimate */
+#estimate-finish > button.btn-primary {
+  background: #ff0051;
+}
+/* -------- END STAGE SPECIFIC ---------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
   background-color: #5f7989 !important;
