@@ -1053,6 +1053,11 @@ a.view-campaign-brief {
 nav.campaign-nav a {
   color: #1b4057 !important;
 }
+/* -------- CTA BLOCKS ---------- */
+.stage-details-3 > .stage-action > .btn-stage-action {
+  background: #1b4057;
+}
+/* -------- END CTA BLOCKS ---------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
   background-color: #5f7989 !important;
