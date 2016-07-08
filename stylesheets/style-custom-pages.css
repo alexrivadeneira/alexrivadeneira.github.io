@@ -1042,13 +1042,13 @@ a.view-campaign-brief {
 .stage-all:hover > a,
 .stage-all > a:focus,
 .stage-all.idea-stage {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 .stage-all.active > a,
 .stage-all:hover > a,
 .stage-all > a:focus,
 .stage-all.idea-stage {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 nav.campaign-nav a {
   color: #1b4057 !important;
