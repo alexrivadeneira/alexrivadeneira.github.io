@@ -1057,7 +1057,7 @@ li.stage-all > a {
   background-color: #89aec5 !important;
 }
 aside > section > .stage-list li.stage-all > a::after {
-  border-top: 5px solid #89aec5 !important;
+  border-top: 5px solid #1b4057 !important;
 }
 li.stage-all > a:hover {
   background-color: #5f7989 !important;
@@ -1066,10 +1066,10 @@ aside > section > .stage-list li.stage-all > a:hover::after {
   border-top: 5px solid #5f7989 !important;
 }
 li.stage-all.active > a {
-  background-color: #ff0051 !important;
+  background-color: #5f7989 !important;
 }
 aside > section > .stage-list li.stage-all.active > a::after {
-  border-top: 5px solid #ff0051 !important;
+  border-top: 5px solid #5f7989 !important;
 }
 li.stage-0 > a {
   background: #759ab1 !important;
