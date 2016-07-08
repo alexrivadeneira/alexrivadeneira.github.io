@@ -779,32 +779,32 @@ blockquote.cl-quote-text {
 /* word cloud frequency widget */
 a.very-high {
   font-size: 28px;
-  color: #000000;
+  color: #254a61;
   font-weight: 900;
 }
 a.high {
   font-size: 23px;
-  color: #000e25;
+  color: #395e75;
   font-weight: 900;
 }
 a.medium-high {
   font-size: 20px;
-  color: #11364d;
+  color: #4d7289;
   font-weight: 600;
 }
 a.medium {
   font-size: 15px;
-  color: #395e75;
+  color: #61869d;
   font-weight: 600;
 }
 a.medium-low {
   font-size: 13px;
-  color: #254a61;
+  color: #759ab1;
   font-weight: 300;
 }
 a.low {
   font-size: 10px;
-  color: #4d7289;
+  color: #89aec5;
   font-weight: 300;
 }
 a.very-low {
