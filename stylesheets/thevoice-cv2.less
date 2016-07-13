@@ -5,9 +5,8 @@
 
 /* only important ones now are brandColor, brandColorRiff, and contrastcolor */
 
-@brandColor: #1b4057;
-
-@brandColorRiff: #768c9a;
+@brandColor: #002f5f;
+@brandColorRiff: @brandColor + 30%;
 
 @brandColorDarkest: @brandColor - 60%;
 @brandColorDarker: @brandColor - 30%;
@@ -19,7 +18,9 @@
 @contrastColorLighter: @contrastColor + 30%;
 
 
-
+body{
+	background: blue;
+}
 
 
 @stageall: @brandColor + 110%;
@@ -343,6 +344,23 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1){
 	  padding-bottom: 15px;
 
 	}	
+}
+
+
+/* overriding default bootstrap styles for the circle controllers to make them sleek squares */
+.carousel-indicators{
+	
+	& li{
+		border-radius: 0;
+		width: 25px;
+		height: 26px;
+	}
+
+	& .active{
+		width: 25px;
+		height: 27px;
+		margin-bottom: 1px;
+	}
 }
 
 

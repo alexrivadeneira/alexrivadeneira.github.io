@@ -1,4 +1,7 @@
 /* only important ones now are brandColor, brandColorRiff, and contrastcolor */
+body {
+  background: blue;
+}
 /* -------general------- */
 a:hover {
   text-decoration: none;
@@ -72,7 +75,7 @@ hr.white {
   background-image: linear-gradient(to right, #ff0051, rgba(255, 0, 81, 0.75), rgba(255, 0, 81, 0));
 }
 .cl-brand-bg {
-  background-color: #1b4057;
+  background-color: #002f5f;
   color: #fff;
 }
 .cl-contrast-bg {
@@ -80,7 +83,7 @@ hr.white {
   color: #fff;
 }
 .cl-text-brand {
-  color: #1b4057 !important;
+  color: #002f5f !important;
 }
 .cl-text-contrast {
   color: #ff0051 !important;
@@ -97,7 +100,7 @@ hr.white {
   transition: .10s;
 }
 .cl-section .btn:hover {
-  background-color: #395e75;
+  background-color: #1e4d7d;
 }
 a {
   -o-transition: .10s;
@@ -144,7 +147,7 @@ nav.navbar-sub-hero #ideascale-navbar-collapse-1 ul li > ul > li {
   text-transform: none;
 }
 nav.navbar-sub-hero #ideascale-navbar-collapse-1 ul li > ul > li:hover {
-  background-color: #395e75;
+  background-color: #1e4d7d;
 }
 nav.navbar-sub-hero .navbar-brand {
   padding: 0;
@@ -219,9 +222,20 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
     padding-bottom: 15px;
   }
 }
+/* overriding default bootstrap styles for the circle controllers to make them sleek squares */
+.carousel-indicators li {
+  border-radius: 0;
+  width: 25px;
+  height: 26px;
+}
+.carousel-indicators .active {
+  width: 25px;
+  height: 27px;
+  margin-bottom: 1px;
+}
 /*END refactor like below  - these are the default styles for landing page */
 .ip-carousel-inner {
-  background: #6b90a7;
+  background: #507faf;
 }
 .ip-carousel-caption {
   height: 100%;
@@ -232,7 +246,7 @@ nav.navbar-sub-hero .navbar-nav li:nth-child(1) {
   padding: 45px;
   padding-top: 100px;
   color: #fff;
-  background: rgba(0, 33, 54, 0.8);
+  background: rgba(0, 17, 35, 0.8);
   left: 0;
   text-align: left;
 }
@@ -391,17 +405,17 @@ blockquote.cl-quote-text {
   color: #333;
 }
 .cl-ideas .cl-idea-box h3 a {
-  color: #1b4057;
+  color: #002f5f;
   font-weight: 900;
 }
 .cl-ideas .cl-idea-author {
-  color: #395e75;
+  color: #1e4d7d;
 }
 .cl-ideas .cl-idea-stats {
   position: absolute;
   bottom: 45px;
   left: 30px;
-  color: #395e75;
+  color: #1e4d7d;
 }
 @media (max-width: 768px) {
   .cl-ideas .cl-idea-stats {
@@ -428,7 +442,7 @@ blockquote.cl-quote-text {
   position: absolute;
   bottom: 45px;
   right: 30px;
-  color: #1b4057;
+  color: #002f5f;
 }
 @media (max-width: 768px) {
   .cl-ideas-campaigns .cl-campaign-end-date {
@@ -445,7 +459,7 @@ blockquote.cl-quote-text {
   color: #ff0051;
 }
 .cl-ideas-pinned .cl-idea-center-pin {
-  color: #395e75;
+  color: #1e4d7d;
   text-align: center;
   width: 100%;
   font-size: 35px;
@@ -500,7 +514,7 @@ blockquote.cl-quote-text {
   padding-bottom: 0px;
 }
 .cl-ideas-alt h3 a {
-  color: #1b4057;
+  color: #002f5f;
 }
 .cl-ideas-alt .cl-idea-author-img {
   position: static;
@@ -515,7 +529,7 @@ blockquote.cl-quote-text {
   /* used to add padding to every other callout idea for visual interest */
 }
 .cl-ideas-callout h3 a {
-  color: #1b4057;
+  color: #002f5f;
 }
 .cl-ideas-callout .cl-ideas-callout-style {
   border: none;
@@ -525,13 +539,13 @@ blockquote.cl-quote-text {
   position: absolute;
   bottom: 75px;
   left: 30px;
-  color: #395e75;
+  color: #1e4d7d;
 }
 .cl-ideas-callout .cl-idea-stats-callout-reverse {
   position: absolute;
   bottom: 75px;
   right: 30px;
-  color: #395e75;
+  color: #1e4d7d;
 }
 .cl-ideas-callout .cl-ideas-callout-extra-margin {
   margin-top: 50px;
@@ -629,7 +643,7 @@ blockquote.cl-quote-text {
   position: absolute;
   bottom: 45px;
   right: 30px;
-  color: #1b4057;
+  color: #002f5f;
 }
 @media (min-width: 1200px) {
   .cl-campaigns > .cl-row {
@@ -682,7 +696,7 @@ blockquote.cl-quote-text {
   height: 200px;
 }
 .cl-campaigns-horizontal .cl-campaigns-horizontal-name {
-  color: #1b4057;
+  color: #002f5f;
   text-align: left;
   font-size: 25px;
 }
@@ -697,18 +711,18 @@ blockquote.cl-quote-text {
 .cl-campaigns-featured .cl-featured-campaign-logo {
   width: 100%;
   height: 270px;
-  border: 1px solid #1b4057;
+  border: 1px solid #002f5f;
 }
 .cl-campaigns-featured .cl-campaign-group {
   padding-top: 7px;
-  color: #1b4057;
+  color: #002f5f;
   font-size: 13px;
   text-transform: uppercase;
   text-align: left;
 }
 .cl-campaigns-featured .cl-featured-campaign-name a {
   text-align: left;
-  color: #1b4057;
+  color: #002f5f;
   font-size: 18px;
   font-weight: 900;
 }
@@ -717,7 +731,7 @@ blockquote.cl-quote-text {
 .cl-leaderboard .cl-leaderboard-row {
   padding-top: 5px;
   padding-bottom: 5px;
-  color: #1b4057;
+  color: #002f5f;
   text-align: center;
 }
 .cl-leaderboard .cl-leaderboard-even-bg {
@@ -779,37 +793,37 @@ blockquote.cl-quote-text {
 /* word cloud frequency widget */
 a.very-high {
   font-size: 28px;
-  color: #254a61;
+  color: #0a3969;
   font-weight: 900;
 }
 a.high {
   font-size: 23px;
-  color: #395e75;
+  color: #1e4d7d;
   font-weight: 900;
 }
 a.medium-high {
   font-size: 20px;
-  color: #4d7289;
+  color: #326191;
   font-weight: 600;
 }
 a.medium {
   font-size: 15px;
-  color: #61869d;
+  color: #4675a5;
   font-weight: 600;
 }
 a.medium-low {
   font-size: 13px;
-  color: #759ab1;
+  color: #5a89b9;
   font-weight: 300;
 }
 a.low {
   font-size: 10px;
-  color: #89aec5;
+  color: #6e9dcd;
   font-weight: 300;
 }
 a.very-low {
   font-size: 8px;
-  color: #61869d;
+  color: #4675a5;
   font-weight: 200;
 }
 /* -------END tags------ */
@@ -840,7 +854,7 @@ footer ul li {
   font-weight: 300;
 }
 footer p {
-  color: #6b90a7;
+  color: #507faf;
   font-size: 10px;
   text-align: center;
   font-weight: 300;
@@ -862,13 +876,13 @@ footer > section.cl-section > row.cl-row > div > h4 {
   background-size: cover;
 }
 .cl-video-section .cl-brand-translucent-overlay {
-  background-color: rgba(0, 33, 54, 0.9);
+  background-color: rgba(0, 17, 35, 0.9);
   width: 100%;
   color: #fff;
 }
 .cl-video-section iframe {
   width: 100%;
-  border: 1px solid #1b4057;
+  border: 1px solid #002f5f;
 }
 .cl-video-section h2 > a {
   color: #fff;
@@ -905,7 +919,7 @@ footer > section.cl-section > row.cl-row > div > h4 {
 /* -------inner community page------ */
 /* changes all the links to brand color, except for stage links */
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > li > a:hover {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 /* "Submit New Idea" button  */
 #new-idea-button {
@@ -924,11 +938,11 @@ footer > section.cl-section > row.cl-row > div > h4 {
 /* fix for tags color issue */
 .idea-tags a.tag {
   background: #fff;
-  color: #1b4057;
-  border: 2px solid #1b4057;
+  color: #002f5f;
+  border: 2px solid #002f5f;
 }
 .idea-tags a.tag:hover {
-  color: #1b4057;
+  color: #002f5f;
 }
 /* fix for SSO login button */
 a[href="/a/sso/login"] {
@@ -959,19 +973,19 @@ a[href="/a/sso/login"] {
 }
 /* DARK COLORS */
 #leaders-section-content a[href="/a/leaderboard"] {
-  color: #1b4057;
+  color: #002f5f;
 }
 #admins-section-content a[href="/a/admin/member-management/admin"] {
-  color: #1b4057;
+  color: #002f5f;
 }
 #global-moderators-section-content a[href="/a/admin/member-management/moderator#anchor-security-global-moderator"] {
-  color: #1b4057;
+  color: #002f5f;
 }
 #tags-section-content a[href="/a/admin/ui-customization/tags-settings"] {
-  color: #1b4057;
+  color: #002f5f;
 }
 .go-to-admin > a {
-  color: #1b4057;
+  color: #002f5f;
 }
 .idea a,
 .profile a,
@@ -981,56 +995,56 @@ a[href="/a/sso/login"] {
 .profile .btn-link,
 .main-content-area .btn-link,
 .campaign .btn-link {
-  color: #1b4057;
+  color: #002f5f;
 }
 .voted-up > .vote-actions > .vote-up,
 a.vote-up:hover {
-  border-bottom-color: #1b4057;
+  border-bottom-color: #002f5f;
 }
 .voted-down > .vote-actions > .vote-down,
 a.vote-down:hover {
-  border-top-color: #1b4057;
+  border-top-color: #002f5f;
 }
 .voted-up > .stage-data {
-  color: #1b4057;
+  color: #002f5f;
 }
 .voted-down > .stage-data {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-0 .up-votes {
-  border-color: #1b4057;
+  border-color: #002f5f;
 }
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a:hover {
-  color: #768c9a !important;
+  color: #1e4d7d !important;
 }
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a {
-  color: #768c9a !important;
+  color: #1e4d7d !important;
 }
 .stage-all.active > a,
 .stage-all:hover > a,
 .stage-all > a:focus,
 .stage-all.idea-stage {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 .voted-up > .vote-actions > .vote-up,
 a.vote-up:hover {
-  color: #1b4057;
+  color: #002f5f;
 }
 .campaigns-section-content > h5 {
   padding-top: 15px;
 }
 /* campaign page */
 a.view-campaign-brief {
-  color: #1b4057;
+  color: #002f5f;
 }
 .campaign-description .stage-workflow > h3 {
-  color: #1b4057;
+  color: #002f5f;
 }
 .campaign-description h2 a {
-  color: #1b4057;
+  color: #002f5f;
 }
 .campaign-team-link a {
-  color: #1b4057;
+  color: #002f5f;
 }
 /* LIGHT COLORS */
 /* HIGHLIGHTS */
@@ -1051,68 +1065,68 @@ a.view-campaign-brief {
   background-color: yellow !important;
 }
 nav.campaign-nav a {
-  color: #1b4057 !important;
+  color: #002f5f !important;
 }
 /* -------- CTA BLOCKS ---------- */
 .stage-action-ideate > .stage-data {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-1 > .stage-action > .btn-stage-action {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-2 > .stage-action > .btn-stage-action {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-3 > .stage-action > .btn-stage-action {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-4 > .stage-action > .btn-stage-action {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-5 > .stage-action > .btn-stage-action {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-1 > .stage-action > .btn-stage-action:hover {
-  background: #1b4057;
+  background: #002f5f;
 }
 .stage-details-2 > .stage-action > .btn-stage-action:hover {
-  background: #1b4057;
+  background: #002f5f;
 }
 .stage-details-3 > .stage-action > .btn-stage-action:hover {
-  background: #1b4057;
+  background: #002f5f;
 }
 .stage-details-4 > .stage-action > .btn-stage-action:hover {
-  background: #1b4057;
+  background: #002f5f;
 }
 .stage-details-5 > .stage-action > .btn-stage-action:hover {
-  background: #768c9a;
+  background: #1e4d7d;
 }
 .stage-details-1 .progress-desc {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-2 .progress-desc {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-3 .progress-desc {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-4 .progress-desc {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-5 .progress-desc {
-  color: #1b4057;
+  color: #002f5f;
 }
 .stage-details-1 > .stage-progress > .progress > .progress-bar {
-  background: #1b4057;
+  background: #002f5f;
 }
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > .active.current > a {
-  background: #1b4057 !important;
+  background: #002f5f !important;
 }
 .stage-action-block > .stage-details > .stage-workflow > .stage-list > .active > a:hover {
-  background: #1b4057 !important;
+  background: #002f5f !important;
 }
 /* -------- END CTA BLOCKS ---------- */
 /* -------- STAGE SPECIFIC ---------- */
@@ -1121,13 +1135,13 @@ nav.campaign-nav a {
   background: #ff0051;
 }
 .non-semantic-protector > .ribbon {
-  background: #1b4057;
+  background: #002f5f;
 }
 /* -------- END STAGE SPECIFIC ---------- */
 /* -------- IDEA SPECIFIC --------- */
 .idea-details-pills > .active > [data-toggle] {
-  color: #1b4057 !important;
-  border-bottom-color: #1b4057 !important;
+  color: #002f5f !important;
+  border-bottom-color: #002f5f !important;
 }
 /* tabs */
 .idea-extras-tabbed > .nav-tabs > li > [role="tab"] {
@@ -1143,193 +1157,193 @@ nav.campaign-nav a {
 /* -------- END IDEA SPECIFIC --------- */
 /* -------- START STAGES SIDEBAR ---------- */
 li.stage-all > a {
-  background-color: #768c9a !important;
+  background-color: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-all > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-all > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-all > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-all.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-all.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-0 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-0 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-0 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-0 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-0.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-0.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-0 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-0 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-1 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-1 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-1 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-1 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-1.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-1.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-1 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-1 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-2 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-2 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-2 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-2 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-2.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-2.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-2 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-2 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-3 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-3 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-3 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-3 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-3.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-3.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-3 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-3 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-4 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-4 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-4 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-4 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-4.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-4.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-4 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-4 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-5 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-5 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-5 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-5 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-5.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-5.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-5 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-5 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 li.stage-6 > a {
-  background: #768c9a !important;
+  background: #1e4d7d !important;
 }
 aside > section > .stage-list li.stage-6 > a::after {
-  border-top: 5px solid #768c9a !important;
+  border-top: 5px solid #1e4d7d !important;
 }
 li.stage-6 > a:hover {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-6 > a:hover::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 li.stage-6.active > a {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 aside > section > .stage-list li.stage-6.active > a::after {
-  border-top: 5px solid #1b4057 !important;
+  border-top: 5px solid #002f5f !important;
 }
 aside > section > .stage-list li.stage-6 > a:focus {
-  border-top: 5px #1b4057 !important;
+  border-top: 5px #002f5f !important;
 }
 aside > section > .stage-list li.stage-6 > a:focus {
-  background-color: #1b4057 !important;
+  background-color: #002f5f !important;
 }
 /* -------- END STAGES SIDEBAR ---------- */
 /* campaign brief stages */
 .campaign #campaign-stage-flow .stage-item {
-  background: #1b4057;
+  background: #002f5f;
 }
