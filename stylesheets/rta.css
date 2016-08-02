@@ -1,11 +1,5 @@
-/* *{
-  direction: rtl;
-} */
-
-
 .navbar-default .navbar-nav > li > a {
-/*    font-family: "Muli", Helvetica, Arial, sans-serif;
-*/    font-size: 14px;
+  font-size: 14px;
     font-weight: normal;
     letter-spacing: 0px;
     font-size: 13px;
@@ -14,13 +8,8 @@
     font-weight: 600;
     font-style: normal;
     color: #fff;
-
-
 }
 
-/*html[dir="rtl"] .navbar-default .navbar-nav > li > a {
-  font-size: 24px;
-}*/
 
 @media (min-width: 768px) {
   html[dir="rtl"] .navbar-default .navbar-nav > li {
@@ -30,23 +19,28 @@
 
 
 .hero-unit{
-  background-image: url("http://ideascale.ae/userimages/1001/herobanner.jpeg");
   background-size: cover;
   margin-top: -17px;
   padding: 30px;
   color: #fff;
   font-size: 15px;
+  background-color: #e2dbc8;
+}
+
+@media(min-width: 992px){
+  .hero-unit{
+    background-image: url("http://ideascale.ae/userimages/1001/herobanner.jpeg");
+  }
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
   color: #fff;
 }
 
-
 .navbar-default{
     background-color: #D9E3E6;
     color: #fff;
-    }
+}
 
 
 .header-nav ul{
@@ -81,9 +75,8 @@
   .cl-logo{
     height: 80px;
   }
-
-
 }
+
 .cl-logo {
   display: block;
   width: 450px;
@@ -252,7 +245,6 @@
 .cl-idea > p {
   font-size: 12px;
   line-height: 1.3;
-  height: 100px;
   overflow: hidden;
  }
 .cli-stats {
@@ -370,8 +362,8 @@
     margin-top: 10px;
   }
   .cl-idea {
-    padding-left: 70px;
-  }
+/*    padding-left: 70px;
+*/  }
   .cl-idea > header > p > img {
     width: 60px;
     height: 60px;
@@ -408,10 +400,6 @@ a:hover {
   background-size: cover;
 
 }
-
-
-
-
 
 .cl-leaderboard {
   margin-top: 15px;
@@ -518,14 +506,10 @@ font-size: 23px;
 
 /* arabic transpose main inner page sections */
 
-html[dir="rtl"] .official-header-wrapper{
+/*html[dir="rtl"] #main-content{
 float: right;
 }
-
-html[dir="rtl"] #main-content{
-float: right;
-}
-
+*/
 
 /* fix stages arabic */
 /*
@@ -731,24 +715,17 @@ a.campaign-name{
 }
 
 
-/* arabic transpose main inner page sections */
-
-html[dir="rtl"] .official-header-wrapper{
-float: right;
-}
-
-html[dir="rtl"] #main-content{
-float: right;
-}
-
-
-/*html[dir="rtl"] .navbar-default .navbar-nav > li > a {
-  font-size: 24px;
-}*/
 
 /*html[dir="rtl"] .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
   float: right;
 }
+
+html[dir="ltr"] .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+  float: left;
+}
+*/
+
+
 
 html[dir="rtl"] .divider-row .left{
   text-align: right;
@@ -758,8 +735,42 @@ html[dir="rtl"] .divider-row .right{
   text-align: left;
 }
 
+html[dir="rtl"] .col-md-3{
+  float: right;
+}
+
+
+html[dir="rtl"] .col-md-9{
+  float: right;
+}
+
+html[dir="rtl"] .col-md-6{
+  float: right;
+}
+
+html[dir="rtl"] .col-md-4{
+  float: right;
+}
+
 html[dir="rtl"] .navbar-nav{
   float: right;
   margin-right: -15px;
 }
-*/
+
+
+@media(max-width: 767px){
+  .custom-landing-body > .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.we-are-discussing{
+  padding-top: 15px;
+}
+
+@media(max-width: 992px){
+  .we-are-discussing{
+    padding-top: 50px;
+  }
+}
