@@ -1,0 +1,15 @@
+body {
+  padding-top: 5rem;
+  background: #ffff9b;
+  font-family: Georgia;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.main-img{
+	border-radius: 100%;
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+}
