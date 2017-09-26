@@ -2,16 +2,32 @@ body{
 	font-family: times;
 }
 
+p{
+	font-size: 25px;
+}
+
+ul li{
+	font-size: 25px;
+}
+
+ul.nav{
+	font-size: 30px;
+	font-weight: 300;
+
+}
 #crack{
 	background: url('img/f4.gif');
+	background-size: cover;
 	background-position: bottom;
 	background-size: fit;
 	background-repeat: no-repeat;
-	height: 700px;
+	height: 630px;
+
 }
 
 .signature{
 	font-family: Papyrus;
+	font-size: 35px;
 }
 
 #cloud{
