@@ -1,19 +1,19 @@
-body {
-  padding-top: 5rem;
-  background: #ffff9b;
-  font-family: Georgia;
-}
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-.main-img{
-	border-radius: 100%;
-	width: 300px;
-	margin: 0 auto;
-	display: block;
+body{
+	font-family: times;
 }
 
-.card-img-top{
-width: 100%;
+#crack{
+	background: url('img/f4.gif');
+	background-position: bottom;
+	background-size: fit;
+	background-repeat: no-repeat;
+	height: 700px;
+}
+
+.signature{
+	font-family: Papyrus;
+}
+
+#cloud{
+	background: url('img/f4.gif');	
 }
