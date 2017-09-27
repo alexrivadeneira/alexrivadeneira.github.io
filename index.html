@@ -13,7 +13,7 @@
   <li class="active">
     <a href="#">Home</a>
   </li>
-  <li><a href="#">Portfolio</a></li>
+  <li><a href="#link">Portfolio</a></li>
   <li><a href="#">Journal</a></li>
   <li><a href="#">Gallery</a></li>
   <li><a href="#">Aboot</a></li>
@@ -21,10 +21,11 @@
 </ul>
 
 <div class="container">
+<div id="content">
 		<h3>Dear Citizens,</h3>
 		<p>Here are some unsolicited tips on living a better life:</p>
 		<ul>
-			<li>Drive less and walk more</li>
+			<li><a href="#link">Drive less and walk more</a></li>
 			<li>Meditate</li>
 			<li>Watch old movies</li>
 			<li>Experience nature</li>
@@ -34,6 +35,7 @@
 		<p>Sincerely,</p>
 		<p class="signature">Alex</p>
 		<hr/>
+</div>
 </div>
 
 
@@ -71,6 +73,31 @@
 
   	}  	 	
   }
+
+
+  var loc = window.location;
+
+  window.onhashchange = function(loc){
+  	var newRoute = getRoute(loc.newURL);
+  	updateView(newRoute);
+  }
+
+
+  function getRoute(url){
+  	return url.split("#")[1];
+  }
+
+
+
+  function updateView(view){
+  	var content = document.getElementById("content");
+  	content.innerHTML = views[view];
+
+  }
+
+  var views = {
+  	link: "<p>kxkljdfjkladsfjkldfkljs</p>"
+  };
 
   </script>
 </div>
