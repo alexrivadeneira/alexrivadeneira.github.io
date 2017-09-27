@@ -9,32 +9,21 @@
 
 	<div class="container-fluid">
 
-	<ul class="nav nav-tabs">
+	<ul id="nav" class="nav nav-tabs">
+
   <li class="active">
-    <a href="#">Home</a>
+    <a href="#home">Home</a>
   </li>
-  <li><a href="#link">Portfolio</a></li>
-  <li><a href="#">Journal</a></li>
-  <li><a href="#">Gallery</a></li>
-  <li><a href="#">Aboot</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#journal">Journal</a></li>
+  <li><a href="#gallery">Gallery</a></li>
+  <li><a href="#about">About</a></li>
 
 </ul>
 
 <div class="container">
 <div id="content">
-		<h3>Dear Citizens,</h3>
-		<p>Here are some unsolicited tips on living a better life:</p>
-		<ul>
-			<li><a href="#link">Drive less and walk more</a></li>
-			<li>Meditate</li>
-			<li>Watch old movies</li>
-			<li>Experience nature</li>
-			<li>Don't be grouchy</li>
-		</ul>
-		<p>Welcome to my corner of the web</p>
-		<p>Sincerely,</p>
-		<p class="signature">Alex</p>
-		<hr/>
+
 </div>
 </div>
 
@@ -80,6 +69,7 @@
   window.onhashchange = function(loc){
   	var newRoute = getRoute(loc.newURL);
   	updateView(newRoute);
+  	updateNav(newRoute);
   }
 
 
@@ -95,8 +85,48 @@
 
   }
 
+  function updateNav(view){
+  	var nav = document.getElementById("nav");
+  	var lis = nav.getElementsByTagName("li");
+  	for(var i = 0; i < lis.length; i++){
+  		lis[i].classList.remove("active");
+  		as = lis[i].getElementsByTagName("a");
+  		console.log(as);
+  		for(var j = 0; j < as.length; j++){
+  			if(as[j].href.split("#")[1] === view){
+  				lis[i].classList.add("active");
+  			}
+  		}
+  	}
+  }
+
   var views = {
-  	link: "<p>kxkljdfjkladsfjkldfkljs</p>"
+  	home: `		
+  	<h3>Dear Citizens,</h3>
+		<p>Here are some unsolicited tips on living a better life:</p>
+		<ul>
+			<li>Drive less and walk more/li>
+			<li>Meditate</li>
+			<li>Watch old movies</li>
+			<li>Experience nature</li>
+			<li>Don't be grouchy</li>
+		</ul>
+		<p>Welcome to my corner of the web</p>
+		<p>Sincerely,</p>
+		<p class="signature">Alex</p>
+		`,
+		portfolio:`
+		<p>Portfolio items</p>
+		`,
+		journal:`
+		<p>Journal entries, NOT blogs</p>
+		`,
+		gallery: `
+		<p>Gallery, not Photos</p>
+		`,
+		about: `
+		<h1>Everything about </h1>
+		`
   };
 
   </script>
