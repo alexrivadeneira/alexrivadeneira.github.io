@@ -1,4 +1,4 @@
-controllers.journal = function(data, params){
+controllers.journal = function(){
 	content = views.journal();
-	router.render(content);
+	router.render(mainContent, content);
 }

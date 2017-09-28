@@ -1,4 +1,4 @@
-controllers.portfolio = function(data, params){
-	content = "PORTFOLIO HOME CONTENT";
-	router.render(content);
+controllers.portfolio = function(){
+	content = views.portfolio();
+	router.render(mainContent, content);
 }

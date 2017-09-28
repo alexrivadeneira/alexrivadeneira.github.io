@@ -1,4 +1,4 @@
-controllers.about = function(data, params){
-	content = "ABOUT HOME CONTENT";
-	router.render(content);
+controllers.about = function(){
+	content = views.about();
+	router.render(mainContent, content);
 }

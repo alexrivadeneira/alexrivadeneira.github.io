@@ -1,4 +1,4 @@
-controllers.gallery = function(data, params){
-	content = "TEST HOME CONTENT";
-	router.render(content);
+controllers.gallery = function(){
+	content = views.gallery();
+	router.render(mainContent, content);
 }

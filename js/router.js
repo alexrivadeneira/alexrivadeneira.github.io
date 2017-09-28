@@ -7,12 +7,16 @@ var router = {
 		if(controllers[route]){
 			controllers[route]();
 		}
+
+		if(views[route]){
+			controllers.navbar(route)
+		};
 		
 	},
 
-	render: function(content){
+	render: function(target, content){
 		console.log("rendering");
-		mainContent.innerHTML = content;
+		target.innerHTML = content;
 	}
 }
 

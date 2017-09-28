@@ -1,3 +1,5 @@
+
+
 views.journal = function(){
 	content = 	`
 
