@@ -1,6 +1,8 @@
 views.home = function(){
 	content = 	`
 
+			<img class="img-responsive impossible" src="img/expanding-box.gif" alt="impossible figure"/>
+
 	<div class="row">
 		<div class="col-md-9">
 			<h3>Dear Citizens,</h3>
