@@ -1,4 +1,3 @@
-// needs directing capability
 var router = {
 	router: function(){
 		route = location.hash.split("#")[1] || "home";
@@ -18,4 +17,4 @@ var router = {
 }
 
 
-// needs rendering functionality
+
