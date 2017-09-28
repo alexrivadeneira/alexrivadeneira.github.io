@@ -33,3 +33,17 @@ ul.nav{
 #cloud{
 	background: url('img/f4.gif');	
 }
+
+.nav-tabs{
+	border-bottom: 3px solid #000;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	border: 3px solid #000;
+	border-bottom-color: transparent;
+	margin-bottom: -2px;
+}
+
+ul.nav{
+	margin-bottom: 15px;
+}
