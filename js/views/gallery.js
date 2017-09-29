@@ -1,5 +1,11 @@
 views.gallery = function(){
-	content = 	`<h2>Gallery Placeholder</h2>`;
-
+	content = 	`
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<h2>Coming Soon</h2>
+			<img class="img-responsive" src="img/gallery.png" alt="gallery placeholder"/>
+		</div>
+	</div>
+	`;
 	return content;
 }
