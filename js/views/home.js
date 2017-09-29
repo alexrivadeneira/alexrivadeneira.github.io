@@ -1,9 +1,12 @@
 views.home = function(){
 	content = 	`
 
-			<img class="img-responsive impossible" src="img/expanding-box.gif" alt="impossible figure"/>
+ 	<!-- <img class="img-responsive impossible" src="img/expanding-box.gif" alt="impossible figure"/> -->
 
 	<div class="row">
+		<div class="col-md-3">
+			<img class="img-responsive impossible" src="img/impossible2.png" alt="impossible figure"/>
+		</div>	
 		<div class="col-md-9">
 			<h3>Dear Citizens,</h3>
 				<p>Here are some unsolicited tips on living a better life:</p>
@@ -19,9 +22,7 @@ views.home = function(){
 			<p>Sincerely,</p>
 			<p class="signature">Alex</p>
 		</div>
-		<div class="col-md-3">
-			<img class="img-responsive impossible" src="img/impossible2.png" alt="impossible figure"/>
-		</div>
+
 	</div><!-- end row -->
 	
 			`;
