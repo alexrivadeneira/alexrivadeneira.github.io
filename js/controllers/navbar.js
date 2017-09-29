@@ -1,5 +1,3 @@
-console.log("navbar controller");
-
 controllers.navbar = function(current){
 	content = views.navbar(current);
 

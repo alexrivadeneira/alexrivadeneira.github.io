@@ -4,7 +4,7 @@ views.home = function(){
  	<!-- <img class="img-responsive impossible" src="img/expanding-box.gif" alt="impossible figure"/> -->
 
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-lg-3">
 			<img class="img-responsive impossible" src="img/impossible2.png" alt="impossible figure"/>
 		</div>	
 		<div class="col-md-9">

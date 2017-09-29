@@ -55,3 +55,7 @@ ul.nav{
 .impossible:hover{
 	transform: rotate(0deg);
 }
+
+.portfolio-img{
+	padding: 15px;
+}

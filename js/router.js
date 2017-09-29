@@ -15,7 +15,6 @@ var router = {
 	},
 
 	render: function(target, content){
-		console.log("rendering");
 		target.innerHTML = content;
 	}
 }
