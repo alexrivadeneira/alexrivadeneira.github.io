@@ -2,7 +2,7 @@ views.portfolio = function(){
 	var items = [  {
     "title":"National Cancer Institute Community Design",
     "date":"03/22/2015",
-    "content":"Front end project for IdeaScale for the Vice President's Cancer Research initiative.  Bootstrap, LESS.",
+    "content":"Front end project for IdeaScale for the Vice President's Cancer Research initiative.  Built to client's design specifications.  Bootstrap, LESS.",
     "image":"cancer.png",
     "link": "https://cancerresearchideas.cancer.gov/"
     },
@@ -25,15 +25,15 @@ views.portfolio = function(){
   {
     "title":"Tic Tac Toe...vs the Computer",
     "date":"09/09/2014",
-    "content":"The computer is not very smart yet, but it can prevent you from winning on the diagonals.  In future versions, I will make the computer be able to block additional types of moves. <a href=\"http://www.codeskulptor.org/#user37_gBGFfHbHho_25.py\" target=\"ttt\">You can play the human-only version of the game here.</a>",
+    "content":"The computer is not very smart yet, but it can prevent you from winning on the diagonals.  In future versions, I will give the computer the ability to block additional types of moves. <a href=\"http://www.codeskulptor.org/#user37_gBGFfHbHho_25.py\" target=\"ttt\">You can play the human-only version of the game here.</a>",
     "image":"tttvscomp.png",
     "link": "http://www.codeskulptor.org/#user37_7yzOJ39UY6_0.py"
     },
 
   {
-    "title":"Head to Head! Game",
+    "title":"Head-to-Head Game",
     "date":"01/25/2015",
-    "content":"A guessing game where the players try to guess their friends preferences on random topics.",
+    "content":"A guessing game where the players try to guess their friends preferences on random topics.  People enjoyed playing this game, and I want to rebuild it using a modern JavaScript framework like React",
     "image":"h2h.png",
     "link": "http://head2head2.herokuapp.com/"
     }];
