@@ -16,7 +16,7 @@ views.navbar = function(current){
 		}
 	}
 
-	navPages += "</ul>";
+	navPages += "<li><a href='./Rivadeneira-10-17.pdf' target='_blank'>Resume</li></ul>";
 
 	return navPages;
 }
