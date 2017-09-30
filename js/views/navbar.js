@@ -1,12 +1,10 @@
 views.navbar = function(current){
 	var navPages = "<ul id='nav' class='nav nav-tabs'>";
 
-	// check for current, and also eliminate navbar view
-
-	console.log(views);
+	// should there be so much logic here?
 
 	for(page in views){
-		if(page != "navbar"){
+		if(page != "navbar" && page[0] != "_"){
 			if(page == current){
 				navPages += "<li class='active'><a href='#" + page + "'>" + page.charAt(0).toUpperCase() + page.slice(1) + "</li>";
 			}

@@ -1,59 +1,39 @@
-var entries = [
+var journal_entries = [
 { "date": "09.29.2017",
 "title": "Obduction Review",
+"images": ["img/obduction/hunrath.jpg", "img/obduction/hunrath-junk.jpg", "img/obduction/kaptar.jpg", "img/obduction/lake.jpg"],
+
 "body": "
-<img class='img-responsive journal-img' src='img/obduction/hunrath.jpg' alt='hunrath' />
 
 <p>I played Cyan’s \"Obduction\" recently for the Mac, VR and PC.  Overall I enjoyed the game a lot, although I did find some inconsistencies and issues.</p>
 
-
 <p>\"Obduction\" is a good title for this game. For Myst superfans, it\'s unfortunate that everything Cyan produces inevitably gets compared to Riven, but at least in this one respect, Obduction almost manages to manifest something of Riven quality. \"Obduction\" is a homonym for \"abduction\": Obduction’s characters have all been abducted by aliens. Literally, \"obduction\" means \"covering or layering over\", which, the player discovers, occurs throughout the game: the worlds in the game are layering into one another in big and small ways. Obduction’s \"O\" can also reference the circle that gets drawn around the player during swapping (the game’s term for teleporting between areas), and the shape of the worlds in the game, which are all large spheres. </p>
-
 
 <p>The player visits multiple worlds in Obduction.  Through an elaborate cosmic process, each of the worlds are small spheres, cut or abducted from their larger planet.  Most of Obduction’s gameplay takes place in this system of four spheres, one of the spheres having been cut away from Earth.  At various points, the player actually collides into the sphere walls. </p>
 
-
-
-
-<img class='img-responsive journal-img' src='img/obduction/hunrath-junk.jpg' alt='hunrath' />
-
 <p>The visuals in Obduction are very good.  I found Kaptar’s massive, ruined palaces and multiple layers of ancient history the most interesting. Hunrath was interesting and fun, although it felt like a big junkyard.  I couldn’t help but think about how convenient a junkyard is from a design perspective. Any time the game architects encountered an issue designing Hunrath, they probably said, \"well, it\'s a big junkyard anyway, so we can move X over to Y and put some more garbage around it to cover up the seams.\" </p>
-
 
 <p>As fun as Hunrath was, or as intriguing as it was to explore the other worlds, none of the visuals felt groundbreaking or refined as the clean, new-agey worlds of Myst, and they even lacked the kind of refinement and detailing present in the original Uru worlds.   I couldn\'t help but read Hunrath as a kind of oblique critique of the state of our planet, or even just a modern office:  our world is littered with plastic junk and too many wires. When Myst was released, there were a billion less people in the world, hardly anyone used the internet, and the repercussions and rate of and the rate of planned obsolescence hadn\'t reached its current nightmarish velocity.  I\'m a little bit scared to see what some of Cyan\'s worlds might look like in another 25 years. </p>
 
-
-<img class='img-responsive journal-img' src='img/obduction/kaptar.jpg' alt='hunrath' />
-
 <p>I experienced name fatigue while playing Obduction. The Mofang are from Soria, the Arai are from Kaptar, the Villein from Maray and the humans are from Hunrath, which, by the way, is also actually Arizona.  Since the \"worlds\" observed in Obduction are actually cut away from larger planets, I understand that the spheres themselves aren’t actually the respective speices homeworlds, but it would have been a lot less confusing that have cell/sphere and specieies names that lined up a little better. I also thought \"karrfin\" was another word for the Mofang species until I realized C.W. was using it as a swearword.  Furthermore, of the main characters have multiple aliases: Cecil / CW, Mayor Jannsen / The Mayor / Josef, and Farley is variously referred to as Caroline or Farley throughout.  In my life, hardly anyone has ever called me anything other than \"Alex\" besides when I accidentally cut someone off in traffic.  </p>
-
 
 <p>Some of the character motivations in Obduction could be developed further, and may be inconsistent.   Why are there so many Arai in Hunrath?  Wouldn\'t they be more interested in Maray, where they could view their home world?  I can\'t imagine how the characters, once discovering the fact that their home world is visible in one of the other cells, wouldn\'t become obsessed with studying beyond those specific cell walls.  Can you imagine, after being abducted from Earth for years and years, suddenly you found some magic portal looking back into the Earth?  How would you not spend almost all of your time gazing into that window?   The macro-swap conceit is a little confusing, too:  The cell is physically inside its sister world, but no one from the sister world can see the cell? Why doesn’t the same phenomena occur for the micro swaps? </p>
 
-
 <p>Why was \"swapping on demand\" such an important development?  Ostensibly, the species in each of the cells didn’t realize they were connected to others cells until the trees were mature.  And by that point, they could walk through the trees to get to the other cells.  Did they really not like walking that much?</p>
-
 
 <p>Some other questions: Hunrath has tons of junk in it accumulating from the earth, but I fail to observe this in the other cells.  The Soria cell is destroyed, but Maybe the Vellein and Arai are lot neater than the humans? Why are humans prioritized above the others?  Why does the system’s main water supply flow from Hunrath? </p>
 
-
 <p>In that line of thinking, why was it apparent to Farley, and not Cecil, that earth was in an apocalyptic state?  (For the record, the Arizona desert outside the Mofang cell didn\'t look apparently apocalyptic to me, either.  I thought the smoke was coming from a chimney, and was waiting for a car to drive down the road any minute.). Furthermore, why did the humans get to dictate, a la Cecil\'s battery plan, where the trees would ultimately swap to?  Wouldn’t that be forcing all of the other species back to earth? Is that what the plan was? In that case, no wonder the Mofang were upset.  Curiously, though, I don’t think that’s the game’s explanation for the Mofang’s animosity. </p>
-
-
-<img class='img-responsive journal-img' src='img/obduction/lake.jpg' alt='hunrath' />
 
 <p>Robyn Miller produces great video game music; he has an ear for character development and reinforcing abstract visuals. I detected a slight reference to the Myst theme in the \"Down the Rabbit Hole\"; just enough to add a little Cyan signature.   \"From the Innocent Earth\" is strange and almost disturbing as you descend into the alien architecture of the Velliens. I enjoyed the melancholy, psychedelic, drawling feeling of \"Completing Your Task,\" which reminded me of the desert music in Uru (Hunrath is indeed another part of the American southwest:  for some reason Rand Miller really wants to tell stories about the American southwest).</p>
 
-
 <p>Robyn Miller’s soundtrack cover art distilled the essence and spirit of the game better than some of the game designers themselves.  It’s a shame he couldn’t have been involved more heavily in the game’s development, as I suspect he would help add that little \"edge\" and extra refinement that’s missing. </p>
-
 
 <p>The ending of Obduction is bittersweet and ties together the overall conceit of the game. It\'s sad that no one will ever really be able to make it home, but the new world does look very inviting.  </p>
 
-
 <p>I played the Mac, PC and VR versions of this game.  The VR version was almost perfect technically. I got stuck in a hole in the desert in Hunrath once and had to switch to the desktop version and node-mode to free myself, but other than that it ran very well.  It seems unfortunate that in many areas in the VR, it\'s possible to peer through walls and behind locked doors, spoiling what’s inside.  It seems like the designers were aware of this, for example, preventing the player from peering into the door when CW is speaking, but these barriers are not applied consistently throughout the game.  The Mac version of the game was very buggy and crashed frequently, particularly in Maray and Kaptar.  It was very frustrating to play such a temperamental game on the Mac, but I think Cyan continues to push updates to all versions of the game, and the PC version was virtually flawless. It\'s a shame the VR version of the game doesn\'t include the swapping particle effect, because it\'s a helpful cue to make the player realized that they\'re carrying an entire ring of matter with them when they swap.</p>
 
-
 <p>Overall, I thoroughly enjoyed exploring the worlds of Obduction.  I do miss the polish and high artistry from Myst and Riven in particular.  Unfortunately, until popular tastes change, it may be a very long time before we see anything of that caliber again.  If my review comes off as harsh, it’s only because of the mighty heights this company used to produce from; in reality, Obduction is the best game I have played in years. Ultimately, Obduction is an extremely fun and worthy successor to Myst and Riven, although I long for the days when Cyan or someone else can produce a masterpiece like Riven again.</p>
-"}
-];
+"
+
+}];

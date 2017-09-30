@@ -2,8 +2,6 @@ var router = {
 	router: function(){
 		route = location.hash.split("#")[1] || "home";
 
-		console.log("route", route);
-
 		if(controllers[route]){
 			controllers[route]();
 		}
@@ -14,8 +12,14 @@ var router = {
 		
 	},
 
-	render: function(target, content){
-		target.innerHTML = content;
+	render: function(target, content, convert_markdown){
+		convert_markdown = convert_markdown || false;
+		if(convert_markdown){
+			var converter = new showdown.Converter();
+			target.innerHTML = converter.makeHtml(content);
+		} else {
+			target.innerHTML = content;
+		}
 	}
 }
 
