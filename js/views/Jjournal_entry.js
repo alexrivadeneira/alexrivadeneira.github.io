@@ -8,7 +8,7 @@ views.Jjournal_entry = function(data){
 
 <img src="img/obduction/obduction-hunrath.jpg" class="float-left img-responsive journal-img" alt="obduction screenshot" />
 
-<p>I played Cyan\'s Obduction recently for the Mac, VR and PC. I enjoyed the game a lot, although I did find some inconsistencies and issues.</p>
+<p>I played Cyan\'s Obduction recently for the Mac, Oculus Rift and PC. I enjoyed the game a lot, although I did find some inconsistencies and issues.</p>
 
 <p>\"Obduction\" is a good title for this game. For Myst superfans, it\'s unfortunate that everything Cyan produces inevitably gets compared to Riven, but at least in this one respect, Obduction almost manages to manifest something of Riven quality. \"Obduction\" is a homonym for \"abduction\": Obduction\'s characters have all been abducted by aliens. Literally, \"obduction\" means \"covering or layering over\", which, the player discovers, occurs throughout the game: the worlds in the game are layering into one another in big and small ways. Obduction\'s \"O\" can also reference the circle that gets drawn around the player during swapping (the game\'s term for teleporting between areas), and the shape of the worlds in the game, which are all large spheres. </p>
 

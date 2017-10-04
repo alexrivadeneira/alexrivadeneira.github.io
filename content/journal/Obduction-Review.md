@@ -1,7 +1,7 @@
 Obduction Review
 ================
 
-I played Cyan’s “Obduction” recently for the Mac, VR and PC.  Overall I enjoyed the game a lot, although I did find some inconsistencies and issues.
+I played Cyan’s “Obduction” recently for the Mac, Oculus-VR and PC.  Overall I enjoyed the game a lot, although I did find some inconsistencies and issues.
 
 “Obduction” is a good title for this game. For Myst superfans, it's unfortunate that everything Cyan produces inevitably gets compared to Riven, but at least in this one respect, Obduction almost manages to manifest something of Riven quality. "Obduction" is a homonym for “abduction”: Obduction’s characters have all been abducted by aliens. Literally, “obduction” means "covering or layering over", which, the player discovers, occurs throughout the game: the worlds in the game are layering into one another in big and small ways. Obduction’s “O” can also reference the circle that gets drawn around the player during swapping (the game’s term for teleporting between areas), and the shape of the worlds in the game, which are all large spheres. 
 
