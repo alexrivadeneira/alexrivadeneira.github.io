@@ -16,7 +16,7 @@ views.home = function(){
 					<li>Read <a href="https://www.goodreads.com/book/show/10210.Jane_Eyre" target="_blank">a novel</a> once in a while</li>
 					<li>Eat less meat and processed sugar</li>
 					<li>Experience nature</li>
-					<li>Don't be grouchy</li>
+					<li>Don\'t be grouchy</li>
 				</ul>
 			<p>Welcome to my corner of the wonderful world wide web.</p>
 			<p>Sincerely,</p>
