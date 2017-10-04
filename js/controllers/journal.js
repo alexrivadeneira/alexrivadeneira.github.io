@@ -3,7 +3,7 @@ controllers.journal = function(data){
 	router.render(mainContent, content);
 }
 
-controllers._journal_entry = function(data){
-	content = views._journal_entry();
+controllers.Jjournal_entry = function(data){
+	content = views.Jjournal_entry();
 	router.render(mainContent, content);
 }

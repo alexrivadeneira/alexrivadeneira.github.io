@@ -4,7 +4,7 @@ views.navbar = function(current){
 	// should there be so much logic here?
 
 	for(page in views){
-		if(page != "navbar" && page[0] != "_"){
+		if(page != "navbar" && page[0] != "J"){
 			if(page == current){
 				navPages += "<li class='active'><a href='#" + page + "'>" + page.charAt(0).toUpperCase() + page.slice(1) + "</li>";
 			}
