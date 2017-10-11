@@ -1,8 +1,8 @@
 views.portfolio = function(){
 	var items = [  {
-    "title":"National Cancer Institute Community Design",
+    "title":"National Cancer Institute Community Design Implementation",
     "date":"03/22/2015",
-    "content":"Front end project for IdeaScale for the Vice President's Cancer Research initiative.  Built to client's design specifications.  Bootstrap, LESS.",
+    "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Built to client's design specifications.  Bootstrap, LESS.",
     "image":"cancer.png",
     "link": "https://cancerresearchideas.cancer.gov/"
     },
@@ -13,19 +13,10 @@ views.portfolio = function(){
     "image":"tubetube.png",
     "link": "http://tubetubedc.herokuapp.com/"
     },
-
-  {
-    "title":"2048",
-    "date":"04/08/2015",
-    "content":"2048, built in Python as part of Rice University's <a href=\"https://www.coursera.org/course/principlescomputing1\" target=\"POC\">Principles of Computing Course</a>.  I designed the logic with instructions and Rice provided the GUI.",
-    "image":"2048.png",
-    "link": "http://www.codeskulptor.org/#user39_unOF7r1mKt_6.py"
-    },
-
   {
     "title":"Tic Tac Toe...vs the Computer",
     "date":"09/09/2014",
-    "content":"The computer is not very smart yet, but it can prevent you from winning on the diagonals.  In future versions, I will give the computer the ability to block additional types of moves. <a href=\"http://www.codeskulptor.org/#user37_gBGFfHbHho_25.py\" target=\"ttt\">You can play the human-only version of the game here.</a>",
+    "content":"The computer is programmed with a basic level of intelligence focused on preventing losses via diagonals. Future iterations will expand with other counter strategies.",
     "image":"tttvscomp.png",
     "link": "http://www.codeskulptor.org/#user37_7yzOJ39UY6_0.py"
     },
