@@ -14,7 +14,7 @@ views.navbar = function(current){
 		}
 	}
 
-	navPages += "<li><a href='./Rivadeneira-10-17.pdf' target='_blank'>Resume</li></ul>";
+	navPages += "<li><a href='./Rivadeneira-resume.pdf' target='_blank'>Resume</li></ul>";
 
 	return navPages;
 }

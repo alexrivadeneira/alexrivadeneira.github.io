@@ -8,7 +8,7 @@ views.home = function(){
 			<img class="img-responsive impossible" src="img/impossible2.png" alt="impossible figure"/>
 		</div>	
 		<div class="col-md-9">
-			<h3>Dear Citizens,</h3>
+			<h3>Hi!</h3>
 				<p>Here are some unsolicited tips on living a better life:</p>
 				<ul>
 					<li>Drive less and walk more</li>

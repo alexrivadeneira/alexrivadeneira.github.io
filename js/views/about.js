@@ -6,7 +6,7 @@ views.about = function(){
 		</div>
 		<div class="col-md-9">
 			<h2>Alex Rivadeneira</h2>
-			<p>I am a normal civilian in the great town of Berkeley, California.  I enjoy walking quickly, hiking, and running.  I am a teacher and computer programmer.</p>  
+			<p>I am a civilian of the great town of Berkeley, California.  I enjoy walking quickly, hiking, and running.  I am a teacher and computer programmer.</p>  
 		</div>
 	</div>
 

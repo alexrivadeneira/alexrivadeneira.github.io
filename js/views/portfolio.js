@@ -24,7 +24,7 @@ views.portfolio = function(){
   {
     "title":"Head-to-Head Game",
     "date":"01/25/2015",
-    "content":"A guessing game where the players try to guess their friends preferences on random topics.  People enjoyed playing this game, and I want to rebuild it using a modern JavaScript framework like React",
+    "content":"A guessing game where the players try to guess their friends preferences on random topics.  People enjoyed playing this game, and I want to rebuild it using a modern JavaScript framework like the React ecosystem",
     "image":"h2h.png",
     "link": "http://head2head2.herokuapp.com/"
     }];
