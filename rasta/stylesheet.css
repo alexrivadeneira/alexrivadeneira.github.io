@@ -10,15 +10,28 @@ h1{
 
 }
 
+a{
+	text-decoration: none !important;
+}
+
+
 h1, h2, h3, h4{
 	font-family: 'Asul', sans-serif;
 
 }
 
+h3{
+	font-size: 30px;
+}
+
+.btn-success{
+	font-size: 25px;
+	margin-bottom: 50px;
+}
 
 
 p{
-	font-size: 25px;
+	font-size: 20px;
 }
 
 h3{
@@ -27,7 +40,11 @@ h3{
 }
 
 
-
+.center{
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
 
 
 	
