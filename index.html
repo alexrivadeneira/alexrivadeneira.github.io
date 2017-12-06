@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylesheet.css">	
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 </head>
@@ -9,364 +10,54 @@
 <body>
 
 <div class="container-fluid">
-
-
-  <div class="container">
-
-
-<h1><a id="Introduction_to_Building_Websites_in_the_Wonderful_World_Wide_Web_0"></a>Introduction to Building Websites in the Wonderful World Wide Web</h1>
-<h2><a id="Class_Prereqs_2"></a>Class Prereqs:</h2>
-<p>Students should be able to…</p>
-<ul>
-<li>Perform basic tasks on a personal computer, such as opening programs, browsing the web, accessing email and saving and opening files</li>
-<li>Perform basic high school algebra (using variables, equations/expressions)</li>
-<li>Type at least 40-50 words per minute</li>
-</ul>
-<h2><a id="Projects_8"></a>Projects</h2>
-<h3><a id="Students_will_build_9"></a>Students will build:</h3>
-<ul>
-<li>Weeks 1-2: “About Me Website” - A static website hosted on the local hard drive.<br>
-Skills: HTML structure, images, links, CSS styles</li>
-<li>Weeks 3-4: “Higher/Lower Number Guessing Game” - The computer generates a random number in some range, and the user inputs numbers until they can guess the number.  To help the user, the computer tells the user if their guess is higher or lower than the hidden number.<br>
-Skills: JavaScript variables, expressions, conditionals</li>
-<li>Weeks 5-6: “JavaScript Stopwatch” - A game that tests the user’s reflexes to see how quickly they can stop and start a stopwatch.<br>
-Skills: DOM manipulation, JavaScript events, functions, timers</li>
-<li>Weeks 7-8: &quot;Bank Account Simulator” - A basic bank account website that keeps track of the user’s balance, deposits, withdraws, interest and fees.<br>
-Skills: JavaScript objects and methods</li>
-<li>Weeks 9-10: “Tic Tac Toe” – Two players, “X” and “O”, compete to fill three spaces in a row.<br>
-Skills: All of the skills learned during the course plus strategies on how to represent a game programmatically.</li>
-</ul>
-<p>Here’s the outline:</p>
-<h2><a id="Week_1_Introduction_to_Websites_HTML_CSS_23"></a>Week 1: Introduction to Websites, HTML, CSS</h2>
-<h3><a id="Overview_Students_will_use_HTML_tags_tag_attributes_and_CSS_to_build_a_basic_local_static_personal_website_24"></a>Overview: Students will use HTML tags, tag attributes and CSS to build a basic, local, static personal website.</h3>
-<ul>
-<li>“Fixed mindset” vs “Growth mindset” video and discussion, Carol Dweck  <a href="https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve">https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve</a></li>
-<li>Creating a “local” website on your desktop</li>
-<li>filenames</li>
-<li>server vs local</li>
-<li>viewing code source</li>
-<li>HTML tags and structure</li>
-<li><code>&lt;strong&gt; &lt;a&gt;&lt;/a&gt; &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;ul&gt; &lt;li&gt; &lt;div&gt; &lt;span&gt;&lt;hr /&gt;</code></li>
-<li>HTML tag attributes</li>
-<li><code>&lt;img src=&quot;&quot;&gt;</code></li>
-<li><code>&lt;a href=&quot;&quot; alt=&quot;&quot;&gt;</code></li>
-<li>HTML tag class attributes</li>
-<li><code>&lt;h2 class=&quot;myclass&quot;&gt;</code></li>
-<li><code>&lt;div class=&quot;test&quot;&gt;</code></li>
-<li>Mapping HTML tags to styles in CSS</li>
-<li>font-size</li>
-<li>background-color</li>
-<li>color</li>
-</ul>
-<h3><a id="Project_44"></a>Project:</h3>
-<p>“About Me Website”</p>
-<h3><a id="Optional_homeworkadditional_resources_47"></a>Optional homework/additional resources:</h3>
-<ul>
-<li>Sign up at <a href="https://codepen.io">codepen.io</a> and experiment</li>
-<li>View code source on some of your favorite websites</li>
-<li>W3Schools HTML exercises: <a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes1">https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes1</a></li>
-<li>HTML and CSS Handbook: <a href="http://www.htmlandcssbook.com">http://www.htmlandcssbook.com</a></li>
-</ul>
-<h1><a id="Week_2_More_Advanced_CSS_Styling_53"></a>Week 2: More Advanced CSS Styling</h1>
-<h3><a id="Overview_Students_will_learn_about_CSS_class_selectors_and_CSS_hierarchy_to_style_their_personal_website_54"></a>Overview: Students will learn about CSS class selectors and CSS hierarchy to style their personal website.</h3>
-<ul>
-<li>Dividing a web project into multiple files: separating out the stylesheet</li>
-<li>Strategies for finding answers online</li>
-<li>Using developer tools (Chrome/Firefox)</li>
-<li>Advanced Cascading Stylesheets rules</li>
-<li>CSS id vs class selectors
-<ul>
-<li><code>#myID{}</code></li>
-<li><code>.myClass{}</code></li>
-</ul>
-</li>
-<li>Pseudo class selectors
-<ul>
-<li><code>a:hover{}</code></li>
-<li><code>span:mouseover</code></li>
-</ul>
-</li>
-<li>CSS hierarchy/specificity rules
-<ul>
-<li>ID &gt; class</li>
-<li><code>!important</code></li>
-</ul>
-</li>
-<li>CSS design box model
-<ul>
-<li>Margins</li>
-<li>Padding</li>
-<li>Border</li>
-</ul>
-</li>
-<li>Inline vs block elements</li>
-<li>Modifying ul li to build a navigation bar</li>
-</ul>
-<p>Project:<br>
-“About Me Website”: add side/navigation bars</p>
-<p>Optional homework/additional resources:<br>
-* W3Schools CSS exercises: <a href="https://www.w3schools.com/css/exercise.asp">https://www.w3schools.com/css/exercise.asp</a><br>
-* “HTML and CSS Handbook”: <a href="http://www.htmlandcssbook.com">http://www.htmlandcssbook.com</a></p>
-<h1><a id="Week_3_Intro_to_JavaScript_Adding_Interactivity_to_Your_Website_82"></a>Week 3: Intro to JavaScript: Adding Interactivity to Your Website</h1>
-<h3><a id="Overview_Students_will_learn_JavaScript_basics_including_manipulating_primitives_such_as_boolean_string_number_83"></a>Overview: Students will learn JavaScript basics, including manipulating primitives such as boolean, string, number</h3>
-<ul>
-<li>Syntax rules
-<ul>
-<li>camelCase convention</li>
-<li><code>;</code></li>
-<li><code>//</code></li>
-<li><code>=</code></li>
-<li><code>===</code></li>
-</ul>
-</li>
-<li>Strings</li>
-<li><code>null</code></li>
-<li><code>undefined</code></li>
-<li>Converting between types
-<ul>
-<li><code>parseInt()</code></li>
-<li><code>toString()</code></li>
-<li><code>parseFloat()</code></li>
-</ul>
-</li>
-<li><code>console.log()</code></li>
-<li><code>alert()</code></li>
-<li>variables, expressions
-<ul>
-<li><code>var i = &quot;myString&quot;;</code></li>
-<li><code>if(i === myString){}</code></li>
-</ul>
-</li>
-<li>booleans
-<ul>
-<li><code>var myBool = true;</code></li>
-</ul>
-</li>
-<li>if/else expressions
-<ul>
-<li><code>if/else logic</code></li>
-</ul>
-</li>
-<li>Math/Random libraries</li>
-</ul>
-<p>Project: “Higher/Lower Number Guessing Game”</p>
-<p>Optional homework/additional resources:</p>
-<ul>
-<li>Codecademy JavaScript: <a href="https://www.codecademy.com/en/tracks/javascript-combined">https://www.codecademy.com/en/tracks/javascript-combined</a></li>
-<li>“JavaScript: The Good Parts” by Douglas Crockford</li>
-<li>You Don’t Know JavaScript: <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a></li>
-</ul>
-<h1><a id="Week_4_JavaScript_Functions_115"></a>Week 4: JavaScript Functions</h1>
-<h3><a id="Overview_Students_will_manipulate_data_inputs_and_outputs_using_JavaScript_functions_116"></a>Overview: Students will manipulate data inputs and outputs using JavaScript functions</h3>
-<ul>
-<li>Document Object Model (DOM)</li>
-<li>Selecting elements to modify:
-<ul>
-<li><code>document.getElementById()</code></li>
-</ul>
-</li>
-<li>Inputs and outputs</li>
-<li>Functions</li>
-</ul>
-<pre><code>function add(x, y){
-        return x + y;
-        } 
-</code></pre>
-<ul>
-<li>Logging return values</li>
-<li>returning data from a function
-<ul>
-<li>no return</li>
-<li><code>return;</code></li>
-<li><code>return variable;</code></li>
-</ul>
-</li>
-<li>Functions worksheet practice</li>
-</ul>
-<p>Project: “Higher/Lower Number Guessing Game”</p>
-<p>Optional homework/additional resources:</p>
-<ul>
-<li>Codecademy JavaScript: <a href="https://www.codecademy.com/en/tracks/javascript-combined">https://www.codecademy.com/en/tracks/javascript-combined</a></li>
-<li>“JavaScript: The Good Parts” by Douglas Crockford</li>
-<li>You Don’t Know JavaScript: <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a></li>
-<li>How Computer Memory Works: <a href="https://computer.howstuffworks.com/computer-memory.htm">https://computer.howstuffworks.com/computer-memory.htm</a></li>
-</ul>
-<h1><a id="Week_5_JavaScript_Timer_and_Function_Events_142"></a>Week 5: JavaScript Timer and Function Events</h1>
-<h3><a id="Overview_Students_will_make_use_of_JavaScript_timers_to_affect_changes_on_the_page_using_functions_143"></a>Overview: Students will make use of JavaScript timers to affect changes on the page using functions.</h3>
-<ul>
-<li>++ syntax</li>
-<li>JavaScript for loops</li>
-</ul>
-<pre><code>for(var i = 0; i &lt; 5; i++){
-        console.log(&quot;one loop!&quot;);
-}
-</code></pre>
-<ul>
-<li>Selecting elements by class name:
-<ul>
-<li>document.getElementsByClassName(“myClass”);</li>
-</ul>
-</li>
-<li>HTML buttons
-<ul>
-<li>&lt;button&gt;Click here!&lt;/button&gt;</li>
-</ul>
-</li>
-<li>JavaScript Timers
-<ul>
-<li>Passing functions to a timer</li>
-<li>setInterval(myFunction, 1000);</li>
-<li>setTimeout(myFunction, 1000);</li>
-<li>clearing a timer:<br>
-var interval = setInterval(myFunction, 1000);<br>
-clearInteval(interval);</li>
-</ul>
-</li>
-<li>Javascript events - onClick event
-<ul>
-<li>&lt;button onClick=“myFunction()”/&gt;</li>
-</ul>
-</li>
-</ul>
-<p>Project: Stopwatch game</p>
-<p>Optional homework/additional resources:</p>
-<ul>
-<li>JavaScript Timing Events: <a href="https://www.w3schools.com/js/js_timing.asp">https://www.w3schools.com/js/js_timing.asp</a></li>
-<li>Codecademy JavaScript: <a href="https://www.codecademy.com/en/tracks/javascript-combined">https://www.codecademy.com/en/tracks/javascript-combined</a></li>
-<li>“JavaScript: The Good Parts” by Douglas Crockford</li>
-<li>You Don’t Know JavaScript: <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a></li>
-<li>How Computer Memory Works: <a href="https://computer.howstuffworks.com/computer-memory.htm">https://computer.howstuffworks.com/computer-memory.htm</a></li>
-</ul>
-<h1><a id="Week_6_JavaScript_Arrays_175"></a>Week 6: JavaScript Arrays</h1>
-<h3><a id="Overview_Students_will_use_arrays_and_threedimensional_arrays_to_store_and_manipulate_data_176"></a>Overview: Students will use arrays and three-dimensional arrays to store and manipulate data</h3>
-<ul>
-<li>Storing data in arrays:
-<ul>
-<li>var myArray = [“string1”, 1, false, “more stuff”];</li>
-<li>array indexes</li>
-<li>array.length property</li>
-<li>iterating over arrays</li>
-<li>valid values</li>
-</ul>
-</li>
-<li>3D arrays
-<ul>
-<li>var threeDimensionalArray = [[0,1,2],[3,4,5],[6,7,8]];</li>
-</ul>
-</li>
-<li>Looping within loops:</li>
-</ul>
-<pre><code>    for(var i = 0; i &lt; rows.length; i++){
-        for(var j = 0; j &lt; cols.length; j++){
-        console.log(rows[i], cols[i]);
-        }
-    }
-</code></pre>
-<p>Project: Stopwatch game</p>
-<p>Optional homework/additional resources:</p>
-<ul>
-<li>Codecademy JavaScript: <a href="https://www.codecademy.com/en/tracks/javascript-combined">https://www.codecademy.com/en/tracks/javascript-combined</a></li>
-<li>“JavaScript: The Good Parts” by Douglas Crockford</li>
-<li>You Don’t Know JavaScript: <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a></li>
-</ul>
-<h1><a id="Week_7_201"></a>Week 7:</h1>
-<h3><a id="Overview_Students_will_create_and_manipulate_JavaScript_objects_to_organizestructure_their_application_data_202"></a>Overview: Students will create and manipulate JavaScript objects to organize/structure their application data</h3>
-<ul>
-<li>
-<p>Debugging code best practices:</p>
-<ul>
-<li>Check after each modification</li>
-<li>Tips on using the console to log out information</li>
-<li>Use comments</li>
-</ul>
-</li>
-<li>
-<p>Javascript objects</p>
-</li>
-</ul>
-<pre><code>var student = {
-        firstName: &quot;Ben&quot;,
-        lastName: &quot;Wong&quot;
-        age: 30,
-        address: &quot;1010 Shattuck Ave&quot;
-    };
-</code></pre>
-<ul>
-<li>Object dot notation</li>
-<li>“this” keyword</li>
-<li>valid keys and values</li>
-</ul>
-<p>Project: Simulating a bank account</p>
-<p>Optional homework/resources:</p>
-<ul>
-<li>JavaScript Objects: <a href="https://www.w3schools.com/js/js_objects.asp">https://www.w3schools.com/js/js_objects.asp</a></li>
-<li>Bouncing Ball simulation: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice</a></li>
-<li>Arrays and Objects in JavaScript: <a href="https://www.codecademy.com/courses/javascript-beginner-en-9Sgpi/0/1">https://www.codecademy.com/courses/javascript-beginner-en-9Sgpi/0/1</a></li>
-</ul>
-<h1><a id="Week_8_JavaScript_Objects_228"></a>Week 8: JavaScript Objects</h1>
-<h3><a id="Overview_Students_will_create_and_manipulate_JavaScript_objects_to_organizestructure_their_application_data_229"></a>Overview: Students will create and manipulate JavaScript objects to organize/structure their application data</h3>
-<ul>
-<li>Dot notation to modify objects</li>
-<li>Prototypal inheritance chain
-<ul>
-<li>var person = Object.create(student);</li>
-<li>Adding functions to objects (methods)</li>
-<li>Method overriding</li>
-<li>Object.hasOwnProperty</li>
-</ul>
-</li>
-<li>HTML forms</li>
-</ul>
-<pre><code>&lt;form&gt;
-    &lt;input type=&quot;text&quot; value=&quot;&quot; /&gt;
-    &lt;button onclick=&quot;myFunction(event)&quot;&gt;
-&lt;/form&gt;
-</code></pre>
-<p>Project: Simulating a bank account</p>
-<p>Optional homework/additional resources:</p>
-<ul>
-<li>JavaScript Objects: <a href="https://www.w3schools.com/js/js_objects.asp">https://www.w3schools.com/js/js_objects.asp</a></li>
-<li>Bouncing Ball simulation: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice</a></li>
-<li>Arrays and Objects in JavaScript: <a href="https://www.codecademy.com/courses/javascript-beginner-en-9Sgpi/0/1">https://www.codecademy.com/courses/javascript-beginner-en-9Sgpi/0/1</a></li>
-</ul>
-<h1><a id="Week_9_Building_Tic_Tac_Toe_Game_251"></a>Week 9: Building Tic Tac Toe Game</h1>
-<h3><a id="Overview_Students_will_use_their_accumulated_course_knowledge_to_represent_a_wellknown_game_programatically_252"></a>Overview: Students will use their accumulated course knowledge to represent a well-known game programatically</h3>
-<ul>
-<li>Create game grid using nested for loops</li>
-<li>Detecting changes to the grid using events</li>
-<li>Boolean to alertnate players</li>
-<li>Game states</li>
-<li>Storing game values</li>
-</ul>
-<p>Project: Building Tic Tac Toe</p>
-<p>Additional resources:</p>
-<ul>
-<li>JavaScript canvas: <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a></li>
-<li>CSS Animations: <a href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></li>
-</ul>
-<h1><a id="Week_10_Finish_game_and_further_ideas_266"></a>Week 10: Finish game and further ideas</h1>
-<ul>
-<li>Time to work on building game and beautifying with CSS</li>
-</ul>
-<p>Further thoughts:</p>
-<ul>
-<li>How can we persist data?</li>
-<li>Additional languages</li>
-</ul>
-<p>Project: Building Tic Tac Toe</p>
-<p>Additional resources:</p>
-<ul>
-<li>JavaScript canvas: <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a></li>
-<li>CSS Animations: <a href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></li>
-<li>Rice’s Introduction to Interactive Programming in Python</li>
-</ul>
-
+  <div id="navbar">
   </div>
 
+  <div class="container">
+    <div id="content">
+    </div>
+  </div>
 
+  <div class="row" id="crack">
+  </div>
 
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <span class="text-muted">Adjust the crack:</span>
+        <input oninput="updateSlider(this.value)" type="range" min="1" max="100" value="50" class="slider" id="slider">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- initializing -->
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- controllers -->
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/portfolio.js"></script>
+    <script src="js/controllers/journal.js"></script>
+    <script src="js/controllers/gallery.js"></script>
+    <script src="js/controllers/about.js"></script>
+    <script src="js/controllers/navbar.js"></script>
+   
+
+    <!-- views -->
+    <script src="js/views/home.js"></script>
+    <script src="js/views/portfolio.js"></script>
+    <script src="js/views/journal.js"></script>
+    <script src="js/views/gallery.js"></script>
+    <script src="js/views/about.js"></script>
+    <script src="js/views/navbar.js"></script>
+
+    <!-- partial view -->
+    <script src="js/views/Jjournal_entry.js"></script>
 
 
 
