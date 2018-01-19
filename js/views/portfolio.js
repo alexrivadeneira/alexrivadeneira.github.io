@@ -5,7 +5,7 @@ views.portfolio = function(){
     "date":"03/22/2015",
     "content":"Do you know how much sodium is in that hotdog?  Now you can with the Nutrition Facts Quiz! Simple React app using the OpenFoodFacts.org API",
     "image":"food.png",
-    "link": "https://fast-atoll-11121.herokuapp.com"
+    "link": "http://foodquiz.herokuapp.com"
     },
     {
     "title":"National Cancer Institute Community Design Implementation",
