@@ -1,5 +1,13 @@
 views.portfolio = function(){
-	var items = [  {
+	var items = [  
+    {
+    "title":"Nutrition Facts Quiz",
+    "date":"03/22/2015",
+    "content":"Do you know how much sodium is in that hotdog?  Now you can with the Nutrition Facts Quiz! Simple React app using the OpenFoodFacts.org API",
+    "image":"food.png",
+    "link": "https://fast-atoll-11121.herokuapp.com"
+    },
+    {
     "title":"National Cancer Institute Community Design Implementation",
     "date":"03/22/2015",
     "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Built to client's design specifications.  Bootstrap, LESS.",
@@ -19,15 +27,17 @@ views.portfolio = function(){
     "content":"The computer is programmed with a basic level of intelligence focused on preventing losses via diagonals. Future iterations will expand with other counter strategies.",
     "image":"tttvscomp.png",
     "link": "http://www.codeskulptor.org/#user37_7yzOJ39UY6_0.py"
-    },
+    }
 
-  {
-    "title":"Head-to-Head Game",
-    "date":"01/25/2015",
-    "content":"A guessing game where the players try to guess their friends preferences on random topics.  People enjoyed playing this game, and I want to rebuild it using a modern JavaScript framework like the React ecosystem",
-    "image":"h2h.png",
-    "link": "http://head2head2.herokuapp.com/"
-    }];
+  // {
+  //   "title":"Head-to-Head Game",
+  //   "date":"01/25/2015",
+  //   "content":"A guessing game where the players try to guess their friends preferences on random topics.  People enjoyed playing this game, and I want to rebuild it using a modern JavaScript framework like the React ecosystem",
+  //   "image":"h2h.png",
+  //   "link": "http://head2head2.herokuapp.com/"
+  //   }
+
+    ];
 
 
 	content = 	"";

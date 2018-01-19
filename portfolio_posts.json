@@ -5,6 +5,13 @@
     "image":"cancer-thumb.png",
     "link": "https://cancerresearchideas.cancer.gov/"
     },
+{
+    "title":"National Cancer Institute Community Design",
+    "date":"03/22/2015",
+    "content":"Front end project for IdeaScale for the Vice President's Cancer Research initiative.  Bootstrap, LESS.",
+    "image":"cancer-thumb.png",
+    "link": "https://cancerresearchideas.cancer.gov/"
+    },
  {
     "title":"TubeTube: Perfectly Timed Videos for Your Journey",
     "date":"03/22/2015",
@@ -29,10 +36,10 @@
     "link": "http://www.codeskulptor.org/#user37_7yzOJ39UY6_0.py"
     },
 
-  {
-    "title":"Head to Head! Game",
-    "date":"01/25/2015",
-    "content":"A guessing game where the players try to guess their friends preferences on random topics.",
-    "image":"h2h.png",
-    "link": "http://head2head2.herokuapp.com/"
-    },
+  // {
+  //   "title":"Head to Head! Game",
+  //   "date":"01/25/2015",
+  //   "content":"A guessing game where the players try to guess their friends preferences on random topics.",
+  //   "image":"h2h.png",
+  //   "link": "http://head2head2.herokuapp.com/"
+  //   },
