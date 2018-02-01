@@ -1,14 +1,19 @@
 views.home = function(){
 	content = 	`
 
- 	<!-- <img class="img-responsive impossible" src="img/expanding-box.gif" alt="impossible figure"/> -->
+ 	<div class="row">
+ 		<div class="col-md-9 col-md-offset-3">
+ 		<h3><strong>Intro to Web Dev Course</strong></h3>
+ 		<p>Hi everybody.  I\'m excited to announce I\'ll be teaching an introductory web development course at the Berkeley Public Library, every Saturday starting in March.  The class is 10 weeks long and covers HTML, CSS and JavaScript.  Find out more <a href="https://www.berkeleypubliclibrary.org/events/introduction-web-development-centralec" target="_blank">here.</a></p>
+ 		<hr />
+ 		</div>
+ 	</div>
 
 	<div class="row">
 		<div class="col-lg-3">
 			<img class="img-responsive impossible" src="img/impossible2.png" alt="impossible figure"/>
 		</div>	
 		<div class="col-md-9">
-			<h3>Hi!</h3>
 				<p>Here are some unsolicited tips on living a better life:</p>
 				<ul>
 					<li>Drive less and walk more</li>

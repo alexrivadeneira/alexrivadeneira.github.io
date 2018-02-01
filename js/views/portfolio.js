@@ -8,9 +8,9 @@ views.portfolio = function(){
     "link": "http://foodquiz.herokuapp.com"
     },
     {
-    "title":"National Cancer Institute Community Design Implementation",
+    "title":"National Cancer Research Community Skin",
     "date":"03/22/2015",
-    "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Built to client's design specifications.  Bootstrap, LESS.",
+    "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Implemented front-end to client's design specifications.  Bootstrap, LESS. Note: this page is currently archived. It looks like some CSS bugs have been introduced during archiving.",
     "image":"cancer.png",
     "link": "https://cancerresearchideas.cancer.gov/"
     },
