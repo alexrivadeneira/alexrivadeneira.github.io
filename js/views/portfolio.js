@@ -10,7 +10,7 @@ views.portfolio = function(){
     {
     "title":"National Cancer Research Community Skin",
     "date":"03/22/2015",
-    "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Implemented front-end to client's design specifications.  Bootstrap, LESS. Note: this page is currently archived. It looks like some CSS bugs have been introduced during archiving.",
+    "content":"Front end project for IdeaScale for Vice President Biden's cancer research initiative.  Implemented to client's design specifications.  Bootstrap, LESS. Note: this page is currently archived. It looks like some CSS bugs have been introduced during archiving.",
     "image":"cancer.png",
     "link": "https://cancerresearchideas.cancer.gov/"
     },
