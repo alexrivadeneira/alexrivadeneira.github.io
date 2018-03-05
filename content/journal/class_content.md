@@ -10,6 +10,7 @@ Students should be able to...
 ### Students will build:
 * Weeks 1-2: "About Me Website" - A static website hosted on the local hard drive.
 Skills: HTML structure, images, links, CSS styles
+
 * Weeks 3-4: "Higher/Lower Number Guessing Game" - The computer generates a random number in some range, and the user inputs numbers until they can guess the number.  To help the user, the computer tells the user if their guess is higher or lower than the hidden number. 
 Skills: JavaScript variables, expressions, conditionals 
 * Weeks 5-6: "JavaScript Stopwatch" - A game that tests the user's reflexes to see how quickly they can stop and start a stopwatch. 
