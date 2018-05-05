@@ -3,7 +3,7 @@ views.portfolio = function(){
     {
     "title":"Battleships in React",
     "date":"05/01/2018",
-    "content":"Batlleships game in React! Single player game against the computer opponent. The computer has a basic level of intelligence.  I want to continue to tweak the computer's targeting algorithm.",
+    "content":"Battleships game in React! Single player game against the computer opponent. The computer has a basic level of intelligence.  I want to continue to tweak the computer's targeting algorithm.",
     "image":"react-bs.png",
     "link": "https://reactbship.herokuapp.com"
     },  
