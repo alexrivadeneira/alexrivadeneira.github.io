@@ -1,8 +1,15 @@
 views.portfolio = function(){
 	var items = [  
     {
+    "title":"Battleships in React",
+    "date":"05/01/2018",
+    "content":"Batlleships game in React! Single player game against the computer opponent. The computer has a basic level of intelligence.  I want to continue to tweak the computer's targeting algorithm.",
+    "image":"react-bs.png",
+    "link": "https://reactbship.herokuapp.com"
+    },  
+    {
     "title":"Nutrition Facts Quiz",
-    "date":"03/22/2015",
+    "date":"03/22/2017",
     "content":"Do you know how much sodium is in that hotdog?  Now you can with the Nutrition Facts Quiz! Simple React app using the OpenFoodFacts.org API",
     "image":"food.png",
     "link": "http://foodquiz.herokuapp.com"
