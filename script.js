@@ -2,6 +2,9 @@ renderHome();
 
 function getMainContentNode(){
     let mainContent = document.getElementById('main-content');
+    while(mainContent.firstChild){
+        mainContent.removeChild(mainContent.firstChild);
+    }
 
     return mainContent;
 }
