@@ -71,6 +71,7 @@ function renderHome(){
 }
 
 function renderPortfolio(){
+    // TODO: Remove this hard coded html
     let mainContent = getMainContentNode();
 
     const portfolioPostHtmlCollection = portfolioPosts.map(post => {
@@ -90,9 +91,8 @@ function renderPortfolio(){
 }
 
 function renderJournal(){
+    // TODO: Remove html strings
 let mainContent = getMainContentNode();
-// mainContent.appendChild(document.createElement('h2').appendChild(document.createTextNode('himmmm')));
-
 
     const journalPostHtmlCollection = journalPosts.map(post => {
         return `
