@@ -23,9 +23,8 @@ function renderHome(){
         let postDateText = document.createTextNode(`${post.date}`);
         postDate.appendChild(postDateText);
 
-        let postContent = document.createElement('p');
-        let postContentText = document.createTextNode(`${post.content}`);
-        postContent.appendChild(postContentText);
+        let postContent = document.createElement('div');
+        postContent.innerHTML += post.content;
 
         newPost.appendChild(postTitle);
         newPost.appendChild(postDate);
