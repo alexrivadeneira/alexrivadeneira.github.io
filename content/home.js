@@ -1,5 +1,17 @@
 const homePosts = [
 {
+    title: "Clock",
+    date: "06/09/2018",
+    content: `
+    <div id='clock' >
+        <div id='minute-hand'></div>
+        <div id='hour-hand'></div>
+        <div id='second-hand'></div>
+        <div id='center'></div>
+    </div>
+    `,
+},
+{
     "title":"Experimenting with CSS Animations",
     "date":"05/30/2018",
     "content":`<p>CSS animations let us create some really impressive effects using only CSS (no Flash or JavaScript!) I've been experimenting with them to add a little life to my blog. For those of you who want to learn more about getting started with CSS animations, here's a simple guide.  </p>
