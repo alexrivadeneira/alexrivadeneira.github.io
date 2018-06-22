@@ -7,6 +7,20 @@ const portfolioPosts = [
 "link": "https://reactbship.herokuapp.com"
 },  
 {
+"title":"Monte Carlo Tic Tac Toe",
+"date":"06/21/2018",
+"content":"Tic Tac Toe using Monte Carlo methods to create computer player.",
+"image":"MonteCarloTicTacToe.png",
+"link": "./monte-carlo-tic-tac-toe/index.html"
+},  
+{
+"title":"Nutrition Facts Quiz",
+"date":"03/22/2017",
+"content":"Do you know how much sodium is in that hotdog?  Now you can with the Nutrition Facts Quiz! Simple React app using the OpenFoodFacts.org API",
+"image":"food.png",
+"link": "http://foodquiz.herokuapp.com"
+},
+{
 "title":"Nutrition Facts Quiz",
 "date":"03/22/2017",
 "content":"Do you know how much sodium is in that hotdog?  Now you can with the Nutrition Facts Quiz! Simple React app using the OpenFoodFacts.org API",

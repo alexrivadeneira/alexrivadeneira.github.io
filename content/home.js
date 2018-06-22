@@ -1,5 +1,16 @@
 const homePosts = [
 {
+    title: "Monte Carlo Tic Tac Toe",
+    date: "06/21/2018",
+    content: `
+   <a href='./monte-carlo-tic-tac-toe/index.html'><img style='width: 300px;' src='img/MonteCarloTicTacToe.png' alt='Monte Carlo Tic Tac Toe'/></a>
+   <p>Tic Tac Toe game with computer player making decision about where to move next using Monte Carlo method.</p>
+   <p>Each time it's the computer's turn, the computer looks at each open space and plays out a number of random games from that space.  It keeps track of how many games it wins and loses in each spot, and then makes a choice on where to go based on which spot resulted in getting to the most won games.</p>
+   <p>The hint feature works similarly for the human player: hover over 'Hint?' and you'll see a hit on where to make your next move.  Again, I'm running a bunch of hypothical random games to make the determination of which cells to highlight.  The hint feature is a little buggy, but works well enough for now.</p>
+   <p>You can see my code on Github: <a href='https://github.com/alexrivadeneira/monte-carlo-tic-tac-toe' target='_blank'>Monte Carlo Method Tic Tac Toe</a> and read more about using Monte Carlo Methods <a href='https://en.wikipedia.org/wiki/Monte_Carlo_method' target='_blank'>here.</a></p>
+    `,
+},  
+{
     title: "Clock",
     date: "06/09/2018",
     content: `
