@@ -4,9 +4,10 @@ const homePosts = [
     date: "06/21/2018",
     content: `
    <a href='./monte-carlo-tic-tac-toe/index.html'><img style='width: 300px;' src='img/MonteCarloTicTacToe.png' alt='Monte Carlo Tic Tac Toe'/></a>
-   <p>I built Tic Tac Toe using a Monte Carlo Method algorithm to build the computer opponent AI.</p>
-   <p>Each time it's the computer's turn, in the background, the computer plays a number of hypothetical games.  Specifically, for each open spot, the computer makes a new board in memory and moves to that spot.  It then simulates finishing the game by placing random Xs and Os on the board to complete the game after moving to that spot. It keeps track of how many games it has won and lost from each position, and then chooses its next spot based on the position that resulted in the highest frequency of won games.</p>
-   <p>The hint feature for the human player uses the same agorithm: hover over 'Hint?' and you'll see the board highlight what's its determined to be the best and worst possible moves for you to make based on a number of simulations.  The hint feature is a little buggy, but works well enough for now.</p>
+   <p>I built Tic Tac Toe, using a Monte Carlo Method algorithm to design the computer opponent AI.</p>
+   <p>Each time it's the computer's turn, the computer runs a number of simulated games from every possible position.  Specifically, for each open spot, the computer makes a new board in memory and moves to that spot.  It then simulates finishing the game by placing random Xs and Os on the board to complete the game after moving to that spot, and it repeats that same process for each open space multiple times (in this case, 50 times per space).  It keeps track of how many games it has won and lost from each position, and then chooses its next spot based on the position that resulted in the highest frequency of won games.</p>
+   <p>The hint feature for the human player uses the same agorithm: hover over 'Hint?' and you'll see the board highlight what's its determined to be the best and worst possible moves for you to make based on a number of simulations.  The hint feature is a little buggy at the moment.</p>
+   <p>Unit tests written using Jasmine.</p>
    <p>You can see my code on Github: <a href='https://github.com/alexrivadeneira/monte-carlo-tic-tac-toe' target='_blank'>Monte Carlo Method Tic Tac Toe</a> and read more about using Monte Carlo Methods <a href='https://en.wikipedia.org/wiki/Monte_Carlo_method' target='_blank'>here.</a></p>
     `,
 },  
