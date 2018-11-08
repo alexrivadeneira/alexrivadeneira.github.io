@@ -15,31 +15,18 @@ body{
     overflow: hidden;
     height: 70px;
     animation: move-stars infinite 15s;
-}
-
-@keyframes move-stars{
-    0%{background-position-x: 0px;} 
-    5%{background-position-x: 10px;}
-    15%{background-position-x: 35px;}
-    30%{background-position-y: -3px;}
-    40%{background-position-x: -10px;}
-    50%{background-position-x: -35px;}
-    80%{background-position-y: 3px;}
-    100%{background-position-x: 0px;}
+    display: flex;
+    padding-left: 15px;
 }
 
 #header h1{
     font-size: 30px;
-    margin-left: 15px;
-    float: left;
-    display: inline;
 }
 
 #cursor{
     width: 18px;
     height: 25px;
     background: #fff;
-    float: left;
     margin-left: 8px;
     margin-right: 10px;
     margin-top: 23px;
@@ -52,6 +39,8 @@ body{
 }
 
 .post{
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     border: 1px solid #000;
     padding-top: 0px;
@@ -60,26 +49,19 @@ body{
     box-shadow: 3px 5px 0px #000;
     transition: ease .2s;
     margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.post img{
-    float: right;
-    width: 60%;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    margin-top: 15px;
 }
 
 .post h2{
     font-family: 'Courier New', 'Courier';
+    margin-bottom: 0;
 }
 
-.post:hover{
-    box-shadow: 2px 3px 0px #000;
-    margin-top: 20px;
-    margin-left: 20px;
+.post h4{
+    margin-top: 0;
+}
+
+.post img{
+    max-width: 30%;
 }
 
 .post .label{
@@ -88,7 +70,6 @@ body{
     width: 150px;
     padding: 5px;
     background: yellow;
-    display: block;
     cursor: pointer;
 }
 
@@ -120,10 +101,6 @@ body{
     background:yellow;
 }
 
-#page-content{
-    width: 75%;
-    margin: 0 auto;
-}
 
 .btn-show-more{
     text-decoration: none;
@@ -135,7 +112,6 @@ body{
     min-width: 105px;
     border: 1px solid #000; 
     cursor: pointer;
-    display: inline-block;
     font-family: 'Courier New', 'Courier';
     font-weight: 900;   
 }
@@ -193,4 +169,16 @@ body{
     top: 73px;
     left: 73px;
     border-radius: 100%;
+}
+
+
+@keyframes move-stars{
+    0%{background-position-x: 0px;} 
+    5%{background-position-x: 10px;}
+    15%{background-position-x: 35px;}
+    30%{background-position-y: -3px;}
+    40%{background-position-x: -10px;}
+    50%{background-position-x: -35px;}
+    80%{background-position-y: 3px;}
+    100%{background-position-x: 0px;}
 }

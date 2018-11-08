@@ -107,7 +107,7 @@ const homePosts = [
 {
     "title":"Refresh!",
     "date":"05/23/2018",
-    "content":"I've refreshed the look of my homepage a bit; mostly simplifying it. I like writing 'plain Jane' vanilla JavaScript without libraries or frameworks, so I'm going to continue to experiment with enhancing the structure of this website in the same way.  So far, I'm storing all of my static content in JavaScript objects and have written a few functions to update what renders based on where the user navigates. I would like to build my own Markdown processor to make updating the site even easier, although ES6 string literals help with complex text content stored as a JavaScript object value.",
+    "content":"I've refreshed the look of my homepage a bit; mostly simplifying it. I like writing 'plain' vanilla JavaScript without libraries or frameworks, so I'm going to continue to experiment with enhancing the structure of this website in the same way.  So far, I'm storing all of my static content in JavaScript objects and have written a few functions to update what renders based on where the user navigates. I would like to build my own Markdown processor to make updating the site even easier, although ES6 string literals help with complex text content stored as a JavaScript object value.",
     "image":"img/principalsoffice.png",
     "link": "https://reactbship.herokuapp.com"
     },     

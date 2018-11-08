@@ -8,10 +8,13 @@
     color: #000;
     text-align: center;
     font-family: sans-serif;
+
 }
+
 
 #board{
     width: 370px;
     margin: 0 auto;
     margin-top: 50px;
+
 }
