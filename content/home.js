@@ -1,5 +1,12 @@
 const homePosts = [
 {
+    title: "New Class",
+    date: "11/07/2018",
+    content: `
+    <a href='content/programming-js-berkeley-library.png' target='_blank'><img src='content/programming-js-berkeley-library.png' alt='JS programming class' /><a/> <p>New class! Come learn JavaScript programming at the Berkeley Public Library - South Branch this winter!</p>
+    `,
+},
+{
     title: "Monte Carlo Tic Tac Toe",
     date: "06/21/2018",
     content: `
