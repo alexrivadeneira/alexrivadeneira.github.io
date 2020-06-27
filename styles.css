@@ -23,7 +23,7 @@ header {
     background: rgb(255,255,255);
     background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
     /*background: radial-gradient(circle at right bottom, rgba(6,0,106,1) 1%, rgba(154,164,192,1) 73%, rgba(255,255,255,1) 100%);*/
-    padding: 0px;
+    padding: 15px;
 }
 
 @media(max-width: 680px){
@@ -151,11 +151,25 @@ section.-dark ul{
     list-style-type: none;
 }
 
+.img-float-left{
+  float: left;
+}
 
+.img-max-width-40{
+  max-width: 40%;
+}
 
+@media(max-width: 680px){
+  .img-max-width-40{
+  max-width: 100%;
+  }
+}
 
+.img-treatment{
+  padding: 5px;
+  margin: 15px;
+}
 
-
-
-
-
+.-dark .img-treatment{
+  border: 1px solid #fff;
+}
