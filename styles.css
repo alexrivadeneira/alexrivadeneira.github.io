@@ -144,12 +144,23 @@ section.-dark h2{
     padding-left: 15px;
 }
 
+
 section.-dark ul{
     font-family: "Merriweather", Sans-serif;
     font-size: 20px;
     font-weight: 100;
     line-height: 1.8em;
     list-style-type: none;
+}
+
+@media(max-width: 680px){
+  section.-dark h2, section.-light h2{
+    font-size: 45px;
+  }
+
+  section ul, li, p{
+    font-size: 17px;
+  }
 }
 
 .img-float-left{
@@ -177,4 +188,8 @@ section.-dark ul{
 
 .-dark .img-treatment{
   border: 1px solid #fff;
+}
+
+.-bold-font{
+  font-family: 'Montserrat', sans-serif;
 }
