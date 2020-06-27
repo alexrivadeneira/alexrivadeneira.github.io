@@ -1,0 +1,159 @@
+.announcement{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bc2125;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    top: 35px;
+    position: relative;
+    height: 650px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+    /*background: radial-gradient(circle at right bottom, rgba(6,0,106,1) 1%, rgba(154,164,192,1) 73%, rgba(255,255,255,1) 100%);*/
+    padding: 0px;
+}
+
+@media(max-width: 680px){
+    header {
+        height: 450px;
+    }
+}
+
+.hero--ben-profile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media(max-width: 680px){
+    .hero--ben-profile{
+        width: 75%;
+    }
+}
+
+.hero--logo{
+    width: 350px;
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    left: 0px;
+    transform: rotate(15deg);
+    animation: drive 3s forwards;
+}
+
+@keyframes drive{
+    0%   {
+        left: -500px;
+    }
+    50%   {
+        left: 300px;
+    }
+    100%   {
+        top: 0px;
+        left: 0px;
+        /*width: 350px;*/
+        transform: rotate(0deg);
+    }
+}
+
+.hero--textarea{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+
+
+.hero--textarea h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    line-height: .35;
+    color: #fff;
+    transition: .5s ease-in-out;
+
+}
+
+.hero--textarea h1:hover{
+
+    transform: translateY(-10px) scale(1.02);
+    color: #bc2125;
+
+}
+
+@media(max-width: 680px){
+    .hero--textarea h1, h2{
+        font-size: 35px;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+section{
+    padding: 15px;
+}
+
+section.-light h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #099cff;
+    border-left: 10px solid #bc2125;
+    padding-left: 15px;
+}
+
+section.-light{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+section.-light ul{
+    font-weight: 100;
+    line-height: 1.8em;
+    list-style-type: none;
+}
+
+section.-dark{
+    background: #17065b;
+    color: #fff;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+}
+
+section.-dark h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    border-left: 10px solid #bc2125;
+    padding-left: 15px;
+}
+
+section.-dark ul{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.8em;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
