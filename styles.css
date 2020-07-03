@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .announcement{
     height: 45px;
     display: flex;
@@ -85,6 +89,10 @@ header {
     color: #fff;
     transition: .5s ease-in-out;
 
+}
+
+.hero--textarea a{
+  text-decoration: none;
 }
 
 .hero--textarea h1:hover{
