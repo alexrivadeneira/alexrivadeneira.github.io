@@ -108,6 +108,11 @@ section{
     padding: 15px;
 }
 
+section p a{
+  color: #fff;
+  font-weight: 900;
+}
+
 section.-light h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
