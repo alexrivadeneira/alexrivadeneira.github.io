@@ -191,6 +191,14 @@ section.-dark ul{
   margin: 0px 15px 15px 15px;
 }
 
+.-light .img-treatment{
+  border: 1px solid #099cff;
+}
+
+.-light p a{
+  color: #099cff;
+}
+
 .-dark .img-treatment{
   border: 1px solid #fff;
 }
