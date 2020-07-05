@@ -142,6 +142,10 @@ section.-light ul{
     list-style-type: none;
 }
 
+li.check:before {
+  content: '✓ ';
+}
+
 section.-dark{
     background: #17065b;
     color: #fff;
