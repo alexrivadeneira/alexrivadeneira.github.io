@@ -64,7 +64,7 @@ header {
     0%   {
         left: -500px;
     }
-    50%   {
+    60%   {
         left: 300px;
     }
     100%   {
@@ -95,11 +95,13 @@ header {
   text-decoration: none;
 }
 
-.hero--textarea h1:hover{
+@media(hover: hover){
+  .hero--textarea h1:hover{
 
-    transform: translateY(-10px) scale(1.02);
-    color: #bc2125;
+      transform: translateY(-10px) scale(1.02);
+      color: #bc2125;
 
+  }
 }
 
 @media(max-width: 680px){
@@ -138,14 +140,23 @@ section.-light{
 
 section.-light ul{
     font-weight: 100;
-    line-height: 1.8em;
+    padding-left: 15px;
     list-style-type: none;
 }
+
+li.check{
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
 
 li.check:before {
   content: '✓ ';
 }
 
+section ul{
+  padding-bottom: 15px;
+}
 section.-dark{
     background: #17065b;
     color: #fff;
@@ -166,7 +177,7 @@ section.-dark ul{
     font-family: "Merriweather", Sans-serif;
     font-size: 20px;
     font-weight: 100;
-    line-height: 1.8em;
+    padding-left: 15px;
     list-style-type: none;
 }
 
