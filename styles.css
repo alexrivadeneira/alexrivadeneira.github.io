@@ -24,8 +24,12 @@ html {
     margin: 0;
 }
 
+.slogan{
+  text-align: center;
+}
+
 header {
-    top: 45px;
+    /* top: 45px; */
     position: relative;
     height: 650px;
     background: rgb(255,255,255);
@@ -228,4 +232,9 @@ section.-dark ul{
 
 .-bold-font{
   font-family: 'Montserrat', sans-serif;
+}
+
+.legal{
+  text-align: center;
+  font-size: 15px;
 }
