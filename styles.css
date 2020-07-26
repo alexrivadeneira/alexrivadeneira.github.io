@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.max-width{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .announcement{
     height: 45px;
     display: flex;
