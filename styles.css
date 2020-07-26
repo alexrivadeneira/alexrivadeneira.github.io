@@ -13,6 +13,19 @@ html {
   margin: 0 auto;
 }
 
+.max-width-hero{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 650px;
+  position: relative;
+}
+
+@media(max-width: 680px){
+    .max-width-hero {
+        height: 450px;
+    }
+}
+
 .announcement{
     height: 45px;
     display: flex;
@@ -45,7 +58,6 @@ header {
     background: rgb(255,255,255);
     background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
     /*background: radial-gradient(circle at right bottom, rgba(6,0,106,1) 1%, rgba(154,164,192,1) 73%, rgba(255,255,255,1) 100%);*/
-    padding: 15px;
 }
 
 @media(max-width: 680px){
