@@ -262,10 +262,6 @@ section.-dark ul{
   font-family: 'Montserrat', sans-serif;
 }
 
-.legal{
-  text-align: center;
-  font-size: 15px;
-}
 
 .button-wrap{
   display: flex;
@@ -292,4 +288,45 @@ section.-dark ul{
 
 .donate-button:hover{
   background: #9a1a1d;
+}
+
+footer{
+  background: #040111;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+}
+
+.footer-heading{
+  margin-bottom: 7px;
+}
+
+footer svg{
+  fill: #fff;
+}
+
+.contact-icon{
+  width: 45px;
+}
+
+.contact-icon:hover{
+    fill: #b8b8b8;
+}
+
+
+
+.flex-grid{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .flex-grid {
+    display: block;
+  }
 }
