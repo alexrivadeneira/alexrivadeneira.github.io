@@ -96,15 +96,14 @@ header {
 
 @media(max-width: 680px){
     .hero--ben-profile{
-        width: 60%;
+        width: 68%;
     }
 
     .hero .donate-button{
-      font-family: 'Montserrat', sans-serif;
       font-size: 15px;
-      background: #bc2125;
-      color: #fff;
       border: 2px solid #fff;
+      display: block;
+      width: 60%;
     }
 }
 
