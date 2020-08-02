@@ -347,3 +347,13 @@ section.ben-planning-bg{
   height: 600px;
   background-position: 0 0;
 }
+
+@media (max-width: 680px) {
+
+  section.ben-planning-bg{
+    background-position-x: 700px;
+  }
+  .flex-grid {
+    display: block;
+  }
+}
