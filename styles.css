@@ -33,7 +33,7 @@ html {
     align-items: center;
     justify-content: center;
     background: #bc2125;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
     color: #fff;
@@ -80,9 +80,31 @@ header {
     right: 0;
 }
 
+.hero .donate-button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  background: #bc2125;
+  color: #fff;
+  border: 3px solid #fff;
+
+}
+
+.hero .donate-button.-secondary{
+  background: none;
+  color: #fff;
+}
+
 @media(max-width: 680px){
     .hero--ben-profile{
-        width: 75%;
+        width: 60%;
+    }
+
+    .hero .donate-button{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      background: #bc2125;
+      color: #fff;
+      border: 2px solid #fff;
     }
 }
 
@@ -118,7 +140,7 @@ header {
 
 .hero--textarea h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
+    font-size: 65px;
     line-height: .35;
     color: #fff;
     transition: .5s ease-in-out;
