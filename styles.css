@@ -357,3 +357,27 @@ section.ben-planning-bg{
     display: block;
   }
 }
+
+
+#wrapper {
+  width:150px; /* width of viewport in your case 100% */
+  height:500px; /* height of viewport in your case 100% */
+  overflow:hidden;
+  margin:10px 0 0 0;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  /* border:1px solid #777; */
+  /*position:fixed;*/
+}
+
+#map {
+  position:relative; /* what #map img is relative to */
+}
+
+#map img{
+  position:absolute; /* need this to make dragging easy */
+  top:0;
+  left:0;
+  border:0 none transparent;
+}
