@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900;300&display=swap');
 
 *{
   box-sizing: border-box;
@@ -36,6 +37,7 @@ html {
     top: 0px;
     width: 100%;
     color: #fff;
+    font-weight: 900;
     padding: 5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -262,11 +264,18 @@ section.-dark ul{
   font-family: 'Montserrat', sans-serif;
 }
 
-
+section.-dark .button-wrap h2{
+  border-left: none;
+  padding-left: 0;
+}
 .button-wrap{
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(188, 33, 37, .7);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .donate-button{
@@ -280,14 +289,15 @@ section.-dark ul{
   flex-shrink: 1;
   margin: 5px;
   padding: 0.5rem 1rem;
-  background: #bc2125;
+  background: #fff;
   flex-basis: 200px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .donate-button:hover{
-  background: #9a1a1d;
+  background: #b8b8b8;
 }
 
 footer{
@@ -329,4 +339,11 @@ footer svg{
   .flex-grid {
     display: block;
   }
+}
+
+section.ben-planning-bg{
+  background-image: url("ben_planning.jpg");
+  background-size: cover;
+  height: 600px;
+  background-position: 0 0;
 }
