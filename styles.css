@@ -43,7 +43,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 25px;
-    z-index: 3002;
+    z-index: 3open002;
 }
 
 section.meet p{
@@ -410,4 +410,19 @@ section.ben-planning-bg{
   z-index: 2001;
   border-top: 2px solid #b8b8b8;
   border-right: 2px solid #b8b8b8;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input-wrapper input{
+  width: 300px;
+  border: 2px solid #e0e6e8;
+  border-radius: 3px;
+  padding: 0 0 0 16px;
+  height: 50px;
+  transition: border .15s;
 }
