@@ -114,27 +114,29 @@
         <div class="max-width">
           <h2>Get involved</h2>
           <form id="contact-form" class="form-wrapper">
+
               <label>Name *</label>
               <div class="form-input-wrapper">
                 <input type="text" name="name" required>
               </div>
+
               <label>Email *</label>
               <div class="form-input-wrapper">
                 <input type="text" name="email" required>
               </div>
+
               <label>Phone</label>
               <div class="form-input-wrapper">
                 <input type="text" name="phone">
               </div>
+
               <label>City</label>
               <div class="form-input-wrapper">
                 <input type="text" name="city">
               </div>
+
               <label>How would you like to volunteer?</label>
-
-              <div class="form-input-wrapper">
-
-
+              <div class="form-select-wrapper">
                 <div>
                   <input type="checkbox" id="make-calls" name="make-calls">
                   <label for="make-calls">Make Calls</label>
@@ -169,13 +171,13 @@
                   <input type="checkbox" id="text-messaging" name="text-messaging">
                   <label for="text-messaging">Text Messaging</label>
                 </div>
-
               </div>
+
               <label>Make a comment</label>
               <div class="form-input-wrapper">
-                <input type="text" name="comment">
+                <input type="textarea" rows="3" name="comment" class="form-comment">
               </div>
-              <input type="submit" value="Send">
+              <input type="submit" value="Submit" class="submit-button">
           </form>
       </div>
     </section>
