@@ -8,3 +8,17 @@ Draggable.create("#map img", {
 	   edgeResistance:0.5,
      intertia: true,
 });
+
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+var inputActivities = document.querySelector('input[name="activity"]');
+
+checkboxes.forEach(function(checkbox){
+  checkbox.addEventListener('click', function(event){
+    inputActivities.value = '';
+    checkboxes.forEach(function(checkbox){
+      if(checkbox.checked === true){
+        inputActivities = checkbox.name + "; "
+      }
+    })
+  })
+})
