@@ -17,7 +17,7 @@ checkboxes.forEach(function(checkbox){
     inputActivities.value = '';
     checkboxes.forEach(function(checkbox){
       if(checkbox.checked === true){
-        inputActivities = checkbox.name + "; "
+        inputActivities.value += checkbox.name + "; "
       }
     })
   })
