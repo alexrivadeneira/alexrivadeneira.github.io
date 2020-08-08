@@ -23,8 +23,17 @@
             event.preventDefault();
             // generate the contact number value
             // this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('contact_service', 'contact_form', this);
+
+            // emailjs.sendForm('contact_service', 'contact_form', this);
+            showThankYouMessageForGetInvolvedForm();
         });
+    }
+
+    function showThankYouMessageForGetInvolvedForm(){
+      var getInvolvedFormWrapper = document.querySelector('.form-wrapper');
+      getInvolvedFormWrapper.innerHTML = `
+        <p>Thanks for your submission!</p>
+      `;
     }
 </script>
 
@@ -140,7 +149,7 @@
 
               <label>Email *</label>
               <div class="form-input-wrapper">
-                <input type="text" name="email" required>
+                <input type="text" name="email" required >
               </div>
 
               <label>Phone</label>
