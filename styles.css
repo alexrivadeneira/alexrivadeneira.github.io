@@ -538,6 +538,9 @@ section.ben-planning-bg{
   .max-width.platform{
     grid-template-columns: 100%;
   }
+  .max-width.platform{
+    padding: 0;
+  }
 }
 
 .platform-wrapper{
