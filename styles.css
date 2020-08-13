@@ -531,7 +531,7 @@ section.ben-planning-bg{
 .max-width.platform{
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  padding: 15px;
+  padding: 0 15px 0 15px;
 }
 
 @media(max-width: 680px){
@@ -544,5 +544,5 @@ section.ben-planning-bg{
 }
 
 .platform-wrapper{
-  padding: 15px;
+  padding: 0 15px 0 15px;
 }
