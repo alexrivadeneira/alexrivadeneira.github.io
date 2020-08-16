@@ -9,6 +9,51 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+}
+
+section {
+  padding: 15px;
+  font-family: "Merriweather", Sans-serif;
+}
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+section ul {
+  font-weight: 100;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  list-style-type: none;
+}
+section.-light {
+  font-size: 20px;
+  color: #7a7a7a;
+}
+section.-light p a {
+  color: #fff;
+  font-weight: 900;
+}
+section.-light h2 {
+  color: #099cff;
+  border-left: 10px solid #bc2125;
+}
+section.-dark {
+  background: #17065b;
+  color: #fff;
+  font-size: 20px;
+}
+section.-dark p a {
+  color: #fff;
+  font-weight: 900;
+}
+section.-dark h2 {
+  border-left: 10px solid #bc2125;
+}
+
 .max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,14 +112,13 @@ nav.hero-nav a:hover {
   font-size: 25px;
   z-index: 3001;
 }
-
-section.meet p {
-  line-height: 1.8em;
-}
-
 .announcement a {
   text-decoration: none;
   color: #fff;
+}
+
+section.meet p {
+  line-height: 1.8em;
 }
 
 .slogan {
@@ -94,12 +138,6 @@ header {
     height: 450px;
   }
 }
-.hero--ben-profile {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .hero .donate-button {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -107,10 +145,21 @@ header {
   color: #fff;
   border: 3px solid #fff;
 }
-
 .hero .donate-button.-secondary {
   background: none;
   color: #fff;
+}
+.hero .hero--logo {
+  width: 350px;
+  position: absolute;
+  left: -300px;
+  transform: rotate(15deg);
+  animation: drive 3s forwards;
+}
+.hero .hero--ben-profile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 680px) {
@@ -125,14 +174,6 @@ header {
     width: 45%;
   }
 }
-.hero--logo {
-  width: 350px;
-  position: absolute;
-  left: -300px;
-  transform: rotate(15deg);
-  animation: drive 3s forwards;
-}
-
 @keyframes drive {
   0% {
     left: -500px;
@@ -175,39 +216,6 @@ header {
     font-size: 35px;
   }
 }
-body {
-  margin: 0;
-}
-
-section {
-  padding: 15px;
-}
-section p a {
-  color: #fff;
-  font-weight: 900;
-}
-
-section.-light h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  text-transform: uppercase;
-  color: #099cff;
-  border-left: 10px solid #bc2125;
-  padding-left: 15px;
-}
-
-section.-light {
-  font-family: "Merriweather", Sans-serif;
-  font-size: 20px;
-  color: #7a7a7a;
-}
-
-section.-light ul {
-  font-weight: 100;
-  padding-left: 15px;
-  list-style-type: none;
-}
-
 li.check {
   padding-bottom: 7px;
   padding-top: 7px;
@@ -217,33 +225,6 @@ li.check:before {
   content: "✓ ";
 }
 
-section ul {
-  padding-bottom: 15px;
-}
-
-section.-dark {
-  background: #17065b;
-  color: #fff;
-  font-family: "Merriweather", Sans-serif;
-  font-size: 20px;
-}
-
-section.-dark h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  text-transform: uppercase;
-  border-left: 10px solid #bc2125;
-  padding-left: 15px;
-}
-
-section.-dark ul {
-  font-family: "Merriweather", Sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  padding-left: 15px;
-  list-style-type: none;
-}
-
 @media (max-width: 680px) {
   section.-dark h2, section.-light h2 {
     font-size: 45px;
@@ -251,19 +232,6 @@ section.-dark ul {
 
   section ul, li, p {
     font-size: 17px;
-  }
-}
-.img-float-left {
-  float: left;
-}
-
-.img-max-width-40 {
-  max-width: 40%;
-}
-
-@media (max-width: 680px) {
-  .img-max-width-40 {
-    max-width: 95%;
   }
 }
 .-light-blue {

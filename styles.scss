@@ -5,6 +5,7 @@ $color-red: #bc2125;
 $color-blue-light: #099cff;
 $color-white: #fff;
 $color-gray: #7a7a7a;
+$color-dark-blue: #17065b;
 
 *{
   box-sizing: border-box;
@@ -12,6 +13,60 @@ $color-gray: #7a7a7a;
 
 html {
   scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+}
+
+section{
+  padding: 15px;
+  font-family: "Merriweather", Sans-serif;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+
+  ul {
+    font-weight: 100;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+  }
+
+  &.-light{
+    font-size: 20px;
+    color: $color-gray;
+
+    p a{
+      color: $color-white;
+      font-weight: 900;
+    }
+
+    h2{
+      color: $color-blue-light;
+      border-left: 10px solid $color-red;
+    }
+  }
+
+  &.-dark{
+    background: $color-dark-blue;
+    color: $color-white;
+    font-size: 20px;
+
+    p a{
+      color: $color-white;
+      font-weight: 900;
+    }
+
+    h2{
+      border-left: 10px solid $color-red;
+    }
+  }
 }
 
 .max-width{
@@ -44,7 +99,6 @@ nav.hero-nav{
   }
 }
 
-
 nav.hero-nav a{
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -58,31 +112,31 @@ nav.hero-nav a:hover{
 }
 
 .announcement{
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $color-red;
-    position: fixed;
-    top: 0px;
-    width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-red;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  color: $color-white;
+  font-weight: 900;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 25px;
+  z-index: 3001;
+
+  a{
+    text-decoration: none;
     color: $color-white;
-    font-weight: 900;
-    padding: 5px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    font-size: 25px;
-    z-index: 3001;
+  }
 }
 
 section.meet p{
   line-height: 1.8em;
-}
-
-.announcement a{
-  text-decoration: none;
-  color: $color-white;
 }
 
 .slogan{
@@ -103,25 +157,36 @@ header {
     }
 }
 
-.hero--ben-profile{
+
+
+
+.hero{
+  .donate-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    background: $color-red;
+    color: $color-white;
+    border: 3px solid $color-white;
+    &.-secondary{
+      background: none;
+      color: $color-white;
+    }
+  }
+  .hero--logo{
+    width: 350px;
+    position: absolute;
+    left: -300px;
+    transform: rotate(15deg);
+    animation: drive 3s forwards;
+  }
+  .hero--ben-profile{
     position: absolute;
     bottom: 0;
     right: 0;
+  }
 }
 
-.hero .donate-button{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  background: $color-red;
-  color: $color-white;
-  border: 3px solid $color-white;
 
-}
-
-.hero .donate-button.-secondary{
-  background: none;
-  color: $color-white;
-}
 
 @media(max-width: 680px){
     .hero--ben-profile{
@@ -136,43 +201,35 @@ header {
     }
 }
 
-.hero--logo{
-    width: 350px;
-    position: absolute;
-    left: -300px;
-    transform: rotate(15deg);
-    animation: drive 3s forwards;
-}
 
 @keyframes drive{
-    0%   {
-        left: -500px;
-    }
-    60%   {
-        left: 300px;
-    }
-    100%   {
-        top: 15px;
-        left: 15px;
-        transform: rotate(0deg);
-    }
+  0%   {
+    left: -500px;
+  }
+  60%   {
+    left: 300px;
+  }
+  100%   {
+    top: 15px;
+    left: 15px;
+    transform: rotate(0deg);
+  }
 }
 
 .hero--textarea{
-    position: absolute;
-    bottom: 5px;
-    left: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
 }
 
 
 
 .hero--textarea h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 65px;
-    line-height: .35;
-    color: $color-white;
-    transition: .5s ease-in-out;
-
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  line-height: .35;
+  color: $color-white;
+  transition: .5s ease-in-out;
 }
 
 .hero--textarea a{
@@ -181,52 +238,15 @@ header {
 
 @media(hover: hover){
   .hero--textarea h1:hover{
-
-      transform: translateY(-10px) scale(1.02);
-      color: $color-red;
-
+    transform: translateY(-10px) scale(1.02);
+    color: $color-red;
   }
 }
 
 @media(max-width: 680px){
-    .hero--textarea h1, h2{
-        font-size: 35px;
-    }
-}
-
-body{
-    margin: 0;
-}
-
-section{
-    padding: 15px;
-
-    p a{
-      color: $color-white;
-      font-weight: 900;
-    }
-}
-
-
-section.-light h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
-    color: $color-blue-light;
-    border-left: 10px solid $color-red;
-    padding-left: 15px;
-}
-
-section.-light{
-    font-family: "Merriweather", Sans-serif;
-    font-size: 20px;
-    color: $color-gray;
-}
-
-section.-light ul{
-    font-weight: 100;
-    padding-left: 15px;
-    list-style-type: none;
+  .hero--textarea h1, h2{
+      font-size: 35px;
+  }
 }
 
 li.check{
@@ -239,32 +259,6 @@ li.check:before {
   content: '✓ ';
 }
 
-section ul{
-  padding-bottom: 15px;
-}
-section.-dark{
-    background: #17065b;
-    color: $color-white;
-    font-family: "Merriweather", Sans-serif;
-    font-size: 20px;
-}
-
-section.-dark h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
-    border-left: 10px solid $color-red;
-    padding-left: 15px;
-}
-
-
-section.-dark ul{
-    font-family: "Merriweather", Sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    padding-left: 15px;
-    list-style-type: none;
-}
 
 @media(max-width: 680px){
   section.-dark h2, section.-light h2{
@@ -276,19 +270,6 @@ section.-dark ul{
   }
 }
 
-.img-float-left{
-  float: left;
-}
-
-.img-max-width-40{
-  max-width: 40%;
-}
-
-@media(max-width: 680px){
-  .img-max-width-40{
-  max-width: 95%;
-  }
-}
 
 .-light-blue{
   color: $color-blue-light;
@@ -400,7 +381,6 @@ section.ben-planning-bg{
 }
 
 @media (max-width: 680px) {
-
   section.ben-planning-bg{
     background-position-x: 700px;
   }
@@ -465,7 +445,6 @@ section.ben-planning-bg{
   height: 50px;
   transition: border .15s;
 }
-
 
 .submit-button{
   font-weight: 500;
