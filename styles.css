@@ -54,12 +54,33 @@ header .nav-menu .-donate:hover {
   background-size: cover;
 }
 
+.-light-font {
+  font-weight: 300;
+}
+
+.meet-ben-img {
+  width: 400px;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  transform: rotate(-3deg);
+}
+
+.read-more {
+  float: right;
+  border-radius: 0;
+}
+
+.meet-highlight {
+  font-size: 28px;
+  line-height: 1.3em !important;
+}
+
 .hero .donate-button {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   background: #bc2125;
   color: #fff;
-  border: 3px solid #fff;
 }
 .hero .donate-button.-secondary {
   background: none;
@@ -78,7 +99,6 @@ header .nav-menu .-donate:hover {
 
   .hero .donate-button {
     font-size: 15px;
-    border: 2px solid #fff;
     display: block;
     width: 45%;
   }
@@ -157,7 +177,7 @@ section.-light p a {
 }
 section.-light h2 {
   color: #099cff;
-  border-left: 10px solid #bc2125;
+  border-left: 10px solid #4f4e3b;
 }
 section.-dark {
   background: #17065b;

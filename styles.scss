@@ -72,6 +72,29 @@ header{
   background-size: cover;
 }
 
+.-light-font{
+  font-weight: 300;
+}
+
+
+
+.meet-ben-img{
+  width: 400px;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  transform: rotate(-3deg);
+}
+
+.read-more{
+  float: right;
+  border-radius: 0;
+}
+
+.meet-highlight{
+  font-size: 28px;
+  line-height: 1.3em !important;
+}
 
 .hero{
   .donate-button{
@@ -79,7 +102,6 @@ header{
     font-size: 30px;
     background: $color-red;
     color: $color-white;
-    border: 3px solid $color-white;
     &.-secondary{
       background: none;
       color: $color-white;
@@ -107,7 +129,6 @@ header{
 
   .hero .donate-button{
     font-size: 15px;
-    border: 2px solid $color-white;
     display: block;
     width: 45%;
   }
@@ -197,7 +218,7 @@ section{
 
     h2{
       color: $color-blue-light;
-      border-left: 10px solid $color-red;
+      border-left: 10px solid $color-dark-green;
     }
   }
 
