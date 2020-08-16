@@ -368,6 +368,7 @@ section.ben-planning-bg {
   color: #fff;
   background: #099cff;
   font-size: 30px;
+  z-index: 5001;
 }
 
 .map-expand:hover {
