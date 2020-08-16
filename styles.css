@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap");
 * {
@@ -34,7 +33,7 @@ section.-light {
   color: #7a7a7a;
 }
 section.-light p a {
-  color: #fff;
+  color: #099cff;
   font-weight: 900;
 }
 section.-light h2 {
@@ -76,12 +75,6 @@ nav.hero-nav {
   margin-top: 15px;
   z-index: 4000;
 }
-
-@media (max-width: 680px) {
-  nav.hero-nav {
-    display: none;
-  }
-}
 nav.hero-nav a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -89,9 +82,13 @@ nav.hero-nav a {
   padding: 15px;
   font-weight: 600;
 }
-
 nav.hero-nav a:hover {
   color: #b8b8b8;
+}
+@media (max-width: 680px) {
+  nav.hero-nav {
+    display: none;
+  }
 }
 
 .announcement {
@@ -221,10 +218,6 @@ li.check {
   padding-top: 7px;
 }
 
-li.check:before {
-  content: "✓ ";
-}
-
 @media (max-width: 680px) {
   section.-dark h2, section.-light h2 {
     font-size: 45px;
@@ -236,27 +229,6 @@ li.check:before {
 }
 .-light-blue {
   color: #099cff;
-}
-
-.img-treatment {
-  padding: 7px;
-  margin: 0px 15px 15px 15px;
-}
-
-.-light .img-treatment {
-  border: 1px solid #099cff;
-}
-
-.-light p a {
-  color: #099cff;
-}
-
-.-dark .img-treatment {
-  border: 1px solid #fff;
-}
-
-.-bold-font {
-  font-family: "Montserrat", sans-serif;
 }
 
 section.-dark .button-wrap h2 {
@@ -293,7 +265,7 @@ section.-dark .button-wrap h2 {
 }
 
 .donate-button:hover {
-  background: #b8b8b8;
+  background: #7a7a7a;
 }
 
 footer {
@@ -352,16 +324,12 @@ section.ben-planning-bg {
 }
 #wrapper {
   width: 150px;
-  /* width of viewport in your case 100% */
   height: 500px;
-  /* height of viewport in your case 100% */
   overflow: hidden;
   margin: 10px 0 0 0;
   position: relative;
   width: 100%;
   margin-bottom: 40px;
-  /* border:1px solid #777; */
-  /*position:fixed;*/
 }
 
 #map {

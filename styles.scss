@@ -5,7 +5,12 @@ $color-red: #bc2125;
 $color-blue-light: #099cff;
 $color-white: #fff;
 $color-gray: #7a7a7a;
+$color-dark-gray: #040111;
+$color-light-gray: #b8b8b8;
 $color-dark-blue: #17065b;
+
+$font-headers: 'Montserrat', sans-serif;
+$font-body: 'Merriweather', Sans-serif;
 
 *{
   box-sizing: border-box;
@@ -17,15 +22,15 @@ html {
 
 
 body{
-    margin: 0;
+  margin: 0;
 }
 
 section{
   padding: 15px;
-  font-family: "Merriweather", Sans-serif;
+  font-family: $font-body;
 
   h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-headers;
     font-size: 60px;
     text-transform: uppercase;
     padding-left: 15px;
@@ -43,7 +48,7 @@ section{
     color: $color-gray;
 
     p a{
-      color: $color-white;
+      color: $color-blue-light;
       font-weight: 900;
     }
 
@@ -82,33 +87,36 @@ section{
 }
 
 @media(max-width: 680px){
-    .max-width-hero {
-        height: 450px;
-    }
-}
-
-nav.hero-nav{
-  float: right;
-  margin-top: 15px;
-  z-index: 4000;
-}
-
-@media(max-width: 680px){
-  nav.hero-nav{
-    display: none;
+  .max-width-hero {
+    height: 450px;
   }
 }
 
-nav.hero-nav a{
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  color: $color-white;
-  padding: 15px;
-  font-weight: 600;
-}
+nav{
 
-nav.hero-nav a:hover{
-  color: #b8b8b8;
+  &.hero-nav{
+    float: right;
+    margin-top: 15px;
+    z-index: 4000;
+
+    a{
+      text-decoration: none;
+      font-family: $font-headers;
+      color: $color-white;
+      padding: 15px;
+      font-weight: 600;
+    }
+    a:hover{
+      color: $color-light-gray;
+    }
+  }
+
+  @media(max-width: 680px){
+    &.hero-nav{
+      display: none;
+    }
+  }
+
 }
 
 .announcement{
@@ -124,7 +132,7 @@ nav.hero-nav a:hover{
   font-weight: 900;
   padding: 5px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-headers;
   margin: 0;
   font-size: 25px;
   z-index: 3001;
@@ -144,25 +152,22 @@ section.meet p{
 }
 
 header {
-    top: 45px;
-    position: relative;
-    height: 650px;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+  top: 45px;
+  position: relative;
+  height: 650px;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
 }
 
 @media(max-width: 680px){
-    header {
-        height: 450px;
-    }
+  header {
+    height: 450px;
+  }
 }
-
-
-
 
 .hero{
   .donate-button{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-headers;
     font-size: 30px;
     background: $color-red;
     color: $color-white;
@@ -187,29 +192,27 @@ header {
 }
 
 
-
 @media(max-width: 680px){
-    .hero--ben-profile{
-        width: 68%;
-    }
+  .hero--ben-profile{
+      width: 68%;
+  }
 
-    .hero .donate-button{
-      font-size: 15px;
-      border: 2px solid $color-white;
-      display: block;
-      width: 45%;
-    }
+  .hero .donate-button{
+    font-size: 15px;
+    border: 2px solid $color-white;
+    display: block;
+    width: 45%;
+  }
 }
 
-
 @keyframes drive{
-  0%   {
+  0%{
     left: -500px;
   }
-  60%   {
+  60%{
     left: 300px;
   }
-  100%   {
+  100%{
     top: 15px;
     left: 15px;
     transform: rotate(0deg);
@@ -222,10 +225,8 @@ header {
   left: 15px;
 }
 
-
-
 .hero--textarea h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-headers;
   font-size: 65px;
   line-height: .35;
   color: $color-white;
@@ -254,12 +255,6 @@ li.check{
   padding-top: 7px;
 }
 
-
-li.check:before {
-  content: '✓ ';
-}
-
-
 @media(max-width: 680px){
   section.-dark h2, section.-light h2{
     font-size: 45px;
@@ -270,30 +265,8 @@ li.check:before {
   }
 }
 
-
 .-light-blue{
   color: $color-blue-light;
-}
-
-.img-treatment{
-  padding: 7px;
-  margin: 0px 15px 15px 15px;
-}
-
-.-light .img-treatment{
-  border: 1px solid $color-blue-light;
-}
-
-.-light p a{
-  color: $color-blue-light;
-}
-
-.-dark .img-treatment{
-  border: 1px solid $color-white;
-}
-
-.-bold-font{
-  font-family: 'Montserrat', sans-serif;
 }
 
 section.-dark .button-wrap h2{
@@ -307,7 +280,7 @@ section.-dark .button-wrap h2{
   padding: 30px;
   background: rgba(188, 33, 37, .7);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-headers;
 }
 
 .donate-button{
@@ -329,13 +302,13 @@ section.-dark .button-wrap h2{
 }
 
 .donate-button:hover{
-  background: #b8b8b8;
+  background: $color-gray;
 }
 
 footer{
-  background: #040111;
+  background: $color-dark-gray;
   color: $color-white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-headers;
   padding: 15px;
 }
 
@@ -354,8 +327,6 @@ footer svg{
 .contact-icon:hover{
     fill: $color-gray;
 }
-
-
 
 .flex-grid{
   display: flex;
@@ -389,17 +360,14 @@ section.ben-planning-bg{
   }
 }
 
-
 #wrapper {
-  width:150px; /* width of viewport in your case 100% */
-  height:500px; /* height of viewport in your case 100% */
+  width:150px;
+  height:500px;
   overflow:hidden;
   margin:10px 0 0 0;
   position: relative;
   width: 100%;
   margin-bottom: 40px;
-  /* border:1px solid #777; */
-  /*position:fixed;*/
 }
 
 #map {
@@ -495,7 +463,6 @@ section.ben-planning-bg{
     grid-template-columns: 100%;
   }
 }
-
 
 .max-width.platform{
   display: grid;
