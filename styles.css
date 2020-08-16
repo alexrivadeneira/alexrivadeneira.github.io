@@ -50,7 +50,7 @@ header .nav-menu .-donate:hover {
 .hero-background {
   background: white;
   background: radial-gradient(circle at right bottom, white 1%, #9aa4c0 33%, #06006a 100%);
-  background-image: url("ben-outside.png");
+  background-image: url("ben-outside.jpg");
   background-size: cover;
 }
 
@@ -58,22 +58,30 @@ header .nav-menu .-donate:hover {
   font-weight: 300;
 }
 
-.meet-ben-img {
+.meet .meet-ben-img {
   width: 400px;
   float: left;
   padding-right: 30px;
   padding-bottom: 15px;
   transform: rotate(-3deg);
 }
-
-.read-more {
-  float: right;
+.meet .read-more {
   border-radius: 0;
+  border: 0;
+  font-family: "Merriweather", Sans-serif;
+  font-size: 20px;
+  color: #099cff;
+  cursor: pointer;
+  font-weight: 900;
+  background: #fff;
 }
-
-.meet-highlight {
+.meet .meet-highlight {
   font-size: 28px;
   line-height: 1.3em !important;
+  color: #4f4e3b;
+}
+.meet .read-more:hover {
+  color: #040111;
 }
 
 .hero .donate-button {
@@ -145,6 +153,15 @@ header .nav-menu .-donate:hover {
 }
 .sub-hero-cta .submit_container {
   display: inline !important;
+}
+.sub-hero-cta .cta-text {
+  font-family: "Montserrat", sans-serif;
+  margin-right: 15px;
+}
+.sub-hero-cta input::placeholder {
+  color: #040111;
+  font-size: 10px;
+  font-family: "Merriweather", Sans-serif;
 }
 
 section {
@@ -244,10 +261,6 @@ nav.hero-nav a:hover {
 .announcement a {
   text-decoration: none;
   color: #fff;
-}
-
-section.meet p {
-  line-height: 1.8em;
 }
 
 .slogan {
