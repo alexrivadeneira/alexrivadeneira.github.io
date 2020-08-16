@@ -16,6 +16,10 @@ $font-body: 'Merriweather', Sans-serif;
   box-sizing: border-box;
 }
 
+button{
+  border: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -368,6 +372,8 @@ section.ben-planning-bg{
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+  border: 2px solid $color-light-gray;
+
 }
 
 #map {
@@ -386,8 +392,24 @@ section.ben-planning-bg{
   bottom: 0;
   left: 0;
   z-index: 2001;
-  border-top: 2px solid #b8b8b8;
-  border-right: 2px solid #b8b8b8;
+  border-top: 2px solid $color-light-gray;
+  border-right: 2px solid $color-light-gray;
+  border-top: 2px solid $color-light-gray;
+  border-bottom: 2px solid $color-white;
+}
+
+.map-expand{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $color-white;
+  background: $color-blue-light;
+  font-size: 30px;
+}
+
+.map-expand:hover{
+  background: $color-light-gray;
+  cursor: pointer;
 }
 
 .form-input-wrapper{

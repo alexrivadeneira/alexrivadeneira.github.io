@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+button {
+  border: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -330,6 +334,7 @@ section.ben-planning-bg {
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+  border: 2px solid #b8b8b8;
 }
 
 #map {
@@ -352,6 +357,22 @@ section.ben-planning-bg {
   z-index: 2001;
   border-top: 2px solid #b8b8b8;
   border-right: 2px solid #b8b8b8;
+  border-top: 2px solid #b8b8b8;
+  border-bottom: 2px solid #fff;
+}
+
+.map-expand {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background: #099cff;
+  font-size: 30px;
+}
+
+.map-expand:hover {
+  background: #b8b8b8;
+  cursor: pointer;
 }
 
 .form-input-wrapper {
