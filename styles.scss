@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+$color-red: #bc2125;
+$color-blue-light: #099cff;
+$color-white: #fff;
+$color-gray: #7a7a7a;
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.max-width-hero{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 650px;
+  position: relative;
+}
+
+@media(max-width: 680px){
+    .max-width-hero {
+        height: 450px;
+    }
+}
+
+nav.hero-nav{
+  float: right;
+  margin-top: 15px;
+  z-index: 4000;
+}
+
+@media(max-width: 680px){
+  nav.hero-nav{
+    display: none;
+  }
+}
+
+
+nav.hero-nav a{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-white;
+  padding: 15px;
+  font-weight: 600;
+}
+
+nav.hero-nav a:hover{
+  color: #b8b8b8;
+}
+
+.announcement{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-red;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    color: $color-white;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 25px;
+    z-index: 3001;
+}
+
+section.meet p{
+  line-height: 1.8em;
+}
+
+.announcement a{
+  text-decoration: none;
+  color: $color-white;
+}
+
+.slogan{
+  text-align: center;
+}
+
+header {
+    top: 45px;
+    position: relative;
+    height: 650px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+}
+
+@media(max-width: 680px){
+    header {
+        height: 450px;
+    }
+}
+
+.hero--ben-profile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero .donate-button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  background: $color-red;
+  color: $color-white;
+  border: 3px solid $color-white;
+
+}
+
+.hero .donate-button.-secondary{
+  background: none;
+  color: $color-white;
+}
+
+@media(max-width: 680px){
+    .hero--ben-profile{
+        width: 68%;
+    }
+
+    .hero .donate-button{
+      font-size: 15px;
+      border: 2px solid $color-white;
+      display: block;
+      width: 45%;
+    }
+}
+
+.hero--logo{
+    width: 350px;
+    position: absolute;
+    left: -300px;
+    transform: rotate(15deg);
+    animation: drive 3s forwards;
+}
+
+@keyframes drive{
+    0%   {
+        left: -500px;
+    }
+    60%   {
+        left: 300px;
+    }
+    100%   {
+        top: 15px;
+        left: 15px;
+        transform: rotate(0deg);
+    }
+}
+
+.hero--textarea{
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+
+
+.hero--textarea h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    line-height: .35;
+    color: $color-white;
+    transition: .5s ease-in-out;
+
+}
+
+.hero--textarea a{
+  text-decoration: none;
+}
+
+@media(hover: hover){
+  .hero--textarea h1:hover{
+
+      transform: translateY(-10px) scale(1.02);
+      color: $color-red;
+
+  }
+}
+
+@media(max-width: 680px){
+    .hero--textarea h1, h2{
+        font-size: 35px;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+section{
+    padding: 15px;
+
+    p a{
+      color: $color-white;
+      font-weight: 900;
+    }
+}
+
+
+section.-light h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: $color-blue-light;
+    border-left: 10px solid $color-red;
+    padding-left: 15px;
+}
+
+section.-light{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    color: $color-gray;
+}
+
+section.-light ul{
+    font-weight: 100;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+li.check{
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+
+li.check:before {
+  content: '✓ ';
+}
+
+section ul{
+  padding-bottom: 15px;
+}
+section.-dark{
+    background: #17065b;
+    color: $color-white;
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+}
+
+section.-dark h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    border-left: 10px solid $color-red;
+    padding-left: 15px;
+}
+
+
+section.-dark ul{
+    font-family: "Merriweather", Sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+@media(max-width: 680px){
+  section.-dark h2, section.-light h2{
+    font-size: 45px;
+  }
+
+  section ul, li, p{
+    font-size: 17px;
+  }
+}
+
+.img-float-left{
+  float: left;
+}
+
+.img-max-width-40{
+  max-width: 40%;
+}
+
+@media(max-width: 680px){
+  .img-max-width-40{
+  max-width: 95%;
+  }
+}
+
+.-light-blue{
+  color: $color-blue-light;
+}
+
+.img-treatment{
+  padding: 7px;
+  margin: 0px 15px 15px 15px;
+}
+
+.-light .img-treatment{
+  border: 1px solid $color-blue-light;
+}
+
+.-light p a{
+  color: $color-blue-light;
+}
+
+.-dark .img-treatment{
+  border: 1px solid $color-white;
+}
+
+.-bold-font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+section.-dark .button-wrap h2{
+  border-left: none;
+  padding-left: 0;
+}
+.button-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(188, 33, 37, .7);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.donate-button{
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  background: $color-white;
+  flex-basis: 200px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.donate-button:hover{
+  background: #b8b8b8;
+}
+
+footer{
+  background: #040111;
+  color: $color-white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+}
+
+.footer-heading{
+  margin-bottom: 7px;
+}
+
+footer svg{
+  fill: $color-white;
+}
+
+.contact-icon{
+  width: 45px;
+}
+
+.contact-icon:hover{
+    fill: $color-gray;
+}
+
+
+
+.flex-grid{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+section.ben-planning-bg{
+  background-image: url("ben_planning.jpg");
+  background-size: cover;
+  height: 600px;
+  background-position: 0 0;
+}
+
+@media (max-width: 680px) {
+
+  section.ben-planning-bg{
+    background-position-x: 700px;
+  }
+  .flex-grid {
+    display: block;
+  }
+}
+
+
+#wrapper {
+  width:150px; /* width of viewport in your case 100% */
+  height:500px; /* height of viewport in your case 100% */
+  overflow:hidden;
+  margin:10px 0 0 0;
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  /* border:1px solid #777; */
+  /*position:fixed;*/
+}
+
+#map {
+  position:relative; /* what #map img is relative to */
+}
+
+#map img{
+  position:absolute; /* need this to make dragging easy */
+  top:0;
+  left:0;
+  border:0 none transparent;
+}
+
+.map-legend{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2001;
+  border-top: 2px solid #b8b8b8;
+  border-right: 2px solid #b8b8b8;
+}
+
+.form-input-wrapper{
+  padding: 7px 15px 15px 0;
+
+}
+
+.form-wrapper{
+  transition: .5s ease-in-out;
+}
+
+.form-select-wrapper{
+  font-size: 14px;
+  padding-bottom: 15px;
+
+}
+
+.form-input-wrapper input{
+  width: 300px;
+  border: 2px solid #e0e6e8;
+  border-radius: 3px;
+  padding: 0 0 0 16px;
+  height: 50px;
+  transition: border .15s;
+}
+
+
+.submit-button{
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  background: $color-blue-light;
+  flex-basis: 200px;
+  color: $color-white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.submit-button:hover{
+  background: $color-gray;
+}
+
+.endorse-name{
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.endorse-title{
+  font-style: italic;
+}
+
+.endorse-wrapper{
+  margin-bottom: 15px;
+
+}
+
+.max-width.endorsements{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  padding: 15px;
+}
+
+@media(max-width: 680px){
+  .max-width.endorsements{
+    grid-template-columns: 100%;
+  }
+}
+
+
+.max-width.platform{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  padding: 0 15px 0 15px;
+}
+
+@media(max-width: 680px){
+  .max-width.platform{
+    grid-template-columns: 100%;
+  }
+  .max-width.platform{
+    padding: 0;
+  }
+}
+
+.platform-wrapper{
+  padding: 0 15px 0 15px;
+}
