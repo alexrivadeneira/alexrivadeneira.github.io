@@ -57,6 +57,32 @@ section.-dark h2 {
   border-left: 10px solid #bc2125;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  background: #fff;
+  height: 70px;
+}
+header .logo {
+  width: 100px;
+}
+header .nav-menu {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+header .nav-menu a {
+  text-decoration: none;
+  padding: 15px;
+  color: #17065b;
+}
+header .nav-menu .-donate {
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: 2px solid #17065b;
+}
+
 .max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -126,18 +152,9 @@ section.meet p {
   text-align: center;
 }
 
-header {
-  top: 45px;
-  position: relative;
-  height: 650px;
+.hero {
   background: white;
   background: radial-gradient(circle at right bottom, white 1%, #9aa4c0 33%, #06006a 100%);
-}
-
-@media (max-width: 680px) {
-  header {
-    height: 450px;
-  }
 }
 .hero .donate-button {
   font-family: "Montserrat", sans-serif;

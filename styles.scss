@@ -29,6 +29,10 @@ body{
   margin: 0;
 }
 
+.nav-menu{
+
+}
+
 section{
   padding: 15px;
   font-family: $font-body;
@@ -76,6 +80,37 @@ section{
       border-left: 10px solid $color-red;
     }
   }
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+
+  .logo{
+    width: 100px;
+  }
+
+  .nav-menu{
+    padding: 15px;
+    font-family: $font-headers;
+    // text-transform: uppercase;
+    font-weight: 900;
+
+    a{
+      text-decoration: none;
+      padding: 15px;
+      color: $color-dark-blue;
+    }
+    .-donate{
+      border-radius: 30px;
+      text-transform: uppercase;
+      border: 2px solid $color-dark-blue;
+
+    }
+  }
+  background: $color-white;
+  height: 70px;
 }
 
 .max-width{
@@ -155,21 +190,13 @@ section.meet p{
   text-align: center;
 }
 
-header {
-  top: 45px;
-  position: relative;
-  height: 650px;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
-}
 
-@media(max-width: 680px){
-  header {
-    height: 450px;
-  }
-}
+
 
 .hero{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+
   .donate-button{
     font-family: $font-headers;
     font-size: 30px;
