@@ -64,6 +64,91 @@ header{
   height: 70px;
 }
 
+.hero-background{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+  background-image: url('ben-outside.png');
+  background-size: cover;
+}
+
+
+.hero{
+
+
+  .donate-button{
+    font-family: $font-headers;
+    font-size: 30px;
+    background: $color-red;
+    color: $color-white;
+    border: 3px solid $color-white;
+    &.-secondary{
+      background: none;
+      color: $color-white;
+    }
+  }
+  .hero--logo{
+    width: 350px;
+    position: absolute;
+    left: -300px;
+    transform: rotate(15deg);
+    animation: drive 3s forwards;
+  }
+  .hero--ben-profile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+@media(max-width: 680px){
+  .hero--ben-profile{
+      width: 68%;
+  }
+
+  .hero .donate-button{
+    font-size: 15px;
+    border: 2px solid $color-white;
+    display: block;
+    width: 45%;
+  }
+}
+
+.hero{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 450px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .hero--textarea h1{
+    font-family: $font-headers;
+    font-size: 65px;
+    line-height: .35;
+    color: $color-white;
+    transition: .5s ease-in-out;
+  }
+
+  .hero--textarea a{
+    text-decoration: none;
+  }
+
+  @media(hover: hover){
+    .hero--textarea h1:hover{
+      transform: translateY(-10px) scale(1.02);
+      color: $color-red;
+    }
+  }
+
+  @media(max-width: 680px){
+    .hero--textarea h1, h2{
+        font-size: 35px;
+    }
+  }
+
+}
+
 section{
   padding: 15px;
   font-family: $font-body;
@@ -124,12 +209,6 @@ section{
   margin: 0 auto;
 }
 
-.max-width-hero{
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 650px;
-  position: relative;
-}
 
 @media(max-width: 680px){
   .max-width-hero {
@@ -199,48 +278,6 @@ section.meet p{
 
 
 
-.hero{
-  background: rgb(255,255,255);
-  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
-
-  .donate-button{
-    font-family: $font-headers;
-    font-size: 30px;
-    background: $color-red;
-    color: $color-white;
-    border: 3px solid $color-white;
-    &.-secondary{
-      background: none;
-      color: $color-white;
-    }
-  }
-  .hero--logo{
-    width: 350px;
-    position: absolute;
-    left: -300px;
-    transform: rotate(15deg);
-    animation: drive 3s forwards;
-  }
-  .hero--ben-profile{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-
-@media(max-width: 680px){
-  .hero--ben-profile{
-      width: 68%;
-  }
-
-  .hero .donate-button{
-    font-size: 15px;
-    border: 2px solid $color-white;
-    display: block;
-    width: 45%;
-  }
-}
 
 @keyframes drive{
   0%{
@@ -256,36 +293,6 @@ section.meet p{
   }
 }
 
-.hero--textarea{
-  position: absolute;
-  bottom: 5px;
-  left: 15px;
-}
-
-.hero--textarea h1{
-  font-family: $font-headers;
-  font-size: 65px;
-  line-height: .35;
-  color: $color-white;
-  transition: .5s ease-in-out;
-}
-
-.hero--textarea a{
-  text-decoration: none;
-}
-
-@media(hover: hover){
-  .hero--textarea h1:hover{
-    transform: translateY(-10px) scale(1.02);
-    color: $color-red;
-  }
-}
-
-@media(max-width: 680px){
-  .hero--textarea h1, h2{
-      font-size: 35px;
-  }
-}
 
 li.check{
   padding-bottom: 7px;
