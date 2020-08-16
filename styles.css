@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap");
 * {
   box-sizing: border-box;
@@ -16,15 +16,50 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  background: #fff;
+  height: 70px;
+}
+header .logo {
+  width: 100px;
+}
+header .nav-menu {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+header .nav-menu a {
+  text-decoration: none;
+  padding: 15px;
+  color: #17065b;
+}
+header .nav-menu .-donate {
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #bc2125;
+}
+header .nav-menu .-donate:hover {
+  background: #b8b8b8;
+}
+
 section {
   padding: 15px;
   font-family: "Merriweather", Sans-serif;
+}
+section h1 {
+  font-weight: 900;
 }
 section h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
   text-transform: uppercase;
   padding-left: 15px;
+  font-weight: 900;
 }
 section ul {
   font-weight: 100;
@@ -55,32 +90,6 @@ section.-dark p a {
 }
 section.-dark h2 {
   border-left: 10px solid #bc2125;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  background: #fff;
-  height: 70px;
-}
-header .logo {
-  width: 100px;
-}
-header .nav-menu {
-  padding: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-}
-header .nav-menu a {
-  text-decoration: none;
-  padding: 15px;
-  color: #17065b;
-}
-header .nav-menu .-donate {
-  border-radius: 30px;
-  text-transform: uppercase;
-  border: 2px solid #17065b;
 }
 
 .max-width {

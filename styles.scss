@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
 
 $color-red: #bc2125;
@@ -29,19 +29,54 @@ body{
   margin: 0;
 }
 
-.nav-menu{
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
 
+  .logo{
+    width: 100px;
+  }
+
+  .nav-menu{
+    padding: 15px;
+    font-family: $font-headers;
+    // text-transform: uppercase;
+    font-weight: 700;
+
+    a{
+      text-decoration: none;
+      padding: 15px;
+      color: $color-dark-blue;
+    }
+    .-donate{
+      border-radius: 30px;
+      text-transform: uppercase;
+      color: $color-white;
+      background: $color-red;
+    }
+    .-donate:hover{
+      background: $color-light-gray;
+    }
+  }
+  background: $color-white;
+  height: 70px;
 }
 
 section{
   padding: 15px;
   font-family: $font-body;
 
+  h1{
+    font-weight: 900;
+  }
   h2 {
     font-family: $font-headers;
     font-size: 60px;
     text-transform: uppercase;
     padding-left: 15px;
+    font-weight: 900;
   }
 
   ul {
@@ -82,36 +117,7 @@ section{
   }
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
 
-  .logo{
-    width: 100px;
-  }
-
-  .nav-menu{
-    padding: 15px;
-    font-family: $font-headers;
-    // text-transform: uppercase;
-    font-weight: 900;
-
-    a{
-      text-decoration: none;
-      padding: 15px;
-      color: $color-dark-blue;
-    }
-    .-donate{
-      border-radius: 30px;
-      text-transform: uppercase;
-      border: 2px solid $color-dark-blue;
-
-    }
-  }
-  background: $color-white;
-  height: 70px;
-}
 
 .max-width{
   max-width: 1200px;
