@@ -8,6 +8,7 @@ $color-gray: #7a7a7a;
 $color-dark-gray: #040111;
 $color-light-gray: #b8b8b8;
 $color-dark-blue: #17065b;
+$color-dark-green: #4f4e3b;
 
 $font-headers: 'Montserrat', sans-serif;
 $font-body: 'Merriweather', Sans-serif;
@@ -73,8 +74,6 @@ header{
 
 
 .hero{
-
-
   .donate-button{
     font-family: $font-headers;
     font-size: 30px;
@@ -86,13 +85,13 @@ header{
       color: $color-white;
     }
   }
-  .hero--logo{
-    width: 350px;
-    position: absolute;
-    left: -300px;
-    transform: rotate(15deg);
-    animation: drive 3s forwards;
-  }
+  // .hero--logo{
+  //   width: 350px;
+  //   position: absolute;
+  //   left: -300px;
+  //   transform: rotate(15deg);
+  //   animation: drive 3s forwards;
+  // }
   .hero--ben-profile{
     position: absolute;
     bottom: 0;
@@ -134,17 +133,33 @@ header{
     text-decoration: none;
   }
 
-  @media(hover: hover){
-    .hero--textarea h1:hover{
-      transform: translateY(-10px) scale(1.02);
-      color: $color-red;
-    }
-  }
 
   @media(max-width: 680px){
     .hero--textarea h1, h2{
         font-size: 35px;
     }
+  }
+
+}
+
+.sub-hero-cta{
+  display: flex;
+  justify-content: center;
+
+  .form-input-wrapper{
+    display: inline;
+  }
+  .form-input-wrapper input{
+    width: 300px;
+    border: 2px solid #e0e6e8;
+    border-radius: 3px;
+    padding: 0 0 0 16px;
+    height: 30px;
+    transition: border .15s;
+    display: inline;
+  }
+  .submit_container {
+    display: inline !important;
   }
 
 }
@@ -278,20 +293,20 @@ section.meet p{
 
 
 
-
-@keyframes drive{
-  0%{
-    left: -500px;
-  }
-  60%{
-    left: 300px;
-  }
-  100%{
-    top: 15px;
-    left: 15px;
-    transform: rotate(0deg);
-  }
-}
+//
+// @keyframes drive{
+//   0%{
+//     left: -500px;
+//   }
+//   60%{
+//     left: 300px;
+//   }
+//   100%{
+//     top: 15px;
+//     left: 15px;
+//     transform: rotate(0deg);
+//   }
+// }
 
 
 li.check{
@@ -313,6 +328,13 @@ li.check{
   color: $color-blue-light;
 }
 
+.-dark-green{
+  color: $color-dark-green;
+}
+
+.-dark-blue{
+  color: $color-dark-blue;
+}
 section.-dark .button-wrap h2{
   border-left: none;
   padding-left: 0;

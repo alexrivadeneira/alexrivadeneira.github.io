@@ -65,13 +65,6 @@ header .nav-menu .-donate:hover {
   background: none;
   color: #fff;
 }
-.hero .hero--logo {
-  width: 350px;
-  position: absolute;
-  left: -300px;
-  transform: rotate(15deg);
-  animation: drive 3s forwards;
-}
 .hero .hero--ben-profile {
   position: absolute;
   bottom: 0;
@@ -108,16 +101,30 @@ header .nav-menu .-donate:hover {
 .hero .hero--textarea a {
   text-decoration: none;
 }
-@media (hover: hover) {
-  .hero .hero--textarea h1:hover {
-    transform: translateY(-10px) scale(1.02);
-    color: #bc2125;
-  }
-}
 @media (max-width: 680px) {
   .hero .hero--textarea h1, .hero h2 {
     font-size: 35px;
   }
+}
+
+.sub-hero-cta {
+  display: flex;
+  justify-content: center;
+}
+.sub-hero-cta .form-input-wrapper {
+  display: inline;
+}
+.sub-hero-cta .form-input-wrapper input {
+  width: 300px;
+  border: 2px solid #e0e6e8;
+  border-radius: 3px;
+  padding: 0 0 0 16px;
+  height: 30px;
+  transition: border 0.15s;
+  display: inline;
+}
+.sub-hero-cta .submit_container {
+  display: inline !important;
 }
 
 section {
@@ -227,19 +234,6 @@ section.meet p {
   text-align: center;
 }
 
-@keyframes drive {
-  0% {
-    left: -500px;
-  }
-  60% {
-    left: 300px;
-  }
-  100% {
-    top: 15px;
-    left: 15px;
-    transform: rotate(0deg);
-  }
-}
 li.check {
   padding-bottom: 7px;
   padding-top: 7px;
@@ -256,6 +250,14 @@ li.check {
 }
 .-light-blue {
   color: #099cff;
+}
+
+.-dark-green {
+  color: #4f4e3b;
+}
+
+.-dark-blue {
+  color: #17065b;
 }
 
 section.-dark .button-wrap h2 {
