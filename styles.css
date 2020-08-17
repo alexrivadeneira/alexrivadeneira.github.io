@@ -6,6 +6,7 @@
 
 button {
   border: 0;
+  -webkit-appearance: none;
 }
 
 html {
@@ -77,6 +78,14 @@ header .nav-menu .-donate:hover {
   background: #b8b8b8;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 6001;
+}
+
 .-hide {
   display: none;
 }
@@ -138,6 +147,7 @@ header .nav-menu .-donate:hover {
   font-size: 30px;
   background: #bc2125;
   color: #fff;
+  -webkit-appearance: none;
 }
 .hero .donate-button.-secondary {
   background: none;
@@ -158,6 +168,7 @@ header .nav-menu .-donate:hover {
     font-size: 15px;
     display: block;
     width: 45%;
+    -webkit-appearance: none;
   }
 }
 .hero {
@@ -352,6 +363,7 @@ section.-dark .button-wrap h2 {
   color: #000;
   text-decoration: none;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 .donate-button:hover {
@@ -501,6 +513,7 @@ section.ben-planning-bg {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 .submit-button:hover {
