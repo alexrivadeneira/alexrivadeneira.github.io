@@ -60,6 +60,7 @@ header .nav-menu .mobile-menu-dismiss {
   header .nav-menu ul li {
     padding: 15px;
     text-align: center;
+    display: block;
     margin: 15px;
   }
   header .nav-menu .mobile-menu-open {
@@ -85,8 +86,7 @@ header .nav-menu .-donate:hover {
 }
 
 .hero-background {
-  background: white;
-  background: radial-gradient(circle at right bottom, white 1%, #9aa4c0 33%, #06006a 100%);
+  background: #616242;
   background-image: url("ben-outside.jpg");
   background-size: cover;
   background-position: top right;
@@ -117,7 +117,7 @@ header .nav-menu .-donate:hover {
 .meet .meet-highlight {
   font-size: 28px;
   line-height: 1.3em !important;
-  color: #4f4e3b;
+  color: #616242;
 }
 .meet .read-more:hover {
   color: #040111;
@@ -233,7 +233,7 @@ section.-light p a {
 }
 section.-light h2 {
   color: #099cff;
-  border-left: 10px solid #4f4e3b;
+  border-left: 10px solid #616242;
 }
 section.-dark {
   background: #17065b;
@@ -304,7 +304,7 @@ li.check {
 }
 
 .-dark-green {
-  color: #4f4e3b;
+  color: #616242;
 }
 
 .-dark-blue {
@@ -321,7 +321,7 @@ section.-dark .button-wrap h2 {
   flex-wrap: wrap;
   margin-bottom: 50px;
   padding: 30px;
-  background: rgba(188, 33, 37, 0.7);
+  background: rgba(97, 98, 67, 0.7);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", sans-serif;
 }
@@ -349,7 +349,7 @@ section.-dark .button-wrap h2 {
 }
 
 footer {
-  background: #040111;
+  background: #616242;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 15px;

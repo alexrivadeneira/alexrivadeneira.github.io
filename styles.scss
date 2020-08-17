@@ -8,7 +8,7 @@ $color-gray: #7a7a7a;
 $color-dark-gray: #040111;
 $color-light-gray: #b8b8b8;
 $color-dark-blue: #17065b;
-$color-dark-green: #4f4e3b;
+$color-dark-green: #616242;
 
 $font-headers: 'Montserrat', sans-serif;
 $font-body: 'Merriweather', Sans-serif;
@@ -80,7 +80,7 @@ header{
       ul li{
         padding: 15px;
         text-align: center;
-        // display: block;
+        display: block;
         margin: 15px;
       }
       .mobile-menu-open{
@@ -115,8 +115,7 @@ header{
 
 
 .hero-background{
-  background: rgb(255,255,255);
-  background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
+  background: $color-dark-green;
   background-image: url('ben-outside.jpg');
   background-size: cover;
   background-position: top right;
@@ -419,7 +418,7 @@ section.-dark .button-wrap h2{
   flex-wrap: wrap;
   margin-bottom: 50px;
   padding: 30px;
-  background: rgba(188, 33, 37, .7);
+  background: rgba(97, 98, 67, .7);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
   font-family: $font-headers;
 }
@@ -447,7 +446,7 @@ section.-dark .button-wrap h2{
 }
 
 footer{
-  background: $color-dark-gray;
+  background: $color-dark-green;
   color: $color-white;
   font-family: $font-headers;
   padding: 15px;
