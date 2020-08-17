@@ -129,6 +129,7 @@ header .nav-menu .-donate:hover {
   .meet .meet-ben-img {
     width: 100%;
     margin: 15px;
+    transform: rotate(0deg);
   }
 }
 
