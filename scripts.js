@@ -42,5 +42,44 @@ function showMoreParagraphs(){
   });
 }
 
+var mobileMenuOpen = document.querySelector('.mobile-menu-open');
+var mobileMenuDismiss = document.querySelector('.mobile-menu-dismiss');
+var mobileMenu = document.querySelector('.nav-menu ul');
+
+mobileMenuOpen.addEventListener('click', function(){
+  mobileMenu.classList.remove('-hide');
+  mobileMenu.classList.add('-show');
+  mobileMenuDismiss.classList.remove('-hide');
+  mobileMenuDismiss.classList.add('-show');
+  mobileMenuDismiss.style.position = 'absolute';
+  mobileMenuDismiss.style.right = '30px';
+  mobileMenuDismiss.style.top = '15px';
+
+});
+mobileMenuDismiss.addEventListener('click', function(){
+  mobileMenu.classList.remove('-show');
+  mobileMenuDismiss.classList.remove('-show');
+  mobileMenuDismiss.classList.add('-hide');
+
+});
+
+// nav menu open styles
+
+// ul{
+//   display: block;
+//   width: 100%;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   background: $color-white;
+// }
+// ul li{
+//   padding: 15px;
+//   text-align: center;
+//   display: block;
+//   margin: 15px;
+// }
+// }
+
 
 readMoreBtn.addEventListener('click', showMoreParagraphs);

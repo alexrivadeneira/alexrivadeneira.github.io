@@ -45,12 +45,52 @@ header{
     font-family: $font-headers;
     // text-transform: uppercase;
     font-weight: 700;
+    display: block;
+
+    ul li{
+      list-style-type: none;
+      display: inline-block;
+    }
 
     a{
       text-decoration: none;
       padding: 15px;
       color: $color-dark-blue;
     }
+
+    .mobile-menu-open,
+    .mobile-menu-dismiss{
+      font-size: 30px;
+      color: $color-dark-blue;
+      cursor: pointer;
+    }
+
+
+
+    @media(max-width: 768px){
+
+      ul{
+        display: none;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $color-white;
+      }
+      ul li{
+        padding: 15px;
+        text-align: center;
+        // display: block;
+        margin: 15px;
+      }
+      .mobile-menu-open{
+        display: block;
+      }
+    }
+
+
+
+
     .-donate{
       border-radius: 30px;
       text-transform: uppercase;
@@ -65,6 +105,20 @@ header{
   height: 70px;
 }
 
+.-hide{
+  display: none;
+}
+
+.-show{
+  display: block !important;
+}
+
+@media(max-width: 680px){
+  // header{
+  //   position: relative;
+  // }
+}
+
 .hero-background{
   background: rgb(255,255,255);
   background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
@@ -75,6 +129,8 @@ header{
 .-light-font{
   font-weight: 300;
 }
+
+
 
 
 .meet{
@@ -275,32 +331,7 @@ section{
   }
 }
 
-nav{
 
-  &.hero-nav{
-    float: right;
-    margin-top: 15px;
-    z-index: 4000;
-
-    a{
-      text-decoration: none;
-      font-family: $font-headers;
-      color: $color-white;
-      padding: 15px;
-      font-weight: 600;
-    }
-    a:hover{
-      color: $color-light-gray;
-    }
-  }
-
-  @media(max-width: 680px){
-    &.hero-nav{
-      display: none;
-    }
-  }
-
-}
 
 .announcement{
   height: 45px;

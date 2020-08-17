@@ -31,11 +31,40 @@ header .nav-menu {
   padding: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  display: block;
+}
+header .nav-menu ul li {
+  list-style-type: none;
+  display: inline-block;
 }
 header .nav-menu a {
   text-decoration: none;
   padding: 15px;
   color: #17065b;
+}
+header .nav-menu .mobile-menu-open,
+header .nav-menu .mobile-menu-dismiss {
+  font-size: 30px;
+  color: #17065b;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header .nav-menu ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+  }
+  header .nav-menu ul li {
+    padding: 15px;
+    text-align: center;
+    margin: 15px;
+  }
+  header .nav-menu .mobile-menu-open {
+    display: block;
+  }
 }
 header .nav-menu .-donate {
   border-radius: 30px;
@@ -45,6 +74,14 @@ header .nav-menu .-donate {
 }
 header .nav-menu .-donate:hover {
   background: #b8b8b8;
+}
+
+.-hide {
+  display: none;
+}
+
+.-show {
+  display: block !important;
 }
 
 .hero-background {
@@ -219,27 +256,6 @@ section.-dark h2 {
     height: 450px;
   }
 }
-nav.hero-nav {
-  float: right;
-  margin-top: 15px;
-  z-index: 4000;
-}
-nav.hero-nav a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  padding: 15px;
-  font-weight: 600;
-}
-nav.hero-nav a:hover {
-  color: #b8b8b8;
-}
-@media (max-width: 680px) {
-  nav.hero-nav {
-    display: none;
-  }
-}
-
 .announcement {
   height: 45px;
   display: flex;
