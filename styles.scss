@@ -19,6 +19,7 @@ $font-body: 'Merriweather', Sans-serif;
 
 button{
   border: 0;
+  -webkit-appearance: none;
 }
 
 html {
@@ -182,6 +183,7 @@ header{
     font-size: 30px;
     background: $color-red;
     color: $color-white;
+    -webkit-appearance: none;
     &.-secondary{
       background: none;
       color: $color-white;
@@ -211,6 +213,7 @@ header{
     font-size: 15px;
     display: block;
     width: 45%;
+    -webkit-appearance: none;
   }
 }
 
@@ -450,6 +453,7 @@ section.-dark .button-wrap h2{
   color: #000;
   text-decoration: none;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 .donate-button:hover{
@@ -601,6 +605,7 @@ section.ben-planning-bg{
   color: $color-white;
   text-decoration: none;
   font-weight: 600;
+  -webkit-appearance: none;
 }
 
 .submit-button:hover{
