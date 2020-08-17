@@ -139,6 +139,9 @@ header{
     padding-bottom: 15px;
     transform: rotate(-3deg);
   }
+  .meet-paragraph{
+    display: none;
+  }
   .read-more{
     border-radius: 0;
     border: 0;
@@ -156,6 +159,12 @@ header{
   }
   .read-more:hover{
     color: $color-dark-gray;
+  }
+
+  @media(max-width: 768px){
+    .meet-ben-img{
+      width: 90%;
+    }
   }
 
 }

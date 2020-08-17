@@ -27,11 +27,7 @@ checkboxes.forEach(function(checkbox){
 var meet = document.querySelectorAll('.meet-paragraph');
 var readMoreBtn = document.querySelector('.read-more');
 
-meet.forEach(function(paragraph, idx){
-  if(idx > 1){
-    paragraph.style.display = 'none';
-  }
-});
+
 
 function showMoreParagraphs(){
   var length = meet.length - 1;
