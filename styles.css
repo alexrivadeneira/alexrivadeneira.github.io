@@ -223,6 +223,20 @@ header .nav-menu .-donate:hover {
   font-size: 10px;
   font-family: "Merriweather", Sans-serif;
 }
+@media (max-width: 768px) {
+  .sub-hero-cta .form-input-wrapper,
+.sub-hero-cta .form-input-wrapper input,
+.sub-hero-cta .submit_container {
+    display: block !important;
+    text-align: center;
+  }
+  .sub-hero-cta .submit-button {
+    margin: auto;
+  }
+  .sub-hero-cta form {
+    text-align: center;
+  }
+}
 
 section {
   padding: 15px;

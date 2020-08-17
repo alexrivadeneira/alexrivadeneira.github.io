@@ -282,7 +282,24 @@ header{
     font-size: 10px;
     font-family: $font-body;
   }
+
+  @media(max-width: 768px){
+    .form-input-wrapper,
+    .form-input-wrapper input,
+    .submit_container {
+      display: block !important;
+      text-align: center;
+    }
+    .submit-button{
+      margin: auto;
+    }
+    form{
+      text-align: center;
+    }
+  }
 }
+
+
 
 section{
   padding: 15px;
