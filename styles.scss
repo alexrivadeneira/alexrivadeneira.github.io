@@ -113,18 +113,17 @@ header{
   display: block !important;
 }
 
-@media(max-width: 680px){
-  // header{
-  //   position: relative;
-  // }
-}
 
 .hero-background{
   background: rgb(255,255,255);
   background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
   background-image: url('ben-outside.jpg');
   background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
+
+
 
 .-light-font{
   font-weight: 300;
