@@ -142,6 +142,9 @@ header .nav-menu .-donate:hover {
   }
 }
 
+.hero .hero--logo {
+  width: 200px;
+}
 .hero .donate-button {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -185,6 +188,8 @@ header .nav-menu .-donate:hover {
   line-height: 0.35;
   color: #fff;
   transition: 0.5s ease-in-out;
+  margin-top: 25px;
+  margin-bottom: 45px;
 }
 .hero .hero--textarea a {
   text-decoration: none;
@@ -192,6 +197,10 @@ header .nav-menu .-donate:hover {
 @media (max-width: 680px) {
   .hero .hero--textarea h1, .hero h2 {
     font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .hero .hero--logo {
+    width: 170px;
   }
 }
 
