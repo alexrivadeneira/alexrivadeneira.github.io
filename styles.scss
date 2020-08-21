@@ -261,6 +261,12 @@ header{
     }
   }
 
+  @media(max-width: 450px){
+    .hero--logo{
+      display: none;
+    }
+  }
+
 }
 
 .sub-hero-cta{

@@ -203,6 +203,11 @@ header .nav-menu .-donate:hover {
     width: 170px;
   }
 }
+@media (max-width: 450px) {
+  .hero .hero--logo {
+    display: none;
+  }
+}
 
 .sub-hero-cta {
   display: flex;
