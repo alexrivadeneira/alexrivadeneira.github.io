@@ -80,7 +80,7 @@ header .nav-menu .-donate:hover {
 
 .sticky {
   position: fixed;
-  top: 0;
+  top: 45px;
   width: 100%;
   margin: 0;
   z-index: 6001;
@@ -140,6 +140,10 @@ header .nav-menu .-donate:hover {
     margin: 15px;
     transform: rotate(0deg);
   }
+}
+
+main {
+  margin-top: 100px;
 }
 
 .hero .hero--logo {
@@ -322,7 +326,7 @@ section.-dark h2 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  font-size: 25px;
+  font-size: 15px;
   z-index: 3001;
 }
 .announcement a {

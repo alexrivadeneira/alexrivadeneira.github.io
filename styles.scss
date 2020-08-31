@@ -108,7 +108,7 @@ header{
 
 .sticky {
   position: fixed;
-  top: 0;
+  top: 45px;
   width: 100%;
   margin: 0;
   z-index: 6001;
@@ -184,7 +184,9 @@ header{
 
 
 
-
+main{
+  margin-top: 100px;
+}
 .hero{
   .hero--logo{
     width: 200px;
@@ -400,7 +402,7 @@ section{
   text-align: center;
   font-family: $font-headers;
   margin: 0;
-  font-size: 25px;
+  font-size: 15px;
   z-index: 3001;
 
   a{

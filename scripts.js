@@ -80,16 +80,16 @@ mobileMenuDismiss.addEventListener('click', function(){
 
 readMoreBtn.addEventListener('click', showMoreParagraphs);
 
-window.onscroll = function() {stickyNav()};
-var navbar = document.querySelector("header");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// window.onscroll = function() {stickyNav()};
+// var navbar = document.querySelector("header");
+//
+// // Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+//
+// function stickyNav() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
