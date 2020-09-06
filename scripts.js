@@ -25,6 +25,7 @@ checkboxes.forEach(function(checkbox){
 
 
 var meet = document.querySelectorAll('.meet-paragraph');
+
 var readMoreBtn = document.querySelector('.read-more');
 
 
@@ -38,9 +39,14 @@ function showMoreParagraphs(){
   });
 }
 
+function closeMobileMenu(){
+
+}
+
 var mobileMenuOpen = document.querySelector('.mobile-menu-open');
 var mobileMenuDismiss = document.querySelector('.mobile-menu-dismiss');
 var mobileMenu = document.querySelector('.nav-menu ul');
+var menuLinks = document.querySelectorAll('.menu-link');
 
 mobileMenuOpen.addEventListener('click', function(){
   mobileMenu.classList.remove('-hide');
@@ -58,6 +64,24 @@ mobileMenuDismiss.addEventListener('click', function(){
   mobileMenuDismiss.classList.add('-hide');
 
 });
+
+// menuLinks.forEach(menuLink => {
+//   addEventListener('click', function(){
+//   mobileMenu.classList.remove('-show');
+//   mobileMenuDismiss.classList.remove('-show');
+//   mobileMenuDismiss.classList.add('-hide');
+// })
+
+
+menuLinks.forEach(function(menuLink){
+  menuLink.addEventListener('click', function(){
+  mobileMenu.classList.remove('-show');
+  mobileMenuDismiss.classList.remove('-show');
+  mobileMenuDismiss.classList.add('-hide');
+})
+});
+
+
 
 // nav menu open styles
 
