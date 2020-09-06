@@ -84,6 +84,8 @@ header .nav-menu .-donate:hover {
   width: 100%;
   margin: 0;
   z-index: 6001;
+  height: 100px;
+  padding: 15px;
 }
 
 .-hide {
