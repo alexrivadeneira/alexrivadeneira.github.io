@@ -78,6 +78,18 @@ header .nav-menu .-donate:hover {
   background: #b8b8b8;
 }
 
+section:before {
+  height: 54px;
+  content: "";
+  display: block;
+}
+
+:target {
+  padding-top: 100px;
+  /* = to height of navbar */
+  margin-top: -100px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
