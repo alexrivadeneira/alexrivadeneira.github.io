@@ -89,6 +89,10 @@ html {
     max-height: 450px;
   }
 
+  .-mb-20{
+    margin-bottom: 20px;
+  }
+
   h1{
     font-family: $font-headers;
     font-size: 65px;
@@ -173,6 +177,7 @@ html {
   right:0;
   margin-left:auto;
   margin-right:auto;
+  padding-top: 15px;
   }
 
 
