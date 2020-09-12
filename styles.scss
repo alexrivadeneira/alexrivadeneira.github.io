@@ -30,7 +30,8 @@ html {
   padding: 0;
   margin: 0;
   background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .slide-wrapper{
   max-width: 1200px;
@@ -49,25 +50,28 @@ html {
   .slide-text{
     position: absolute;
     bottom: 15px;
+    max-width: 600px;
   }
   .slide-img{
-    width: 100%;
-    height: 450px;
+    max-height: 450px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .-right{
+    right: 0;
+    text-align: right;
   }
 
   h3{
-    position: absolute;
-    top: 15px;
-    left: 15px;
     color: #fff;
     font-family: sans-serif;
+    text-transform: none;
   }
   p {
-    position: absolute;
     left: 15px;
     bottom: 15px;
     color: #fff;
-    font-family: sans-serif;
   }
   .hero--logo{
     position: absolute;
@@ -79,7 +83,7 @@ html {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30%;
+    max-height: 450px;
   }
 
   h1{
@@ -96,15 +100,44 @@ html {
     text-decoration: none;
   }
 
+  .slide2-join{
+    line-height: 0;
+    font-size: 50px;
+    color: $color-white;
+  }
+
+  .kickoff-p{
+    background-color: $color-dark-blue;
+    // color: #FFFFFF;
+     display:inline;
+     // white-space:pre-wrap;
+     line-height : 24px;
+     // font-size: 24px;
+    padding: 5px;
+    padding-left:0px;
+    box-shadow: -16px 0 0 $color-dark-blue;
+
+  }
+
 
   @media(max-width: 680px){
     h1, h2{
         font-size: 35px;
         margin-bottom: 25px;
     }
+    .slide2-join{
+      line-height: 0;
+      font-size: 20px;
+      color: $color-white;
+    }
     .hero--logo{
       width: 170px;
     }
+    // .kickoff-p{
+    //   // box-shadow: none;
+    //   // background: none;
+    //   // font-weight: 700;
+    // }
   }
 
   @media(max-width: 450px){
@@ -385,6 +418,10 @@ a, input[type="submit"], button, svg{
       display: block;
       width: 45%;
       -webkit-appearance: none;
+    }
+    .kickoff-donate-button{
+      float: right;
+      clear: right;
     }
   }
 
