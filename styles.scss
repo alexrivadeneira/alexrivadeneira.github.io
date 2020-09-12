@@ -112,6 +112,7 @@ section:before {
     display:block;
 }
 
+
 :target{
   padding-top:100px; /* = to height of navbar */
   margin-top:-100px;
@@ -714,4 +715,8 @@ section.ben-planning-bg{
 
 .platform-wrapper{
   padding: 0 15px 0 15px;
+}
+
+.pb-70{
+  padding-bottom: 70px;
 }
