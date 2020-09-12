@@ -45,6 +45,8 @@ html {
   position: absolute;
   bottom: 0;
   overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .slide .-right {
   right: 0;
