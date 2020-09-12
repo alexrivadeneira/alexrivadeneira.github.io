@@ -44,6 +44,7 @@ html {
   max-height: 450px;
   position: absolute;
   bottom: 0;
+  overflow: hidden;
 }
 .slide .-right {
   right: 0;
@@ -159,6 +160,9 @@ header .nav-menu {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   display: block;
+}
+header .nav-menu ul {
+  z-index: 5000;
 }
 header .nav-menu ul li {
   list-style-type: none;

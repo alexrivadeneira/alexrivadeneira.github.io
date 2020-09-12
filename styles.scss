@@ -56,6 +56,7 @@ html {
     max-height: 450px;
     position: absolute;
     bottom: 0;
+    overflow: hidden;
   }
 
   .-right{
@@ -194,6 +195,9 @@ header{
     font-weight: 700;
     display: block;
 
+    ul{
+      z-index: 5000;
+    }
     ul li{
       list-style-type: none;
       display: inline-block;
