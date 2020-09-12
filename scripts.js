@@ -101,16 +101,14 @@ function stickyNav() {
   }
 }
 
-let controls = document.querySelectorAll('.control');
+const controls = document.querySelectorAll('.control');
+const slides = document.querySelectorAll('.slide');
 
 controls.forEach((control, idx) => {
   control.addEventListener('click', () => showSlide(idx));
 });
 
 function showSlide(index){
-  console.log('showslide ', index);
-  const slides = document.querySelectorAll('.slide');
-
   slides.forEach((slide, idx) => {
     if(idx === index){
       slide.style.display = 'block';
@@ -128,4 +126,13 @@ function showSlide(index){
   })
 }
 
-showSlide(0);
+window.addEventListener('DOMContentLoaded', () => {
+  let currSlide = 0;
+  showSlide(currSlide);
+
+  setInterval(function(){
+    currSlide = (currSlide + 1) % slides.length;
+    showSlide(currSlide);
+  }, 4000);
+
+})

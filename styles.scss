@@ -545,6 +545,10 @@ section{
     list-style-type: none;
   }
 
+  p{
+    padding-bottom: 15px;
+  }
+
   &.-light{
     font-size: 20px;
     color: $color-gray;

@@ -447,6 +447,9 @@ section ul {
   padding-bottom: 15px;
   list-style-type: none;
 }
+section p {
+  padding-bottom: 15px;
+}
 section.-light {
   font-size: 20px;
   color: #7a7a7a;
