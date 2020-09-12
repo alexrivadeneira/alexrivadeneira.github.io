@@ -136,6 +136,6 @@ window.addEventListener('DOMContentLoaded', () => {
   interval = setInterval(function(){
     currSlide = (currSlide + 1) % slides.length;
     showSlide(currSlide);
-  }, 4000);
+  }, 6000);
 
 })
