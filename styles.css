@@ -413,6 +413,7 @@ section.-dark .button-wrap h2 {
 }
 
 .button-wrap {
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -563,6 +564,7 @@ section.ben-planning-bg {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   padding: 15px;
+  text-align: center;
 }
 
 @media (max-width: 680px) {
