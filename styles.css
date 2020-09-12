@@ -16,7 +16,7 @@ html {
 .slides {
   padding: 0;
   margin: 0;
-  background: #17065b;
+  background: radial-gradient(circle at right bottom, white 1%, #9aa4c0 33%, #06006a 100%);
 }
 
 .slide-wrapper {
@@ -35,7 +35,7 @@ html {
 }
 .slide .slide-text {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
 }
 .slide .slide-img {
   width: 100%;
@@ -108,7 +108,7 @@ html {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100px;
   left: 0;
   right: 0;
@@ -185,6 +185,10 @@ section:before {
   height: 54px;
   content: "";
   display: block;
+}
+
+section.slides:before {
+  height: 0;
 }
 
 :target {
