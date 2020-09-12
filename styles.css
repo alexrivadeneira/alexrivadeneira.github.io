@@ -105,7 +105,8 @@ section:before {
 }
 
 .-show {
-  display: block !important;
+  display: flex !important;
+  flex-direction: column;
 }
 
 .hero-background {
