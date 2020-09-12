@@ -123,7 +123,9 @@ function showSlide(index){
     if(idx === index){
       slide.style.backgroundColor = 'black';
     } else {
-      slide.style.backgroundColor = 'yellow';
+      slide.style.backgroundColor = 'white';
     }
   })
 }
+
+showSlide(0);
