@@ -31,9 +31,6 @@ function showMoreParagraphs(){
   });
 }
 
-function closeMobileMenu(){
-
-}
 
 var mobileMenuOpen = document.querySelector('.mobile-menu-open');
 var mobileMenuDismiss = document.querySelector('.mobile-menu-dismiss');
@@ -57,12 +54,6 @@ mobileMenuDismiss.addEventListener('click', function(){
 
 });
 
-// menuLinks.forEach(menuLink => {
-//   addEventListener('click', function(){
-//   mobileMenu.classList.remove('-show');
-//   mobileMenuDismiss.classList.remove('-show');
-//   mobileMenuDismiss.classList.add('-hide');
-// })
 
 
 menuLinks.forEach(function(menuLink){
@@ -108,4 +99,31 @@ function stickyNav() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+let controls = document.querySelectorAll('.control');
+
+controls.forEach((control, idx) => {
+  control.addEventListener('click', () => showSlide(idx));
+});
+
+function showSlide(index){
+  console.log('showslide ', index);
+  const slides = document.querySelectorAll('.slide');
+
+  slides.forEach((slide, idx) => {
+    if(idx === index){
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  })
+
+  controls.forEach((slide, idx) => {
+    if(idx === index){
+      slide.style.backgroundColor = 'black';
+    } else {
+      slide.style.backgroundColor = 'yellow';
+    }
+  })
 }
