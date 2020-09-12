@@ -124,6 +124,7 @@ html {
   background: #fff;
   border-radius: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .control-area {

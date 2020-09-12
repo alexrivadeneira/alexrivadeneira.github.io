@@ -1,5 +1,5 @@
 
-
+let interval;
 
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 var inputActivities = document.querySelector('input[name="activity"]');
@@ -105,7 +105,10 @@ const controls = document.querySelectorAll('.control');
 const slides = document.querySelectorAll('.slide');
 
 controls.forEach((control, idx) => {
-  control.addEventListener('click', () => showSlide(idx));
+  control.addEventListener('click', () => {
+    showSlide(idx);
+    clearInterval(interval);
+  });
 });
 
 function showSlide(index){
@@ -130,7 +133,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let currSlide = 0;
   showSlide(currSlide);
 
-  setInterval(function(){
+  interval = setInterval(function(){
     currSlide = (currSlide + 1) % slides.length;
     showSlide(currSlide);
   }, 4000);
