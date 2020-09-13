@@ -129,8 +129,9 @@ function showSlide(index){
   })
 }
 
+let currSlide = 0;
+
 window.addEventListener('DOMContentLoaded', () => {
-  let currSlide = 0;
   showSlide(currSlide);
 
   interval = setInterval(function(){
@@ -161,6 +162,9 @@ gestureZone.addEventListener('touchend', function(event) {
 function handleGesture() {
     if (touchendX <= touchstartX) {
       currSlide = (currSlide - 1) % slides.length;
+      if(currSlide < 0){
+        currSlide = slides.length - 1;
+      }
       showSlide(currSlide);
     }
 
