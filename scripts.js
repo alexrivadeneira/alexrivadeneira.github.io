@@ -181,7 +181,7 @@ function handleGesture() {
     //     console.log('Swiped down');
     // }
     //
-    // if (touchendY === touchstartY) {
-    //     console.log('Tap');
-    // }
+    if (touchendY === touchstartY) {
+      clearInterval(interval);
+    }
 }
