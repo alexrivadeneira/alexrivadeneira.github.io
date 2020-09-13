@@ -30,8 +30,7 @@ html {
   padding: 0;
   margin: 0;
   background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 .slide-wrapper{
   max-width: 1200px;
@@ -47,6 +46,8 @@ html {
   display: none;
   margin: 0 auto;
   height: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   .slide-text{
     position: absolute;
@@ -58,8 +59,11 @@ html {
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
+
+  }
+
+  .-left{
+    left: 0;
   }
 
   .-right{
@@ -76,6 +80,9 @@ html {
     left: 15px;
     bottom: 15px;
     color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
   }
   .hero--logo{
     position: absolute;
@@ -112,6 +119,8 @@ html {
     line-height: 0;
     font-size: 50px;
     color: $color-white;
+    padding-left: 0 !important;
+
   }
 
   .kickoff-p{
@@ -126,6 +135,7 @@ html {
     box-shadow: -16px 0 0 $color-dark-blue;
 
   }
+
 
 
   @media(max-width: 680px){
@@ -146,6 +156,11 @@ html {
     //   // background: none;
     //   // font-weight: 700;
     // }
+    p{
+      font-size: 15px;
+    }
+
+
   }
 
   @media(max-width: 450px){

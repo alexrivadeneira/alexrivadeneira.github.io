@@ -94,7 +94,7 @@ var navbar = document.querySelector("header");
 var sticky = navbar.offsetTop;
 
 function stickyNav() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= sticky + 400) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
