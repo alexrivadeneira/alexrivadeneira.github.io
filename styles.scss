@@ -421,6 +421,7 @@ section.splash-page{
 
 a, input[type="submit"], button, svg{
   transition: 0.1s;
+  text-decoration: none !important ;
 }
 
 
@@ -759,6 +760,15 @@ footer{
 
 footer svg{
   fill: $color-white;
+}
+
+footer.-light{
+  background: #fff;
+  color: $color-dark-blue;
+
+  svg{
+    fill: $color-dark-blue;
+  }
 }
 
 .contact-icon{
