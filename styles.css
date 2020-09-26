@@ -233,6 +233,24 @@ section.slides:before {
   height: 0;
 }
 
+.splash-hero h2 {
+  padding-left: 0;
+}
+
+section.splash-page {
+  margin-top: 0;
+  padding-top: 0;
+}
+section.splash-page h2 {
+  padding-left: 0;
+}
+section.splash-page p {
+  color: #17065b !important;
+}
+section.splash-page:before {
+  height: 0;
+}
+
 :target {
   padding-top: 100px;
   /* = to height of navbar */
