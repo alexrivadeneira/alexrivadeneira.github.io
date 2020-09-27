@@ -292,6 +292,16 @@ section.slides:before{
 .splash-hero{
   h2{
     padding-left: 0;
+    margin-bottom: 0;
+  }
+  form{
+    padding-bottom: 120px;
+  }
+
+  @media(max-width: 768px){
+    form{
+      padding-bottom: 30px;
+    }
   }
 }
 
