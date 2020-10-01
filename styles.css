@@ -752,6 +752,17 @@ section.ben-planning-bg {
   margin-bottom: 15px;
 }
 
+.endorsement-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.endorsement-logos .endorsement-logo {
+  max-height: 100px;
+  margin: 15px;
+}
+
 .max-width.endorsements {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -785,6 +796,10 @@ section.ben-planning-bg {
 
 .pb-70 {
   padding-bottom: 70px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
