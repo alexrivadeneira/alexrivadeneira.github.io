@@ -31,6 +31,11 @@ html {
   margin: 0;
   background: radial-gradient(circle at right bottom, rgba(255,255,255,1) 1%, rgba(154,164,192,1) 33%, rgba(6,0,106,1) 100%);
 
+  .endorsement-logo{
+    max-width: 30%;
+    height: 100px;
+    flex-direction: column;
+  }
 }
 .slide-wrapper{
   max-width: 1200px;
