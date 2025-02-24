@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>BidWell - Real Estate Commission Data</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a {
+      color: #3F51B5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Header Navigation */
+    header {
+      background: #f8f8f8;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #3F51B5;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      font-weight: bold;
+    }
+    /* Main Content */
+    .hero {
+      margin-top: 100px;
+      padding: 40px;
+      text-align: center;
+      background: #e9f2f9;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #3F51B5;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #555;
+    }
+    section {
+      padding: 60px 40px;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #3F51B5;
+    }
+    /* Form Section */
+    .form-section form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fdfdfd;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 15px;
+    }
+    .radio-group label, .checkbox-group label {
+      font-weight: normal;
+    }
+    button {
+      background-color: #3F51B5;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #303F9F;
+    }
+    /* Footer */
+    footer {
+      background: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header>
+    <div class="logo">
+
+
+
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#commission">Commission Data</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>BidWell</h1>
+    <p>BidWell is building a database of commissions to help homebuyers and homesellers understand what others are paying.</p>
+  </section>
+  
+  <!-- Commission Data Section -->
+  <section id="commission" class="form-section">
+    <h2>What was your commission?</h2>
+    <form
+        action="https://formspree.io/f/mdkavbnj"
+        method="POST"
+    >
+      <div class="form-group">
+        <label>Are you a:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="role" value="buyer"> Home Buyer
+          </label>
+          <label>
+            <input type="radio" name="role" value="seller"> Home Seller
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="commission">Commission</label>
+        <input type="text" id="commission" name="commission" placeholder="Enter your commission">
+      </div>
+      
+      <div class="form-group">
+        <label>Price Range for Home</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="price_range" value="0-300k">$0-300k</label>
+          <label><input type="checkbox" name="price_range" value="301k-600k">$301k-600k</label>
+          <label><input type="checkbox" name="price_range" value="601-900k">$601-900k</label>
+          <label><input type="checkbox" name="price_range" value="901-1.2M">$901k-1.2M</label>
+          <label><input type="checkbox" name="price_range" value="1.2M-1.5M">$1.2M-1.5M</label>
+          <label><input type="checkbox" name="price_range" value="1.5M+">$1.5M+</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="location">City, State</label>
+        <input type="text" id="location" name="location" placeholder="e.g., Boston, MA">
+      </div>
+      
+      <div class="form-group">
+        <label for="agent">Real Estate Agent's Name (Optional - Will be kept confidential)</label>
+        <input type="text" id="agent" name="agent" placeholder="Enter agent's name">
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>BidWell is dedicated to providing transparent real estate commission data to empower homebuyers and homesellers. Learn more about our mission and how we're changing the real estate landscape.</p>
+  </section>
+  
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="#">Resource Link 1</a></li>
+      <li><a href="#">Resource Link 2</a></li>
+      <li><a href="#">Resource Link 3</a></li>
+    </ul>
+  </section>
+  
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Stay tuned for updates, market insights, and tips on navigating the real estate landscape. Our blog will be your go-to resource for all things real estate.</p>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BidWell. All rights reserved.</p>
+  </footer>
+</body>
+</html>
