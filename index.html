@@ -40,10 +40,9 @@
       width: 100%;
       z-index: 100;
     }
-    header .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #3F51B5;
+    .logo img {
+      max-width: 150px;
+      height: auto;
     }
     nav ul {
       list-style: none;
@@ -53,7 +52,7 @@
     nav ul li a {
       font-weight: bold;
     }
-    /* Main Content */
+    /* Hero Section */
     .hero {
       margin-top: 100px;
       padding: 40px;
@@ -61,19 +60,25 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
-    /* Hero Columns */
-    .hero-image, .hero-text {
+    .hero-image {
       width: 50%;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+      background-image: url('house.png');
+      background-size: cover;
+      background-position: center;
     }
     .hero-text {
+      width: 50%;
       padding: 20px;
       text-align: left;
     }
-    .hero-image img {
-      width: 100%;
-      height: auto;
-      display: block;
+    /* Center paragraphs in sections beneath the hero */
+    section:not(.hero) p {
+      text-align: center;
     }
     /* Section Headers Centered */
     section h2 {
@@ -101,6 +106,7 @@
       display: block;
       margin-bottom: 8px;
       font-weight: bold;
+      text-align: center;
     }
     .form-group input[type="text"],
     .form-group input[type="number"] {
@@ -113,6 +119,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
+      justify-content: center;
     }
     .radio-group label, .checkbox-group label {
       font-weight: normal;
@@ -125,20 +132,40 @@
       border-radius: 4px;
       font-size: 1rem;
       cursor: pointer;
+      display: block;
+      margin: 0 auto;
     }
     button:hover {
       background-color: #303F9F;
     }
-    /* Resources Section - Resource items in a 3-column layout */
+    /* Resources Section - Cards */
     .resources-container {
       display: flex;
       justify-content: space-between;
       gap: 20px;
       flex-wrap: wrap;
     }
-    .resource-item {
-      flex: 1 1 calc(33.33% - 20px);
+    .resource-card {
+      flex: 0 0 calc(33.33% - 20px);
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.3s ease;
+    }
+    .resource-card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .resource-card img {
+      width: 100%;
+      display: block;
+    }
+    .resource-card h3 {
+      font-size: 1.5rem;
       padding: 10px;
+      margin: 0;
+      background: #f9f9f9;
       text-align: center;
     }
     /* Footer */
@@ -159,39 +186,25 @@
         gap: 10px;
         margin-top: 10px;
       }
-      /* Increase hero margin-top on mobile to ensure header doesn't cover content */
       .hero {
-        margin-top: 140px; /* Adjust this value based on your header's height */
+        margin-top: 140px;
         padding: 20px;
         flex-direction: column;
       }
       .hero-image, .hero-text {
         width: 100%;
       }
+      .hero-image {
+        height: 200px;
+      }
       .hero-text {
         padding: 10px 0;
-      }
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .hero p {
-        font-size: 1rem;
-        padding: 0 10px;
-      }
-      section {
-        padding: 40px 20px;
-      }
-      section h2 {
-        font-size: 1.5rem;
-      }
-      .form-section form {
-        padding: 15px;
       }
       .resources-container {
         flex-direction: column;
       }
-      .resource-item {
-        flex: 1 1 100%;
+      .resource-card {
+        flex: 0 0 100%;
         margin-bottom: 20px;
       }
     }
@@ -201,7 +214,7 @@
   <!-- Header Navigation -->
   <header>
     <div class="logo">
-      BidWell
+      <img src="logo.png" alt="Logo">
     </div>
     <nav>
       <ul>
@@ -214,10 +227,8 @@
   
   <!-- Hero Section -->
   <section class="hero">
-    <!-- Left: Placeholder Image -->
-    <div class="hero-image">
-      <img src="https://via.placeholder.com/500x300" alt="Placeholder Image">
-    </div>
+    <!-- Left: Hero Background Image -->
+    <div class="hero-image"></div>
     <!-- Right: Hero Text -->
     <div class="hero-text">
       <p>How much commission should you be paying your real estate agent? BidWell is building a database of agent commissions to make home buying and selling more transparent. <br><br> Help promote price transparency today by adding in your info to the database.</p>
@@ -282,9 +293,18 @@
   <section id="resources">
     <h2>Resources</h2>
     <div class="resources-container">
-      <div class="resource-item"><a href="#">Resource Link 1</a></div>
-      <div class="resource-item"><a href="#">Resource Link 2</a></div>
-      <div class="resource-item"><a href="#">Resource Link 3</a></div>
+      <!-- <a href="#" class="resource-card">
+        <img src="https://via.placeholder.com/300x150?text=Resource+Image" alt="Resource image">
+        <h3>Resource Title</h3>
+      </a> -->
+      <a href="bidwell_guide_to_negotiating_home_buyers_commissions.pdf" class="resource-card">
+        <img src="resource-1.png" alt="home buyer reference">
+        <h3>Guide to Negotiating Home Buyer's Commission</h3>
+      </a>
+      <!-- <a href="​BidWell Guide to Negotiating Home Buyer's Commissions.pdf" class="resource-card">
+        <img src="https://via.placeholder.com/300x150?text=Resource+Image" alt="Resource image">
+        <h3>Resource Title</h3>
+      </a> -->
     </div>
   </section>
   
