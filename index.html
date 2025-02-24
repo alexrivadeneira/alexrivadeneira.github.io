@@ -57,27 +57,33 @@
     .hero {
       margin-top: 100px;
       padding: 40px;
-      text-align: center;
       background: #e9f2f9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #3F51B5;
+    /* Hero Columns */
+    .hero-image, .hero-text {
+      width: 50%;
     }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-      color: #555;
+    .hero-text {
+      padding: 20px;
+      text-align: left;
     }
-    section {
-      padding: 60px 40px;
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
+    /* Section Headers Centered */
     section h2 {
       margin-bottom: 20px;
       font-size: 2rem;
       color: #3F51B5;
+      text-align: center;
+    }
+    section {
+      padding: 60px 40px;
     }
     /* Form Section */
     .form-section form {
@@ -123,6 +129,18 @@
     button:hover {
       background-color: #303F9F;
     }
+    /* Resources Section - Resource items in a 3-column layout */
+    .resources-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .resource-item {
+      flex: 1 1 calc(33.33% - 20px);
+      padding: 10px;
+      text-align: center;
+    }
     /* Footer */
     footer {
       background: #f8f8f8;
@@ -145,6 +163,13 @@
       .hero {
         margin-top: 140px; /* Adjust this value based on your header's height */
         padding: 20px;
+        flex-direction: column;
+      }
+      .hero-image, .hero-text {
+        width: 100%;
+      }
+      .hero-text {
+        padding: 10px 0;
       }
       .hero h1 {
         font-size: 2rem;
@@ -161,6 +186,13 @@
       }
       .form-section form {
         padding: 15px;
+      }
+      .resources-container {
+        flex-direction: column;
+      }
+      .resource-item {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
       }
     }
   </style>
@@ -182,15 +214,22 @@
   
   <!-- Hero Section -->
   <section class="hero">
-    <h1>BidWell</h1>
-    <p>BidWell is building a database of commissions to help homebuyers and homesellers understand what others are paying.</p>
+    <!-- Left: Placeholder Image -->
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/500x300" alt="Placeholder Image">
+    </div>
+    <!-- Right: Hero Text -->
+    <div class="hero-text">
+      <p>How much commission should you be paying your real estate agent? BidWell is building a database of agent commissions to make home buying and selling more transparent. <br><br> Help promote price transparency today by adding in your info to the database.</p>
+    </div>
   </section>
   
   <!-- Commission Data Section -->
   <section id="commission" class="form-section">
-    <h2>What was your commission?</h2>
+    <h2>Contribute to the Commission Database for Homebuyers and Homesellers</h2>
     <form action="https://formspree.io/f/mdkavbnj" method="POST">
       <div class="form-group">
+        <label>How much commission are you paying?</label>
         <label>Are you a:</label>
         <div class="radio-group">
           <label>
@@ -225,7 +264,7 @@
       </div>
       
       <div class="form-group">
-        <label for="agent">Real Estate Agent's Name (Optional - Will be kept confidential)</label>
+        <label for="agent">Real Estate Agent's Name (Optional)</label>
         <input type="text" id="agent" name="agent" placeholder="Enter agent's name">
       </div>
       
@@ -236,17 +275,17 @@
   <!-- About Section -->
   <section id="about">
     <h2>About</h2>
-    <p>BidWell is dedicated to providing transparent real estate commission data to empower homebuyers and homesellers. Learn more about our mission and how we're changing the real estate landscape.</p>
+    <p>BidWell is dedicated to providing transparent real estate commission data to empower homebuyers and homesellers. Learn more about our mission and how we're changing the real estate landscape. BidWell is collecting localized data about commissions across the United States. After collecting the data, BidWell will publish the results to create price transparency for real estate commissions for homebuyers and homesellers.</p>
   </section>
   
   <!-- Resources Section -->
   <section id="resources">
     <h2>Resources</h2>
-    <ul>
-      <li><a href="#">Resource Link 1</a></li>
-      <li><a href="#">Resource Link 2</a></li>
-      <li><a href="#">Resource Link 3</a></li>
-    </ul>
+    <div class="resources-container">
+      <div class="resource-item"><a href="#">Resource Link 1</a></div>
+      <div class="resource-item"><a href="#">Resource Link 2</a></div>
+      <div class="resource-item"><a href="#">Resource Link 3</a></div>
+    </div>
   </section>
   
   <!-- Blog Section -->
