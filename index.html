@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
   <meta charset="UTF-8">
+  <!-- Add the viewport meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BidWell - Real Estate Commission Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <style>
     /* Basic Reset */
     * {
@@ -104,6 +105,7 @@
     }
     .radio-group, .checkbox-group {
       display: flex;
+      flex-wrap: wrap;
       gap: 15px;
     }
     .radio-group label, .checkbox-group label {
@@ -132,10 +134,31 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
+        padding: 20px;
       }
       nav ul {
         flex-direction: column;
         gap: 10px;
+        margin-top: 10px;
+      }
+      .hero {
+        padding: 20px;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+      section {
+        padding: 40px 20px;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      .form-section form {
+        padding: 15px;
       }
     }
   </style>
@@ -144,10 +167,8 @@
   <!-- Header Navigation -->
   <header>
     <div class="logo">
-
-
-
-
+      <!-- You can add your logo image or text here -->
+      BidWell
     </div>
     <nav>
       <ul>
@@ -167,10 +188,7 @@
   <!-- Commission Data Section -->
   <section id="commission" class="form-section">
     <h2>What was your commission?</h2>
-    <form
-        action="https://formspree.io/f/mdkavbnj"
-        method="POST"
-    >
+    <form action="https://formspree.io/f/mdkavbnj" method="POST">
       <div class="form-group">
         <label>Are you a:</label>
         <div class="radio-group">
