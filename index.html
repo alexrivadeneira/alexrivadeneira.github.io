@@ -118,6 +118,14 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
     .radio-group, .checkbox-group {
       display: flex;
       flex-wrap: wrap;
@@ -274,7 +282,37 @@
       <p>How much commission should you be paying your real estate agent? BidWell is building a database of agent commissions to make home buying and selling more transparent. <br><br> Help promote price transparency today by adding in your info to the database.</p>
     </div>
   </section>
-  
+ 
+<!-- Contact info intake -->
+<section id="contact-intake" class="form-section">
+  <h2>Want to negotiate your buyer's agent fee with your real estate agent?</h2>
+  <h3>BidWell helps you negotiate it with them — free of charge. Just send your name, your agent's contact info, and any other notes. We'll help you save $$$.</h3>
+  <form action="https://formspree.io/f/mdkeyyaa" method="POST">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email address">
+    </div>
+
+    <div class="form-group">
+      <label for="agent-info">Your Agent's Contact Information</label>
+      <textarea id="agent-info" name="agent_info" rows="6" style="width: 100%;" placeholder="Include agent name, phone number, email, brokerage, etc."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="additional-info">Any Other Information</label>
+      <textarea id="additional-info" name="additional_info" rows="6" style="width: 100%;" placeholder="Share any additional context or questions you have..."></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
   <!-- Commission Data Section -->
   <section id="commission" class="form-section">
     <h2>Contribute to the Commission Database for Homebuyers and Homesellers</h2>
