@@ -1,463 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!-- Add viewport meta tag for responsiveness -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BidWell - Real Estate Commission Data</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CivicLens — Know What’s Being Built</title>
+  <meta name="description" content="CivicLens tracks local housing proposals so you know what's changing, where, and how to engage." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Sans + Serif -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <!-- Favicon: simple house + sun SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs/%3E%3Ccircle cx='50' cy='14' r='8' fill='%23FFD54D'/%3E%3Cpath d='M8 34 L32 14 L56 34 V56 H36 V42 H28 V56 H8 Z' fill='%230B72EC'/%3E%3C/svg%3E">
   <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root{
+      /* Bright "summer day" palette */
+      --bg-top: #EAF6FF; /* sky */
+      --bg-mid: #FFFFFF; /* sunlit */
+      --bg-btm: #FFF8E1; /* warm light */
+      --card: #ffffff;
+      --card-border: rgba(15, 23, 42, 0.08);
+      --muted: #4b5563;
+      --text: #111827;
+      --brand: #0B72EC; /* sky blue */
+      --brand-2: #21D4FD; /* cyan */
+      --accent: #FFD54D; /* sunshine */
+      --success: #16a34a;
+      --danger: #ef4444;
+      --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+      --ring: 0 0 0 4px rgba(33, 212, 253, .25);
+      --serif: 'Source Serif 4', Georgia, Cambria, 'Times New Roman', Times, serif;
+      --sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     }
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      color: #333;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(255, 213, 77, .25), transparent 60%),
+        radial-gradient(900px 600px at 110% 10%, rgba(33, 212, 253, .18), transparent 55%),
+        linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 55%, var(--bg-btm) 100%);
+      letter-spacing:0.01em;
     }
-    a {
-      color: #3F51B5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    /* Header Navigation */
-    header {
-      background: #f8f8f8;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    }
-    .logo img {
-      max-width: 150px;
-      height: auto;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    nav ul li a {
-      font-weight: bold;
-    }
-    /* Hero Section */
-    .hero {
-      margin-top: 100px;
-      padding: 40px;
-      background: #e9f2f9;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .hero-image {
-      width: 50%;
-      height: 300px;
-      margin: 0;
-      padding: 0;
-      background-image: url('house.png');
-      background-size: cover;
-      background-position: center;
-    }
-    .hero-text {
-      width: 50%;
-      padding: 20px;
-      text-align: left;
-    }
-    .hero-text p {
-      font-size: 1.75rem;
-    }
-    /* Center paragraphs in sections beneath the hero */
-    section:not(.hero) p {
-      text-align: center;
-    }
-    /* Section Headers Centered */
-    section h2 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #3F51B5;
-      text-align: center;
-    }
-    section {
-      padding: 60px 40px;
-    }
-    /* Form Section */
-    .form-section form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #fdfdfd;
-      padding: 20px;
-      border: 1px solid #eee;
-      border-radius: 5px;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-      text-align: center;
-    }
-    .form-group input[type="text"],
-    .form-group input[type="number"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .form-group textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    .radio-group, .checkbox-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .radio-group label, .checkbox-group label {
-      font-weight: normal;
-    }
-    /* Add spacing between checkboxes and their label text */
-    .checkbox-group input[type="checkbox"] {
-      margin-right: 8px;
-    }
-    button {
-      background-color: #3F51B5;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      display: block;
-      margin: 0 auto;
-    }
-    button:hover {
-      background-color: #303F9F;
-    }
-    /* Resources Section - Cards */
-    .resources-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .resource-card {
-      flex: 0 0 calc(33.33% - 20px);
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      transition: box-shadow 0.3s ease;
-    }
-    .resource-card:hover {
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    .resource-card img {
-      width: 100%;
-      display: block;
-    }
-    .resource-card h3 {
-      font-size: 1.5rem;
-      padding: 10px;
-      margin: 0;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    /* Footer */
-    footer {
-      background: #f8f8f8;
-      text-align: center;
-      padding: 20px;
-      border-top: 1px solid #ddd;
-    }
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 20px;
-      }
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-      }
-      .hero {
-        margin-top: 140px;
-        padding: 20px;
-        flex-direction: column;
-      }
-      .hero-image, .hero-text {
-        width: 100%;
-      }
-      .hero-image {
-        height: 200px;
-      }
-      .hero-text {
-        padding: 10px 0;
-      }
-      .resources-container {
-        flex-direction: column;
-      }
-      .resource-card {
-        flex: 0 0 100%;
-        margin-bottom: 20px;
-      }
+    /* Soft cloud bands */
+    body::before{
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.4;
+      background:
+        radial-gradient(120px 40px at 20% 18%, rgba(255,255,255,.9), transparent 60%),
+        radial-gradient(140px 40px at 30% 22%, rgba(255,255,255,.9), transparent 60%),
+        radial-gradient(120px 40px at 65% 14%, rgba(255,255,255,.9), transparent 60%),
+        radial-gradient(160px 50px at 75% 18%, rgba(255,255,255,.9), transparent 60%);
+      filter: blur(18px);
     }
 
-    /* Blog Styling */
-.blog-container {
-  max-width: 60%;
-  margin: 0 auto;
-  text-align: left;
-}
+    .container{max-width:1100px; margin:0 auto; padding: clamp(16px, 4vw, 28px);}    
 
-.blog-post {
-  margin-bottom: 60px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ddd;
-}
+    .badge{
+      display:inline-flex; align-items:center; gap:.6rem; padding:.45rem .8rem;
+      border:1px solid var(--card-border); border-radius:999px; background:#fff; color:#0f172a;
+      font-size:.88rem; box-shadow: var(--shadow); font-family: var(--serif);
+    }
+    .badge .dot{width:10px; height:10px; border-radius:999px; background: var(--accent); box-shadow: 0 0 0 4px rgba(255, 213, 77, .25)}
+    .badge .emoji{font-size:1rem; line-height:1; opacity:.55; filter:grayscale(40%);}
 
-.blog-title {
-  font-size: 1.75rem;
-  color: #222;
-  margin-bottom: 5px;
-}
+    .muted{color:var(--muted)}
+    .hero{padding: 64px 0 28px; text-align:center}
+    .title{
+      font-size: clamp(2rem, 5vw, 3.2rem); line-height:1.05; font-weight:700; letter-spacing:-0.01em;
+      font-family: var(--serif);
+    }
+    .subtitle{
+      font-size: clamp(1rem, 2.2vw, 1.2rem); color:#334155; max-width:860px; margin:14px auto 0;
+      font-family: var(--serif); font-weight:400;
+    }
+    .cta-row{display:flex; justify-content:center; gap:12px; margin-top:22px; flex-wrap:wrap}
 
-.blog-date {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 20px;
-  font-style: italic;
-}
+    .btn{appearance:none; border:none; cursor:pointer; padding:12px 16px; border-radius:12px; font-weight:700; font-size:1rem}
+    .btn-brand{background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:white; box-shadow: var(--shadow)}
+    .btn-brand:hover{filter: brightness(1.05)}
+    .btn-ghost{background:white; color:#0f172a; border:1px solid var(--card-border); box-shadow: var(--shadow)}
 
-#blog p {
-  text-align: left;
-  line-height: 1.8;
-  margin-bottom: 1.2em;
-}
+    .grid{display:grid; gap:18px}
+    .grid-3{grid-template-columns: repeat(3, minmax(0, 1fr))}
+    .grid-2{grid-template-columns: repeat(2, minmax(0, 1fr))}
+    @media (max-width: 900px){ .grid-3{grid-template-columns:1fr 1fr} }
+    @media (max-width: 680px){ .grid-3,.grid-2{grid-template-columns:1fr} }
 
-details summary {
-  font-size: 0.9rem;
-  color: #3F51B5;
-}
+    .card{background: var(--card); border:1px solid var(--card-border); border-radius:16px; padding:18px; box-shadow: var(--shadow)}
+    .card h3{margin:.2rem 0 .4rem; font-size:1.1rem; font-family: var(--serif); font-weight:600}
+    .card .lead{color:#334155}
 
-details[open] summary {
-  margin-bottom: 0.5rem;
-}
+    .icon{width:26px; height:26px; display:inline-block}
+    .icon svg{width:26px; height:26px}
 
-details ol {
-  padding-left: 1.2rem;
-}
+    section{padding: 22px 0}
+    .section-title{
+      font-size: clamp(1.2rem, 2.4vw, 1.6rem); font-weight:700; margin: 8px 0 14px; font-family: var(--serif);
+    }
 
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(15,23,42,.12), transparent); margin:28px 0}
+
+    .list{display:grid; gap:12px; margin-top:8px}
+    .list .row{display:flex; gap:12px; align-items:flex-start}
+    .list .row .bullet{width:30px; height:30px; display:grid; place-items:center; border-radius:10px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); border:1px solid rgba(0,0,0,.05); box-shadow: var(--shadow)}
+    .list .row .bullet .mini{width:16px; height:16px; background:white; border-radius:3px}
+
+    .kicker{
+      font-weight:700; color:#0f172a; background:linear-gradient(90deg, #fff 0, #fff 60%, rgba(255, 213, 77, .35) 100%);
+      padding:6px 10px; border-radius:999px; border:1px solid var(--card-border); font-family: var(--serif);
+    }
+
+    .pill{
+      display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--card-border); background:#fff; box-shadow: var(--shadow);
+      font-family: var(--serif);
+    }
+
+    .sample{display:grid; gap:10px; font-size:.98rem}
+    .sample b{color:#0f172a; font-family: var(--serif)}
+    .sample .row{display:flex; align-items:center; gap:10px}
+    .sample .glyph{width:18px; height:18px}
+    .sample .emoji{font-size:16px; opacity:.55; filter:grayscale(40%)}
+    .sample .actions{display:flex; gap:8px; flex-wrap:wrap}
+
+    .link-btn{padding:8px 12px; border-radius:10px; background:#fff; border:1px solid var(--card-border); text-decoration:none; color:#0f172a; box-shadow: var(--shadow)}
+
+    .chips{display:flex; flex-wrap:wrap; gap:8px}
+
+    form.waitlist{display:grid; gap:10px; max-width:640px; margin: 8px auto 0}
+    .input{background:#fff; border:1px solid var(--card-border); border-radius:12px; padding:12px 14px; color:#0f172a; box-shadow: var(--shadow)}
+    .input:focus{outline: none; box-shadow: var(--ring); border-color: transparent}
+
+    .disclaimer{font-size:.9rem; color:#475569}
+
+    footer{padding:30px 0 50px; color:#475569; font-size:.95rem}
+    .footer-grid{display:grid; gap:12px; grid-template-columns:1fr auto}
+    @media (max-width: 640px){ .footer-grid{grid-template-columns:1fr} }
+
+    /* general emoji tone-down anywhere */
+    .emoji{opacity:.55; filter:grayscale(40%);}
 
   </style>
 </head>
 <body>
-  <!-- Header Navigation -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
+  <!-- SVG Sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 11h2v9h6v-6h4v6h6v-9h2z"/></symbol>
+    <symbol id="icon-townhall" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 6v2h16V6l-8-4zm-6 6v12h3V8H6zm5 0v12h2V8h-2zm5 0v12h3V8h-3z"/></symbol>
+    <symbol id="icon-brain" viewBox="0 0 24 24"><path fill="currentColor" d="M8 3a3 3 0 0 0-3 3v.5A3.5 3.5 0 0 0 2 10v1a3 3 0 0 0 3 3v1a3 3 0 0 0 3 3h1V3H8zm7 0a3 3 0 0 1 3 3v.5A3.5 3.5 0 0 1 22 10v1a3 3 0 0 1-3 3v1a3 3 0 0 1-3 3h-1V3h1z"/></symbol>
+    <symbol id="icon-speaker" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a3.5 3.5 0 0 0-2.5-3.34v6.68A3.5 3.5 0 0 0 16.5 12zm0-6a9 9 0 0 1 0 18v-2a7 7 0 0 0 0-14V6z"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3v18H4V4h3V2zm13 8H6v10h14V10z"/></symbol>
+    <symbol id="icon-issues" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 6 6.93 12H5.07L12 8zm-1 3h2v4h-2v-4zm0 6h2v2h-2v-2z"/></symbol>
+    <symbol id="icon-people" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 3-1.57 3-3.5S17.66 4 16 4s-3 1.57-3 3.5S14.34 11 16 11zM8 11c1.66 0 3-1.79 3-4S9.66 3 8 3 5 4.79 5 7s1.34 4 3 4zm8 2c-1.78 0-5.33.89-6 2.67V18h12v-2.33C21.33 13.89 17.78 13 16 13zM8 13c-2.33 0-7 1.17-7 3.5V18h7v-1.5c0-.53.21-1.03.56-1.4C8.86 14.36 8.43 14 8 14v-1z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6h20v12H2V6zm10 5L4 8v10h16V8l-8 3z"/></symbol>
+    <symbol id="icon-link" viewBox="0 0 24 24"><path fill="currentColor" d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 1 0 0 6h3v2h-3a5 5 0 0 1-5-5zm7-1h2v2h-2v-2zm4.1-4h-3v2h3a3 3 0 0 1 0 6h-3v2h3a5 5 0 0 0 0-10z"/></symbol>
+  </svg>
+
+  <header class="container hero">
+    <div class="badge">
+      <span class="dot"></span>
+      <span class="emoji" aria-hidden="true">🏘️</span>
+      <span><strong style="font-family:var(--serif)">CivicLens</strong> • Stay ahead of local housing policy</span>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#commission">Commission Data</a></li>
-        <li><a href="#blog">Blog</a></li>
-      </ul>
-    </nav>
+    <h1 class="title" style="margin-top:12px">CivicLens: Know What’s Being Built</h1>
+    <p class="subtitle">Stay ahead of local housing policy — without drowning in jargon. We track housing-related proposals from planning commissions and city councils so you understand what's changing, where, and what you can do about it.</p>
+    <div class="cta-row">
+      <a class="btn btn-brand" href="#waitlist">Join the Waitlist</a>
+      <a class="btn btn-ghost" href="#how">See how it works</a>
+    </div>
   </header>
-  
-  <!-- Hero Section -->
-  <section class="hero">
-    <!-- Left: Hero Background Image -->
-    <div class="hero-image"></div>
-    <!-- Right: Hero Text -->
-    <div class="hero-text">
-      <p>How much commission should you be paying your real estate agent? BidWell is building a database of agent commissions to make home buying and selling more transparent. <br><br> Help promote price transparency today by adding in your info to the database.</p>
-    </div>
-  </section>
- 
-<!-- Contact info intake -->
-<section id="contact-intake" class="form-section">
-  <h2>Want to negotiate your buyer’s agent fee with a real estate agent?</h2>
-  <h3>BidWell helps you negotiate it with them - free of charge. Just send your name, the agent's contact info, and any other notes. We'll help you save $$$.</h3>
-  <form action="https://formspree.io/f/mdkeyyaa" method="POST">
-    <div class="form-group">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name">
-    </div>
 
-    <div class="form-group">
-      <label for="email">Your Email Address</label>
-      <input type="text" id="email" name="email" placeholder="Enter your email address">
-    </div>
-
-    <div class="form-group">
-      <label for="agent-info">Your Agent's Contact Information</label>
-      <textarea id="agent-info" name="agent_info" rows="6" style="width: 100%;" placeholder="Include agent name, phone number, email, brokerage, etc."></textarea>
-    </div>
-
-    <div class="form-group">
-      <label for="additional-info">Any Other Information</label>
-      <textarea id="additional-info" name="additional_info" rows="6" style="width: 100%;" placeholder="Share any additional context or questions you have..."></textarea>
-    </div>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-
-  <!-- Commission Data Section -->
-  <section id="commission" class="form-section">
-    <h2>Contribute to the Commission Database for Homebuyers and Homesellers</h2>
-    <form action="https://formspree.io/f/mdkavbnj" method="POST">
-      <div class="form-group">
-        <label>How much commission are you paying?</label>
-        <label>Are you a:</label>
-        <div class="radio-group">
-          <label>
-            <input type="radio" name="role" value="buyer"> Home Buyer
-          </label>
-          <label>
-            <input type="radio" name="role" value="seller"> Home Seller
-          </label>
+  <main class="container">
+    <section id="what">
+      <div class="badge"><span class="emoji" aria-hidden="true">🧠</span><svg class="icon" aria-hidden="true"><use href="#icon-home"/></svg><span>What Is CivicLens?</span></div>
+      <h2 class="section-title">An AI-powered lens on local housing policy</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon" aria-hidden="true"><svg><use href="#icon-townhall"/></svg></div>
+          <h3>We monitor meetings & materials</h3>
+          <p class="lead muted">Planning commission and city council agendas, staff reports, and draft ordinances — pulled weekly across your city and region.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true"><svg><use href="#icon-brain"/></svg></div>
+          <h3>AI distills what matters</h3>
+          <p class="lead muted">Plain-English summaries with timelines, stakeholders, and what's at stake — no jargon required.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true"><svg><use href="#icon-speaker"/></svg></div>
+          <h3>Action-oriented by design</h3>
+          <p class="lead muted">Ready-to-send email templates and contacts so you can weigh in — or just stay in the loop.</p>
         </div>
       </div>
-      
-      <div class="form-group">
-        <label for="commission">Commission</label>
-        <input type="text" id="commission" name="commission" placeholder="Enter your commission">
-      </div>
-      
-      <div class="form-group">
-        <label>Price Range for Home</label>
-        <div class="checkbox-group">
-          <label><input type="checkbox" name="price_range" value="0-300k">$0-300k</label>
-          <label><input type="checkbox" name="price_range" value="301k-600k">$301k-600k</label>
-          <label><input type="checkbox" name="price_range" value="601-900k">$601-900k</label>
-          <label><input type="checkbox" name="price_range" value="901-1.2M">$901k-1.2M</label>
-          <label><input type="checkbox" name="price_range" value="1.2M-1.5M">$1.2M-1.5M</label>
-          <label><input type="checkbox" name="price_range" value="1.5M+">$1.5M+</label>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="how">
+      <div class="badge"><span class="emoji" aria-hidden="true">🛠️</span><svg class="icon" aria-hidden="true"><use href="#icon-brain"/></svg><span>How It Works</span></div>
+      <h2 class="section-title">From dense PDFs to clear, timely alerts</h2>
+      <div class="grid grid-2">
+        <div class="card list">
+          <div class="row"><div><b>We monitor local housing discussions & decisions.</b><div class="muted">Agendas, staff reports, draft ordinances — automatically aggregated each week.</div></div></div>
+          <div class="row"><div><b>AI summarizes key details.</b><div class="muted">We extract the policy, timeline, stakeholders, and what it means for your neighborhood.</div></div></div>
+          <div class="row"><div><b>Customized by your location.</b><div class="muted">Enter your ZIP code and we track proposals near you.</div></div></div>
+          <div class="row"><div><b>Timely alerts before votes.</b><div class="muted">Be first to know when decisions land — and how to voice your opinion.</div></div></div>
+        </div>
+        <div class="card">
+          <span class="kicker">Sample Summary</span>
+          <div class="sample" style="margin-top:10px">
+            <div class="row"><span class="emoji" aria-hidden="true">🏙️</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-townhall"/></svg><b>Policy:</b> Proposed 84-unit development on Telegraph Ave</div>
+            <div class="row"><span class="emoji" aria-hidden="true">📅</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calendar"/></svg><b>Hearing Date:</b> September 18 — Oakland Planning Commission</div>
+            <div class="row"><span class="emoji" aria-hidden="true">📍</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pin"/></svg><b>Location:</b> 4900 Telegraph Ave, Temescal</div>
+            <div class="row"><span class="emoji" aria-hidden="true">🟢</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-people"/></svg><b>Supporters:</b> YIMBY coalition, affordable housing advocates</div>
+            <div class="row"><span class="emoji" aria-hidden="true">🔴</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-people"/></svg><b>Opponents:</b> Local neighborhood association, small business group</div>
+            <div class="row"><span class="emoji" aria-hidden="true">🏗️</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-issues"/></svg><b>Key Issues:</b> Height variance request, 10% below-market units</div>
+            <div class="actions">
+              <a class="link-btn" href="#">View proposal</a>
+              <a class="link-btn" href="#">Email planner</a>
+              <a class="link-btn" href="#">Attend hearing</a>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <div class="form-group">
-        <label for="location">City, State</label>
-        <input type="text" id="location" name="location" placeholder="e.g., Boston, MA">
-      </div>
-      
-      <div class="form-group">
-        <label for="agent">Real Estate Agent's Name (Optional)</label>
-        <input type="text" id="agent" name="agent" placeholder="Enter agent's name">
-      </div>
-      
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about">
-    <h2>About</h2>
-    <p>BidWell is dedicated to providing transparent real estate commission data to empower homebuyers and homesellers. Learn more about our mission and how we're changing the real estate landscape. BidWell is collecting localized data about commissions across the United States. After collecting the data, BidWell will publish the results to create price transparency for real estate commissions for homebuyers and homesellers.</p>
-  </section>
-  
-  <!-- Resources Section -->
-  <section id="resources">
-    <h2>Resources</h2>
-    <div class="resources-container">
-      <a href="bidwell_guide_to_negotiating_home_buyers_commissions.pdf" class="resource-card">
-        <img src="resource-1.png" alt="home buyer reference">
-        <h3>Guide to Negotiating Home Buyer's Commission</h3>
-      </a>
-    </div>
-  </section>
-  
-<!-- Blog Section -->
-<section id="blog">
-  <h2>Blog</h2>
-  <div class="blog-container">
-    
-    <!-- Blog Post 1 -->
-    <article class="blog-post">
-      <h3 class="blog-title">Launching BidWell</h3>
-      <p class="blog-date">March 3, 2025</p>
-      <p>We launched BidWell in 2024 in the wake of the NAR Settlement that ended collusion and price fixing by the real estate industry.</p>
-      <p>No one knows what the new normal for commissions will look like. That's why BidWell is helping to promote creative new commission structures, provide transparency about commission structures to homebuyers and homesellers, and matching buyers and sellers with agents by commission structure.</p>
-      <p>When you're looking to find a hotel room, a flight, or a high interest savings account, you can easily see prices and shop around. That does not exist for homebuyers and homesellers. That's why BidWell is building the first-of-its-kind database recording how much commission people are paying to their real estate agents. This data will empower homeowners and homebuyers to find the agent that meets your budget.</p>
-      <p>Have you bought or sold a home as a homebuyer, homeseller, or agent? Or have you negotiated those terms recently? We need your help to make commission structures more transparent. <a href="#commission">Please contribute to our database!</a></p>
-    </article>
+    </section>
 
-    <!-- Blog Post 2 -->
-    <article class="blog-post">
-      <h3 class="blog-title">A power imbalance.</h3>
-      <p class="blog-date">March 18, 2025</p>
-      <p>Did you know that you can negotiate your agent's commission when you are buying and selling a home?</p>
-      <p>Right now, real estate agents know way more than you do about everything relating to buying a home – including the commission structure.</p>
-      <p>You can read up more about how to negotiate your commission in our 2025 BidWell Guide to Negotiating Commissions. It includes suggestions for how to structure the commission, ways to find new agents who...</p>
-      <p>Are you looking to buy or sell your home? We can match you with agents who are open to negotiating their commission in your area. <a href="mailto:benfortransit@gmail.com">Email us here</a>.</p>
-    </article>
-    
-  </div>
-</section>
+    <div class="divider"></div>
 
-  
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 BidWell. All rights reserved.</p>
-    <div style="margin-top: 20px; font-size: 0.85rem; color: #666; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left;">
-      <details>
-        <summary style="cursor: pointer; font-weight: bold; text-align: center;">📄 Terms of Service & Privacy Policy</summary>
-        <div style="margin-top: 1em; line-height: 1.6;">
-          <h4>Terms of Service</h4>
-          <p><strong>Effective Date:</strong> 04/01/2025</p>
-          <p>Welcome to BidWell.Homes (“we”, “our”, or “us”). By accessing or using our website and services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must not use our website or services.</p>
-          <ol>
-            <li><strong>Use of Services:</strong> We provide informational and referral services that assist homebuyers in negotiating commission rates with their real estate agents. Our services are free to users.</li>
-            <li><strong>Eligibility:</strong> You must be at least 18 years old and able to enter into legally binding agreements.</li>
-            <li><strong>User Responsibilities:</strong> You agree to use our site for lawful purposes only and not to engage in fraudulent or infringing behavior.</li>
-            <li><strong>No Legal or Financial Advice:</strong> All content is for informational purposes only.</li>
-            <li><strong>Third-Party Services:</strong> We are not responsible for third-party real estate agents or services.</li>
-            <li><strong>Limitation of Liability:</strong> We are not liable for any damages arising from site use.</li>
-            <li><strong>Changes to the Terms:</strong> Continued use after updates means acceptance of new terms.</li>
-          </ol>
-    
-          <h4 style="margin-top: 2em;">Privacy Policy</h4>
-          <p><strong>Effective Date:</strong> 05/01/2025</p>
-          <p>BidWell.Homes is committed to protecting your privacy. This explains how we collect, use, and protect your information.</p>
-          <ol>
-            <li><strong>Information We Collect:</strong> Personal info (name, email, phone, zip), usage data via cookies.</li>
-            <li><strong>How We Use It:</strong> To connect you with real estate pros, communicate, improve UX, comply with laws.</li>
-            <li><strong>Sharing Info:</strong> We share with trusted agents and ops providers. We never sell your data.</li>
-            <li><strong>Your Rights:</strong> You can request access, correction, or deletion.</li>
-            <li><strong>Cookies:</strong> Used to analyze site behavior. Manage settings in your browser.</li>
-            <li><strong>Data Security:</strong> We use industry standards but can't guarantee total security.</li>
-            <li><strong>Changes:</strong> We'll post updates with a new effective date.</li>
-            <li><strong>Contact:</strong> Reach us via the website with any questions.</li>
-          </ol>
+    <section id="audience">
+      <div class="badge"><span class="emoji" aria-hidden="true">👥</span><svg class="icon" aria-hidden="true"><use href="#icon-people"/></svg><span>Who It’s For</span></div>
+      <h2 class="section-title">Made for residents, professionals, and the civically curious</h2>
+      <div class="chips">
+        <span class="pill">Neighborhood Residents</span>
+        <span class="pill">Real Estate Professionals</span>
+        <span class="pill">Housing Advocates</span>
+        <span class="pill">Local Journalists</span>
+        <span class="pill">Curious Voters</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="waitlist">
+      <div class="badge"><span class="emoji" aria-hidden="true">📍</span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg><span>Launching Soon in Select Cities</span></div>
+      <h2 class="section-title">Join the waitlist — be first to know when we launch near you</h2>
+      <form class="waitlist" action="https://formspree.io/f/xgvzpzkj" method="POST">
+        <label class="muted" for="name">Name</label>
+        <input class="input" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+
+        <label class="muted" for="email">Email</label>
+        <input class="input" id="email" name="email" placeholder="you@example.com" type="email" autocomplete="email" required />
+
+        <label class="muted" for="zip">ZIP Code</label>
+        <input class="input" id="zip" name="zip" placeholder="e.g., 94609"  inputmode="numeric" required />
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:6px">
+          <button class="btn btn-brand" type="submit">Join the Waitlist</button>
+          <span class="disclaimer">No spam — just launch updates and relevant alerts for your area.</span>
         </div>
-      </details>
+      </form>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="why">
+      <div class="badge"><span class="emoji" aria-hidden="true">🧩</span><svg class="icon" aria-hidden="true"><use href="#icon-issues"/></svg><span>Why It Matters</span></div>
+      <h2 class="section-title">Local decisions shape affordability, walkability, and equity</h2>
+      <p class="muted" style="font-family:var(--serif)">But they’re often buried in dense PDFs or last-minute hearings. CivicLens makes it easy to stay informed and involved — without spending hours decoding bureaucratic language.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="about">
+      <div class="badge"><svg class="icon" aria-hidden="true"><use href="#icon-people"/></svg><span>About the Leadership Team</span></div>
+      <div class="card">
+        <p class="muted" style="margin:0; font-family:var(--serif)">Ben Fong served on the Berkeley Planning Commission from 2016–2019. (Short bio coming soon.)</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="partners">
+      <div class="badge"><span class="emoji" aria-hidden="true">🤝</span><svg class="icon" aria-hidden="true"><use href="#icon-link"/></svg><span>Partners & Beta Testers Wanted</span></div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Bring CivicLens to your city or organization</h3>
+          <p class="muted" style="font-family:var(--serif)">Interested in piloting CivicLens with your planning department, newsroom, or advocacy group? We’d love to collaborate.</p>
+          <a class="btn btn-ghost" href="#contact" onclick="openContact()">Contact us →</a>
+        </div>
+        <div class="card">
+          <h3>What you’ll get</h3>
+          <ul class="muted" style="margin:0 0 0 1rem; line-height:1.7; font-family:var(--serif)">
+            <li>Early access and onboarding</li>
+            <li>City-specific data pipelines</li>
+            <li>Dedicated feedback channel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-grid">
+      <div>© <span id="year"></span> CivicLens. All rights reserved.</div>
+      <div style="text-align:right">
+        <a class="muted" href="#what" style="text-decoration:none">What is CivicLens?</a> •
+        <a class="muted" href="#how" style="text-decoration:none">How it works</a> •
+        <a class="muted" href="#waitlist" style="text-decoration:none">Waitlist</a>
+      </div>
     </div>
-    
   </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+
+    // Waitlist form mock submit
+    function subscribe(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const zip = document.getElementById('zip').value.trim();
+      const valid = /\S+@\S+\.\S+/.test(email) && /^\d{5}$/.test(zip);
+      if(!valid){ toast('Please enter a valid email and 5-digit ZIP.'); return false; }
+      toast("Thanks! You're on the waitlist.");
+      e.target.reset();
+      return false;
+    }
+
+    function openContact(){
+      toast('Contact us at: hello@civiclens.example');
+    }
+
+    // Lightweight toast
+    function toast(msg){
+      let t = document.createElement('div');
+      t.textContent = msg;
+      t.style.position='fixed'; t.style.bottom='24px'; t.style.left='50%'; t.style.transform='translateX(-50%)';
+      t.style.background='linear-gradient(135deg, var(--brand), var(--brand-2))';
+      t.style.color='white'; t.style.padding='12px 16px'; t.style.borderRadius='12px'; t.style.fontWeight='700';
+      t.style.boxShadow='var(--shadow)'; t.style.zIndex='9999';
+      document.body.appendChild(t);
+      setTimeout(()=>{ t.style.transition='opacity .4s ease, transform .4s ease'; t.style.opacity='0'; t.style.transform='translateX(-50%) translateY(10px)'; }, 1600);
+      setTimeout(()=> t.remove(), 2100);
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
