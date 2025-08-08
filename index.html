@@ -146,7 +146,12 @@
       box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
       padding: clamp(18px, 4vw, 28px) 0;
     }
-    .band-inner{max-width:1100px; margin:0 auto; padding: 0 clamp(16px, 4vw, 28px)}
+.band-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding: 0 clamp(16px, 4vw, 28px);
+  position: relative; /* added */
+}
 
     /* ---------- HOW IT WORKS BULLETS (FULL WIDTH) ---------- */
     .how-grid{
@@ -162,10 +167,13 @@
     .how-card .muted{margin-top:6px}
 
     /* ---------- SAMPLE REPORT DASHBOARD (FULL WIDTH) ---------- */
-    .dashboard{
-      display:grid; gap:18px;
-      grid-template-columns: 280px 1fr;
-    }
+.dashboard{
+  display:grid;
+  gap:24px;                 /* was 18px */
+  grid-template-columns: 280px 1fr;
+  align-items: start;       /* new: sidebar won't fill full height */
+}
+
     @media (max-width: 900px){ .dashboard{grid-template-columns:1fr} }
 
     .sidebar{
@@ -180,9 +188,13 @@
       padding:10px 12px; border:1px solid var(--card-border); background:#fff; border-radius:12px; box-shadow: var(--shadow);
       font-size:.95rem;
     }
-    .project-item.active{
-      outline: 0; border-color: transparent; background: linear-gradient(135deg, rgba(11,114,236,.08), rgba(33,212,253,.08));
-    }
+.project-item.active{
+  background: linear-gradient(135deg, rgba(11,114,236,.14), rgba(33,212,253,.14));
+  border-color: rgba(11,114,236,.45);
+  box-shadow: 0 8px 18px rgba(11,114,236,.10);
+  font-weight: 700;
+}
+
 
     .dash-main{display:grid; gap:18px}
     .dash-row{display:grid; gap:18px; grid-template-columns: 1fr 1fr}
@@ -202,6 +214,9 @@
 .sentiment-board h4{
   margin:0 0 1rem; font-size:1.06rem; font-family: var(--serif);
 }
+
+.sentiment-board.full-row{ grid-column: 1 / -1; }
+
 
 /* Axis band across bottom = graph vibe */
 .axis-band{
@@ -260,6 +275,34 @@
 
 @media (max-width: 900px){
   .board-grid{ grid-template-columns: repeat(5, minmax(240px, 1fr)); }
+}
+/* Overview card: responsive layout with image */
+.stat-card.overview{
+  display:grid;
+  grid-template-columns: 1fr 180px; /* text | image */
+  gap:16px;
+  align-items:start;
+}
+.ov-img img{
+  display:block; width:180px; max-width:100%; height:auto;
+  border:1px solid var(--card-border); border-radius:12px; box-shadow: var(--shadow);
+  object-fit:cover;
+}
+
+/* tighten on medium screens */
+@media (max-width: 900px){
+  .stat-card.overview{ grid-template-columns: 1fr 160px; }
+}
+
+/* phone: stack image above details, make kv labels stack too */
+@media (max-width: 700px){
+  .stat-card.overview{ grid-template-columns: 1fr; }
+  .ov-img{ order:-1; }         /* image goes to top */
+  .ov-img img{ width:100%; }   /* full width of card */
+}
+@media (max-width: 520px){
+  .stat-card.overview .kv{ grid-template-columns: 1fr; } /* label above value */
+  .stat-card.overview .kv b{ margin-bottom:2px; }
 }
 
 
@@ -349,145 +392,249 @@
 
     <!-- ================= FULL-WIDTH SAMPLE REPORT DASHBOARD ================= -->
 <section id="sample-report" class="full-bleed band">
+  <!-- Scoped tweaks just for this section -->
+  <style>
+    /* make this band feel like one connected panel */
+    #sample-report .report-panel{
+      background:#fff; border:1px solid var(--card-border); border-radius:16px; padding:16px; box-shadow: var(--shadow);
+    }
+    /* sidebar + overview (no tall sidebar) */
+    #sample-report .row-top{
+      display:grid; gap:24px; grid-template-columns: 280px 1fr; align-items:start;
+    }
+    /* full-width row utility */
+    #sample-report .full-row{ grid-column:1 / -1; }
+
+    /* darker selected project */
+    #sample-report .project-item.active{
+      background: linear-gradient(135deg, rgba(11,114,236,.14), rgba(33,212,253,.14));
+      border-color: rgba(11,114,236,.45);
+      box-shadow: 0 8px 18px rgba(11,114,236,.10);
+      font-weight: 700;
+    }
+
+    /* Overview card: text + image (responsive) */
+    #sample-report .stat-card.overview{
+      display:grid; grid-template-columns: 1fr 200px; gap:16px; align-items:start;
+    }
+    #sample-report .ov-img img{
+      display:block; width:200px; max-width:100%; height:auto;
+      border:1px solid var(--card-border); border-radius:12px; box-shadow: var(--shadow); object-fit:cover;
+    }
+
+    /* sentiment board should breathe a bit more in this section */
+    #sample-report .board-grid{ grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+    /* timeline/stakeholders row spacing */
+    #sample-report .row-bottom{ display:grid; gap:24px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 900px){
+      #sample-report .row-top{ grid-template-columns: 1fr; }
+      #sample-report .row-bottom{ grid-template-columns: 1fr; }
+      #sample-report .stat-card.overview{ grid-template-columns: 1fr 180px; }
+    }
+    @media (max-width: 700px){
+      #sample-report .stat-card.overview{ grid-template-columns: 1fr; }
+      #sample-report .ov-img{ order:-1; }           /* image moves to top on mobile */
+      #sample-report .ov-img img{ width:100%; }     /* full card width on mobile */
+    }
+    @media (max-width: 520px){
+      #sample-report .stat-card.overview .kv{ grid-template-columns: 1fr; }
+      #sample-report .stat-card.overview .kv b{ margin-bottom:2px; }
+    }
+
+    /* Sentiment board: responsive stacking */
+#sample-report .board-grid{
+  display:grid;
+  gap:16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* desktop */
+  align-items:start;
+  overflow-x: visible; /* override any global overflow */
+}
+#sample-report .axis-band{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:16px;
+}
+
+/* 4 columns (large tablet) */
+@media (max-width: 1100px){
+  #sample-report .board-grid{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+  #sample-report .axis-band{ grid-template-columns: repeat(4, 1fr); }
+}
+
+/* 3 columns (tablet) — hide axis band; column titles act as labels */
+@media (max-width: 900px){
+  #sample-report .board-grid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+  #sample-report .axis-band{ display:none; }
+}
+
+/* 2 columns (phablet) */
+@media (max-width: 700px){
+  #sample-report .board-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+/* 1 column (phones) */
+@media (max-width: 520px){
+  #sample-report .board-grid{ grid-template-columns: 1fr; }
+  #sample-report .board-col{ min-height:auto; } /* let cards shrink */
+}
+
+  </style>
+
   <div class="band-inner">
-    <div class="badge"><span class="emoji" aria-hidden="true">📊</span><svg class="icon" aria-hidden="true"><use href="#icon-issues"/></svg><span>Sample Report</span></div>
-    <h2 class="section-title">What your dashboard could look like</h2>
+    <div class="report-panel">
+      <div class="badge" style="margin-bottom:12px;">
+        <span class="emoji" aria-hidden="true">📊</span>
+        <svg class="icon" aria-hidden="true"><use href="#icon-issues"/></svg>
+        <span>Sample Report</span>
+      </div>
 
-    <div class="dashboard">
-      <!-- Left: Projects You're Monitoring -->
-      <aside class="sidebar">
-        <h3>Projects You’re Monitoring</h3>
-        <div class="project-list">
-          <div class="project-item">ADU on Willow St</div>
-          <div class="project-item">New bike lane proposal near Monterey Market</div>
-          <div class="project-item active">84-unit proposed development on Telegraph</div>
+      <!-- Row 1: Sidebar + Overview (map lives inside the Overview card) -->
+      <div class="row-top">
+        <!-- Left: Projects -->
+        <aside class="sidebar">
+          <h3>Projects You’re Monitoring</h3>
+          <div class="project-list">
+            <div class="project-item">ADU on Willow St</div>
+            <div class="project-item">New bike lane proposal near Monterey Market</div>
+            <div class="project-item active">84-unit proposed development on Telegraph</div>
+          </div>
+        </aside>
+
+        <!-- Right: Overview WITH image inside -->
+        <div class="dash-main">
+          <div class="stat-card overview">
+            <h4 style="grid-column:1 / -1;">Overview</h4>
+
+            <!-- Details -->
+            <div>
+              <div class="kv"><b>Policy:</b><div>Proposed 84-unit development on Telegraph Ave</div></div>
+              <div class="kv"><b>Hearing Date:</b><div>September 18 — Oakland Planning Commission</div></div>
+              <div class="kv"><b>Location:</b><div>4900 Telegraph Ave, Temescal</div></div>
+              <div class="kv"><b>Supporters:</b><div>YIMBY coalition, affordable housing advocates</div></div>
+              <div class="kv"><b>Opponents:</b><div>Local neighborhood association, small business group</div></div>
+              <div class="kv"><b>Key Issues:</b><div>Height variance request, 10% below-market units</div></div>
+
+              <div class="actions">
+                <a class="action-btn" href="#">View full proposal</a>
+                <a class="action-btn" href="#">Email planner</a>
+                <a class="action-btn" href="#">Attend hearing</a>
+              </div>
+            </div>
+
+            <!-- Map image (right on desktop, top on mobile) -->
+            <div class="ov-img">
+              <img src="telegraph.png" alt="Map around 4900 Telegraph Ave">
+            </div>
+          </div>
         </div>
-      </aside>
+      </div>
 
-      <!-- Right: Selected Project Details -->
-      <div class="dash-main">
-        <!-- Overview (kept) -->
+      <!-- Row 2: FULL-WIDTH sentiment graph -->
+      <div class="sentiment-board full-row" style="margin-top:16px;">
+        <h4>Council & Commission Sentiment</h4>
+
+        <!-- axis band -->
+        <div class="axis-band">
+          <div>Strongly Support</div>
+          <div>Support</div>
+          <div>Neutral</div>
+          <div>Oppose</div>
+          <div>Strongly Oppose</div>
+        </div>
+
+        <!-- columns behave like lanes; no overlap; responsive via site CSS + scoped tweak above -->
+        <div class="board-grid">
+          <div class="board-col">
+            <div class="col-title">Strongly Support <span class="chip">Pro</span></div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Councilmember Alvarez</b>
+                <div class="quote">“We need more homes near transit — this is a smart infill site…”</div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Commissioner Chen</b>
+                <div class="quote">“Leaning yes pending traffic study showing minimal spillover…”</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-col">
+            <div class="col-title">Support <span class="chip">+1</span></div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Commissioner Patel</b>
+                <div class="quote">“Supportive if small-business protections are strengthened…”</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-col">
+            <div class="col-title">Neutral <span class="chip">0</span></div>
+          </div>
+
+          <div class="board-col">
+            <div class="col-title">Oppose <span class="chip">−1</span></div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Councilmember Smith</b>
+                <div class="quote">“There’s no need for this — we’ve already reduced rents for high-income individuals, we need…”</div>
+              </div>
+            </div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Commissioner Lee</b>
+                <div class="quote">“Height variance sets a tough precedent for neighboring parcels…”</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-col">
+            <div class="col-title">Strongly Oppose <span class="chip">Con</span></div>
+            <div class="member">
+              <div class="dot" aria-hidden="true"></div>
+              <div class="meta">
+                <b>Councilmember Rivera</b>
+                <div class="quote">“Oppose unless deeper affordability and storefront protections are added…”</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spectrum-actions">
+          <a class="action-btn" href="#">View full vote history on similar issues of council members</a>
+          <a class="action-btn" href="#">View all statements by council members</a>
+        </div>
+      </div>
+
+      <!-- Row 3: Timeline + Stakeholders -->
+      <div class="row-bottom full-row" style="margin-top:16px;">
         <div class="stat-card">
-          <h4>Overview</h4>
-          <div class="kv"><b>Policy:</b><div>Proposed 84-unit development on Telegraph Ave</div></div>
-          <div class="kv"><b>Hearing Date:</b><div>September 18 — Oakland Planning Commission</div></div>
-          <div class="kv"><b>Location:</b><div>4900 Telegraph Ave, Temescal</div></div>
-          <div class="kv"><b>Supporters:</b><div>YIMBY coalition, affordable housing advocates</div></div>
-          <div class="kv"><b>Opponents:</b><div>Local neighborhood association, small business group</div></div>
-          <div class="kv"><b>Key Issues:</b><div>Height variance request, 10% below-market units</div></div>
-          <div class="actions">
-            <a class="action-btn" href="#">View full proposal</a>
-            <a class="action-btn" href="#">Email planner</a>
-            <a class="action-btn" href="#">Attend hearing</a>
-          </div>
+          <h4>Timeline</h4>
+          <div class="kv"><b>Filed:</b><div>July 22</div></div>
+          <div class="kv"><b>Staff Report:</b><div>September 9</div></div>
+          <div class="kv"><b>Hearing:</b><div>September 18</div></div>
+          <div class="kv"><b>Next Steps:</b><div>Commission vote → City Council referral (if appealed)</div></div>
         </div>
-
-        <!-- Sentiment (graph-lane) -->
-        <div class="sentiment-board">
-          <h4>Council & Commission Sentiment</h4>
-
-          <!-- bottom axis band for the chart labels -->
-          <div class="axis-band">
-            <div>Strongly Support</div>
-            <div>Support</div>
-            <div>Neutral</div>
-            <div>Oppose</div>
-            <div>Strongly Oppose</div>
-          </div>
-
-          <!-- columns behave like lanes on a chart (no overlap) -->
-          <div class="board-grid">
-            <div class="board-col">
-              <div class="col-title">Strongly Support <span class="chip">Pro</span></div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Councilmember Alvarez</b>
-                  <div class="quote">“We need more homes near transit — this is a smart infill site…”</div>
-                </div>
-              </div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Commissioner Chen</b>
-                  <div class="quote">“Leaning yes pending traffic study showing minimal spillover…”</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="board-col">
-              <div class="col-title">Support <span class="chip">+1</span></div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Commissioner Patel</b>
-                  <div class="quote">“Supportive if small-business protections are strengthened…”</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="board-col">
-              <div class="col-title">Neutral <span class="chip">0</span></div>
-              <!-- (empty example column to show spacing) -->
-            </div>
-
-            <div class="board-col">
-              <div class="col-title">Oppose <span class="chip">−1</span></div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Councilmember Smith</b>
-                  <div class="quote">“There’s no need for this — we’ve already reduced rents for high-income individuals, we need…”</div>
-                </div>
-              </div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Commissioner Lee</b>
-                  <div class="quote">“Height variance sets a tough precedent for neighboring parcels…”</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="board-col">
-              <div class="col-title">Strongly Oppose <span class="chip">Con</span></div>
-              <div class="member">
-                <div class="dot" aria-hidden="true"></div>
-                <div class="meta">
-                  <b>Councilmember Rivera</b>
-                  <div class="quote">“Oppose unless deeper affordability and storefront protections are added…”</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="spectrum-actions">
-            <a class="action-btn" href="#">View full vote history on similar issues of council members</a>
-            <a class="action-btn" href="#">View all statements by council members</a>
-          </div>
-        </div>
-
-        <!-- Timeline + Stakeholders (kept) -->
-        <div class="dash-row">
-          <div class="stat-card">
-            <h4>Timeline</h4>
-            <div class="kv"><b>Filed:</b><div>July 22</div></div>
-            <div class="kv"><b>Staff Report:</b><div>September 9</div></div>
-            <div class="kv"><b>Hearing:</b><div>September 18</div></div>
-            <div class="kv"><b>Next Steps:</b><div>Commission vote → City Council referral (if appealed)</div></div>
-          </div>
-          <div class="stat-card">
-            <h4>Stakeholders</h4>
-            <div class="kv"><b>Developer:</b><div>Telegraph Partners LLC</div></div>
-            <div class="kv"><b>District:</b><div>D1 — Temescal</div></div>
-            <div class="kv"><b>Nearby Orgs:</b><div>Temescal Merchants Assoc., Temescal Community Council</div></div>
-            <div class="kv"><b>Contact:</b><div>Planner Jane Doe — jane.doe@oakland.gov</div></div>
-          </div>
+        <div class="stat-card">
+          <h4>Stakeholders</h4>
+          <div class="kv"><b>Developer:</b><div>Telegraph Partners LLC</div></div>
+          <div class="kv"><b>District:</b><div>D1 — Temescal</div></div>
+          <div class="kv"><b>Nearby Orgs:</b><div>Temescal Merchants Assoc., Temescal Community Council</div></div>
+          <div class="kv"><b>Contact:</b><div>Planner Jane Doe — jane.doe@oakland.gov</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
     <div class="divider"></div>
 
