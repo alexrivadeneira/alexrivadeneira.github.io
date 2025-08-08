@@ -61,7 +61,7 @@
       font-size:.88rem; box-shadow: var(--shadow); font-family: var(--serif);
     }
     .badge .dot{width:10px; height:10px; border-radius:999px; background: var(--accent); box-shadow: 0 0 0 4px rgba(255, 213, 77, .25)}
-    .badge .emoji{font-size:1rem; line-height:1; opacity:.55; filter:grayscale(40%);}
+    .badge .emoji{font-size:1rem; line-height:1; opacity:.55; filter:grayscale(40%)}
 
     .muted{color:var(--muted)}
     .hero{padding: 64px 0 28px; text-align:center}
@@ -115,13 +115,6 @@
       font-family: var(--serif);
     }
 
-    .sample{display:grid; gap:10px; font-size:.98rem}
-    .sample b{color:#0f172a; font-family: var(--serif)}
-    .sample .row{display:flex; align-items:center; gap:10px}
-    .sample .glyph{width:18px; height:18px}
-    .sample .emoji{font-size:16px; opacity:.55; filter:grayscale(40%)}
-    .sample .actions{display:flex; gap:8px; flex-wrap:wrap}
-
     .link-btn{padding:8px 12px; border-radius:10px; background:#fff; border:1px solid var(--card-border); text-decoration:none; color:#0f172a; box-shadow: var(--shadow)}
 
     .chips{display:flex; flex-wrap:wrap; gap:8px}
@@ -137,7 +130,138 @@
     @media (max-width: 640px){ .footer-grid{grid-template-columns:1fr} }
 
     /* general emoji tone-down anywhere */
-    .emoji{opacity:.55; filter:grayscale(40%);}
+    .emoji{opacity:.55; filter:grayscale(40%)}
+
+    /* ---------- FULL-BLEED UTILITIES ---------- */
+    .full-bleed{
+      width:100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+    .band{
+      background: #ffffffc0;
+      backdrop-filter: saturate(1.1) blur(2px);
+      border-top:1px solid var(--card-border);
+      border-bottom:1px solid var(--card-border);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
+      padding: clamp(18px, 4vw, 28px) 0;
+    }
+    .band-inner{max-width:1100px; margin:0 auto; padding: 0 clamp(16px, 4vw, 28px)}
+
+    /* ---------- HOW IT WORKS BULLETS (FULL WIDTH) ---------- */
+    .how-grid{
+      display:grid; gap:16px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @media (max-width: 1000px){ .how-grid{grid-template-columns:1fr 1fr} }
+    @media (max-width: 600px){ .how-grid{grid-template-columns:1fr} }
+    .how-card{
+      background:#fff; border:1px solid var(--card-border); border-radius:16px; padding:18px; box-shadow: var(--shadow)
+    }
+    .how-card b{font-family: var(--serif); color:#0f172a}
+    .how-card .muted{margin-top:6px}
+
+    /* ---------- SAMPLE REPORT DASHBOARD (FULL WIDTH) ---------- */
+    .dashboard{
+      display:grid; gap:18px;
+      grid-template-columns: 280px 1fr;
+    }
+    @media (max-width: 900px){ .dashboard{grid-template-columns:1fr} }
+
+    .sidebar{
+      background:#fff; border:1px solid var(--card-border); border-radius:16px; box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .sidebar h3{
+      margin:.1rem 0 .6rem; font-size:1.05rem; font-family: var(--serif);
+    }
+    .project-list{display:grid; gap:8px; margin-top:8px}
+    .project-item{
+      padding:10px 12px; border:1px solid var(--card-border); background:#fff; border-radius:12px; box-shadow: var(--shadow);
+      font-size:.95rem;
+    }
+    .project-item.active{
+      outline: 0; border-color: transparent; background: linear-gradient(135deg, rgba(11,114,236,.08), rgba(33,212,253,.08));
+    }
+
+    .dash-main{display:grid; gap:18px}
+    .dash-row{display:grid; gap:18px; grid-template-columns: 1fr 1fr}
+    @media (max-width: 900px){ .dash-row{grid-template-columns:1fr} }
+
+    .stat-card{background:#fff; border:1px solid var(--card-border); border-radius:16px; padding:16px; box-shadow: var(--shadow)}
+    .stat-card h4{margin:.1rem 0 .5rem; font-size:1.02rem; font-family: var(--serif)}
+    .kv{display:grid; grid-template-columns: 170px 1fr; gap:10px; align-items:start; margin:.2rem 0}
+    .kv b{font-family: var(--serif); color:#0f172a}
+    .actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .action-btn{padding:10px 12px; border-radius:12px; background:#fff; border:1px solid var(--card-border); box-shadow: var(--shadow); text-decoration:none; color:#0f172a; font-weight:600}
+
+ /* ---------- COUNCIL SENTIMENT: Graph-lane board ---------- */
+.sentiment-board{
+  background:#fff; border:1px solid var(--card-border); border-radius:16px; padding:24px; box-shadow: var(--shadow);
+}
+.sentiment-board h4{
+  margin:0 0 1rem; font-size:1.06rem; font-family: var(--serif);
+}
+
+/* Axis band across bottom = graph vibe */
+.axis-band{
+  display:grid; grid-template-columns: repeat(5, 1fr);
+  gap:16px; margin-bottom:12px;
+  padding:10px 12px; border:1px dashed rgba(15,23,42,.15);
+  border-radius:12px; background:linear-gradient(90deg, rgba(22,163,74,.06), rgba(239,68,68,.06));
+}
+/* subtle vertical separators */
+.axis-band > div{
+  position:relative; text-align:center; font-weight:700; color:#0f172a; font-size:.93rem;
+}
+.axis-band > div::after{
+  content:""; position:absolute; right:-8px; top:0; bottom:0; width:1px;
+  background:linear-gradient(to bottom, transparent, rgba(15,23,42,.12), transparent);
+}
+.axis-band > div:last-child::after{display:none}
+
+/* the board sits “above” the axis; ticklines give chart feel */
+.board-grid{
+  display:grid; gap:16px; grid-template-columns: repeat(5, minmax(240px, 1fr));
+  align-items:start; overflow-x:auto; padding-bottom:4px;
+}
+.board-col{
+  background:#fff; border:1px solid var(--card-border); border-radius:14px; box-shadow: var(--shadow);
+  padding:12px; min-height:300px; display:flex; flex-direction:column; gap:10px; position:relative;
+}
+/* vertical tick marks inside each column */
+.board-col::before{
+  content:""; position:absolute; left:0; right:0; top:12px; bottom:12px;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(15,23,42,.06) 0,
+      rgba(15,23,42,.06) 1px,
+      transparent 1px,
+      transparent 28px
+    );
+  border-radius:12px; pointer-events:none;
+}
+
+.col-title{ font-weight:700; font-size:.95rem; color:#0f172a; margin-bottom:6px; display:flex; align-items:center; gap:8px }
+.col-title .chip{ font-size:.75rem; padding:3px 8px; border-radius:999px; border:1px solid var(--card-border); background:#fff }
+
+/* cards = no overlap */
+.member{
+  background:#fff; border:1px solid var(--card-border); border-radius:12px; box-shadow: var(--shadow);
+  padding:10px; display:flex; gap:10px; align-items:flex-start;
+}
+.member .dot{ width:10px; height:10px; border-radius:999px; background:#0f172a; margin-top:4px; flex:0 0 auto }
+.member .meta{ font-size:.82rem; line-height:1.2 }
+.member .meta b{ display:block; margin-bottom:2px; font-size:.82rem }
+.member .quote{ font-size:.75rem; color:#334155 }
+
+.spectrum-actions{ display:flex; gap:8px; flex-wrap:wrap; margin-top:14px }
+
+@media (max-width: 900px){
+  .board-grid{ grid-template-columns: repeat(5, minmax(240px, 1fr)); }
+}
+
 
   </style>
 </head>
@@ -195,34 +319,175 @@
 
     <div class="divider"></div>
 
-    <section id="how">
-      <div class="badge"><span class="emoji" aria-hidden="true">🛠️</span><svg class="icon" aria-hidden="true"><use href="#icon-brain"/></svg><span>How It Works</span></div>
-      <h2 class="section-title">From dense PDFs to clear, timely alerts</h2>
-      <div class="grid grid-2">
-        <div class="card list">
-          <div class="row"><div><b>We monitor local housing discussions & decisions.</b><div class="muted">Agendas, staff reports, draft ordinances — automatically aggregated each week.</div></div></div>
-          <div class="row"><div><b>AI summarizes key details.</b><div class="muted">We extract the policy, timeline, stakeholders, and what it means for your neighborhood.</div></div></div>
-          <div class="row"><div><b>Customized by your location.</b><div class="muted">Enter your ZIP code and we track proposals near you.</div></div></div>
-          <div class="row"><div><b>Timely alerts before votes.</b><div class="muted">Be first to know when decisions land — and how to voice your opinion.</div></div></div>
-        </div>
-        <div class="card">
-          <span class="kicker">Sample Summary</span>
-          <div class="sample" style="margin-top:10px">
-            <div class="row"><span class="emoji" aria-hidden="true">🏙️</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-townhall"/></svg><b>Policy:</b> Proposed 84-unit development on Telegraph Ave</div>
-            <div class="row"><span class="emoji" aria-hidden="true">📅</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-calendar"/></svg><b>Hearing Date:</b> September 18 — Oakland Planning Commission</div>
-            <div class="row"><span class="emoji" aria-hidden="true">📍</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-pin"/></svg><b>Location:</b> 4900 Telegraph Ave, Temescal</div>
-            <div class="row"><span class="emoji" aria-hidden="true">🟢</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-people"/></svg><b>Supporters:</b> YIMBY coalition, affordable housing advocates</div>
-            <div class="row"><span class="emoji" aria-hidden="true">🔴</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-people"/></svg><b>Opponents:</b> Local neighborhood association, small business group</div>
-            <div class="row"><span class="emoji" aria-hidden="true">🏗️</span><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-issues"/></svg><b>Key Issues:</b> Height variance request, 10% below-market units</div>
-            <div class="actions">
-              <a class="link-btn" href="#">View proposal</a>
-              <a class="link-btn" href="#">Email planner</a>
-              <a class="link-btn" href="#">Attend hearing</a>
-            </div>
+    <!-- ================= FULL-WIDTH HOW IT WORKS ================= -->
+    <section id="how" class="full-bleed band">
+      <div class="band-inner">
+        <div class="badge"><span class="emoji" aria-hidden="true">🛠️</span><svg class="icon" aria-hidden="true"><use href="#icon-brain"/></svg><span>How It Works</span></div>
+        <h2 class="section-title">From dense PDFs to clear, timely alerts</h2>
+
+        <!-- Full-width cards preserving your exact text -->
+        <div class="how-grid">
+          <div class="how-card">
+            <b>We monitor local housing discussions & decisions.</b>
+            <div class="muted">Agendas, staff reports, draft ordinances — automatically aggregated each week.</div>
+          </div>
+          <div class="how-card">
+            <b>AI summarizes key details.</b>
+            <div class="muted">We extract the policy, timeline, stakeholders, and what it means for your neighborhood.</div>
+          </div>
+          <div class="how-card">
+            <b>Customized by your location.</b>
+            <div class="muted">Enter your ZIP code and we track proposals near you.</div>
+          </div>
+          <div class="how-card">
+            <b>Timely alerts before votes.</b>
+            <div class="muted">Be first to know when decisions land — and how to voice your opinion.</div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ================= FULL-WIDTH SAMPLE REPORT DASHBOARD ================= -->
+<section id="sample-report" class="full-bleed band">
+  <div class="band-inner">
+    <div class="badge"><span class="emoji" aria-hidden="true">📊</span><svg class="icon" aria-hidden="true"><use href="#icon-issues"/></svg><span>Sample Report</span></div>
+    <h2 class="section-title">What your dashboard could look like</h2>
+
+    <div class="dashboard">
+      <!-- Left: Projects You're Monitoring -->
+      <aside class="sidebar">
+        <h3>Projects You’re Monitoring</h3>
+        <div class="project-list">
+          <div class="project-item">ADU on Willow St</div>
+          <div class="project-item">New bike lane proposal near Monterey Market</div>
+          <div class="project-item active">84-unit proposed development on Telegraph</div>
+        </div>
+      </aside>
+
+      <!-- Right: Selected Project Details -->
+      <div class="dash-main">
+        <!-- Overview (kept) -->
+        <div class="stat-card">
+          <h4>Overview</h4>
+          <div class="kv"><b>Policy:</b><div>Proposed 84-unit development on Telegraph Ave</div></div>
+          <div class="kv"><b>Hearing Date:</b><div>September 18 — Oakland Planning Commission</div></div>
+          <div class="kv"><b>Location:</b><div>4900 Telegraph Ave, Temescal</div></div>
+          <div class="kv"><b>Supporters:</b><div>YIMBY coalition, affordable housing advocates</div></div>
+          <div class="kv"><b>Opponents:</b><div>Local neighborhood association, small business group</div></div>
+          <div class="kv"><b>Key Issues:</b><div>Height variance request, 10% below-market units</div></div>
+          <div class="actions">
+            <a class="action-btn" href="#">View full proposal</a>
+            <a class="action-btn" href="#">Email planner</a>
+            <a class="action-btn" href="#">Attend hearing</a>
+          </div>
+        </div>
+
+        <!-- Sentiment (graph-lane) -->
+        <div class="sentiment-board">
+          <h4>Council & Commission Sentiment</h4>
+
+          <!-- bottom axis band for the chart labels -->
+          <div class="axis-band">
+            <div>Strongly Support</div>
+            <div>Support</div>
+            <div>Neutral</div>
+            <div>Oppose</div>
+            <div>Strongly Oppose</div>
+          </div>
+
+          <!-- columns behave like lanes on a chart (no overlap) -->
+          <div class="board-grid">
+            <div class="board-col">
+              <div class="col-title">Strongly Support <span class="chip">Pro</span></div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Councilmember Alvarez</b>
+                  <div class="quote">“We need more homes near transit — this is a smart infill site…”</div>
+                </div>
+              </div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Commissioner Chen</b>
+                  <div class="quote">“Leaning yes pending traffic study showing minimal spillover…”</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-col">
+              <div class="col-title">Support <span class="chip">+1</span></div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Commissioner Patel</b>
+                  <div class="quote">“Supportive if small-business protections are strengthened…”</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-col">
+              <div class="col-title">Neutral <span class="chip">0</span></div>
+              <!-- (empty example column to show spacing) -->
+            </div>
+
+            <div class="board-col">
+              <div class="col-title">Oppose <span class="chip">−1</span></div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Councilmember Smith</b>
+                  <div class="quote">“There’s no need for this — we’ve already reduced rents for high-income individuals, we need…”</div>
+                </div>
+              </div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Commissioner Lee</b>
+                  <div class="quote">“Height variance sets a tough precedent for neighboring parcels…”</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="board-col">
+              <div class="col-title">Strongly Oppose <span class="chip">Con</span></div>
+              <div class="member">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="meta">
+                  <b>Councilmember Rivera</b>
+                  <div class="quote">“Oppose unless deeper affordability and storefront protections are added…”</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spectrum-actions">
+            <a class="action-btn" href="#">View full vote history on similar issues of council members</a>
+            <a class="action-btn" href="#">View all statements by council members</a>
+          </div>
+        </div>
+
+        <!-- Timeline + Stakeholders (kept) -->
+        <div class="dash-row">
+          <div class="stat-card">
+            <h4>Timeline</h4>
+            <div class="kv"><b>Filed:</b><div>July 22</div></div>
+            <div class="kv"><b>Staff Report:</b><div>September 9</div></div>
+            <div class="kv"><b>Hearing:</b><div>September 18</div></div>
+            <div class="kv"><b>Next Steps:</b><div>Commission vote → City Council referral (if appealed)</div></div>
+          </div>
+          <div class="stat-card">
+            <h4>Stakeholders</h4>
+            <div class="kv"><b>Developer:</b><div>Telegraph Partners LLC</div></div>
+            <div class="kv"><b>District:</b><div>D1 — Temescal</div></div>
+            <div class="kv"><b>Nearby Orgs:</b><div>Temescal Merchants Assoc., Temescal Community Council</div></div>
+            <div class="kv"><b>Contact:</b><div>Planner Jane Doe — jane.doe@oakland.gov</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <div class="divider"></div>
 
@@ -312,19 +577,6 @@
         if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
       });
     });
-
-    // Waitlist form mock submit
-    function subscribe(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const zip = document.getElementById('zip').value.trim();
-      const valid = /\S+@\S+\.\S+/.test(email) && /^\d{5}$/.test(zip);
-      if(!valid){ toast('Please enter a valid email and 5-digit ZIP.'); return false; }
-      toast("Thanks! You're on the waitlist.");
-      e.target.reset();
-      return false;
-    }
 
     function openContact(){
       toast('Contact us at: benfortransit@gmail.com');
